@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "fanta-ai"
+version = "0.1.0"
+description = "Sistema AI per raccomandare la formazione di fantacalcio"
+authors = ["gianmadd"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

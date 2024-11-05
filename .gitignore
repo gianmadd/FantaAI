@@ -1,0 +1,18 @@
+# Ambiente virtuale di Poetry
+.venv/
+.poetry/
+
+# File temporanei di sistema
+.DS_Store
+*.swp
+
+# Cache Python
+__pycache__/
+*.pyc
+
+# Ignora il file .env nella cartella config
+config/.env
+
+# Checkpoints di Jupyter Notebook
+.ipynb_checkpoints/
+
