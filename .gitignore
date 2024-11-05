@@ -5,14 +5,20 @@
 # File temporanei di sistema
 .DS_Store
 *.swp
+*.tmp
 
 # Cache Python
 __pycache__/
 *.pyc
+*.pyo
+
 
 # Ignora il file .env nella cartella config
 config/.env
 
 # Checkpoints di Jupyter Notebook
 .ipynb_checkpoints/
+
+# File di log
+*.log
 
