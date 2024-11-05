@@ -22,3 +22,6 @@ config/.env
 # File di log
 *.log
 
+# Project notes
+project_nodes.md
+
