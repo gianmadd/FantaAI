@@ -88,7 +88,9 @@ if __name__ == "__main__":
 
     if teams_data and "teams" in teams_data:
         save_data(teams_data, f"{DATA_RAW_PATH}/teams.json")
-        logging.info(" -------------------------- Dati delle squadre salvati correttamente. -------------------------- ")
+        logging.info(
+            " -------------------------- Dati delle squadre salvati correttamente. -------------------------- "
+        )
 
         # Recupera e salva le partite per ogni squadra
         for team in teams_data["teams"]:
@@ -102,7 +104,8 @@ if __name__ == "__main__":
                         c for c in team_name if c.isalnum() or c in (" ", "_")
                     ).replace(" ", "_")
                     save_data(
-                        matches_data, f"{DATA_RAW_PATH}/team_matches/{safe_team_name}_matches.json"
+                        matches_data,
+                        f"{DATA_RAW_PATH}/team_matches/{safe_team_name}_matches.json",
                     )
                     logging.info(
                         f" -------------------------- Dati delle partite per {team_name} salvati correttamente. -------------------------- "
