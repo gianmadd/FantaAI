@@ -20,19 +20,22 @@ def load_team_data():
 def load_all_team_matches():
     matches_dir = f"{DATA_RAW_PATH}/team_matches"
     all_matches = []
-    for filename in os.listdir(matches_dir):
-        if filename.endswith("_matches.json"):
-            with open(os.path.join(matches_dir, filename), "r") as f:
-                matches_data = json.load(f)
-                all_matches.extend(
-                    matches_data["matches"]
-                )  # Aggiunge tutte le partite in una lista
+
+    # Ordina i file in ordine alfabetico
+    filenames = sorted([f for f in os.listdir(matches_dir) if f.endswith("_matches.json")])
+    
+    for filename in filenames:
+        with open(os.path.join(matches_dir, filename), "r") as f:
+            matches_data = json.load(f)
+            all_matches.extend(matches_data["matches"])  # Aggiunge tutte le partite in una lista
+    
     matches_df = pd.DataFrame(all_matches)
 
     # Ordina per "matchday" e "stage"
     matches_df = matches_df.sort_values(by=["stage", "matchday"]).reset_index(drop=True)
 
     return matches_df
+
 
 
 # Pulizia dei dati
