@@ -1,0 +1,10 @@
+Implementazione DB MySQL
+ - Installazione
+ - Tabelle
+ - Integrazione Python (sqlalchemy / psycopg2)
+
+Implementazione Pipeline 
+ - Caricamento dati grezzi dal DB
+ - Pulizia e Trasformazione dati
+ - Feature Engineering
+ - Divisione in Train e Test
