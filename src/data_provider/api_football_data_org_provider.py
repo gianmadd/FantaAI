@@ -1,7 +1,11 @@
 import logging
+import os
+import sys
 import time
 
 import requests
+
+sys.path.insert(0, os.path.abspath(".."))
 
 from data_provider.data_provider_base import DataProviderBase
 

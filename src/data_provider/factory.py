@@ -1,6 +1,9 @@
-from data_provider.api_football_data_org_provider import FootballDataOrgAPI
+import os
+import sys
 
-# from .alternative_data_provider import AlternativeAPIProvider  # Es. altro provider
+sys.path.insert(0, os.path.abspath(".."))
+
+from data_provider.api_football_data_org_provider import FootballDataOrgAPI
 
 
 def get_data_provider(provider_name, api_key):

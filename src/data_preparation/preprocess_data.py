@@ -1,8 +1,13 @@
 import json
 import os
 import sys
+
+sys.path.insert(0, os.path.abspath(".."))
+
 import logging
+
 import pandas as pd
+
 from utils.save_data_utils import save_processed_data
 
 # Configura il logging
@@ -14,17 +19,18 @@ logging.basicConfig(
 DATA_RAW_PATH = os.path.abspath("../../data/raw/seriea")
 DATA_PROCESSED_PATH = os.path.abspath("../../data/processed/seriea")
 
+
 def load_team_data():
     """
     Carica i dati delle squadre dal file JSON.
 
     Returns:
-        dict: Un dizionario contenente i dati delle squadre, oppure None se si 
+        dict: Un dizionario contenente i dati delle squadre, oppure None se si
               verifica un errore durante il caricamento.
 
     Logs:
         logging.info: Logga il successo del caricamento dei dati.
-        logging.error: Logga un errore se il file non viene trovato o se il contenuto 
+        logging.error: Logga un errore se il file non viene trovato o se il contenuto
                        non può essere decodificato.
     """
     teams_file = os.path.join(DATA_RAW_PATH, "teams.json")
@@ -39,6 +45,7 @@ def load_team_data():
         logging.error(f"Errore nel decodificare il file JSON {teams_file}.")
         teams_data = None
     return teams_data
+
 
 def load_all_team_matches():
     """
@@ -61,7 +68,9 @@ def load_all_team_matches():
         logging.error(f"La directory {matches_dir} non esiste.")
         return pd.DataFrame()
 
-    filenames = sorted(f for f in os.listdir(matches_dir) if f.endswith("_matches.json"))
+    filenames = sorted(
+        f for f in os.listdir(matches_dir) if f.endswith("_matches.json")
+    )
 
     for filename in filenames:
         file_path = os.path.join(matches_dir, filename)
@@ -75,12 +84,15 @@ def load_all_team_matches():
 
     matches_df = pd.DataFrame(all_matches)
     if not matches_df.empty:
-        matches_df = matches_df.sort_values(by=["stage", "matchday"]).reset_index(drop=True)
+        matches_df = matches_df.sort_values(by=["stage", "matchday"]).reset_index(
+            drop=True
+        )
         logging.info("Dati delle partite caricati e ordinati con successo.")
     else:
         logging.warning("Nessun dato di partite caricato.")
-    
+
     return matches_df
+
 
 def clean_data(matches_df):
     """
@@ -90,17 +102,26 @@ def clean_data(matches_df):
         matches_df (pd.DataFrame): Il DataFrame contenente i dati delle partite.
 
     Returns:
-        pd.DataFrame: Il DataFrame con le colonne non necessarie rimosse e i 
+        pd.DataFrame: Il DataFrame con le colonne non necessarie rimosse e i
                       valori mancanti riempiti.
 
     Logs:
         logging.info: Logga il successo della pulizia dei dati.
     """
-    columns_to_drop = ["id", "season", "area", "competition", "group", "lastUpdated", "odds"]
+    columns_to_drop = [
+        "id",
+        "season",
+        "area",
+        "competition",
+        "group",
+        "lastUpdated",
+        "odds",
+    ]
     matches_df.drop(columns=columns_to_drop, inplace=True, errors="ignore")
     matches_df.fillna(0, inplace=True)
     logging.info("Dati puliti con successo.")
     return matches_df
+
 
 def add_features(matches_df):
     """
@@ -120,6 +141,7 @@ def add_features(matches_df):
     logging.info("Feature aggiuntive applicate ai dati.")
     return matches_df
 
+
 # Esegui il preprocessamento
 if __name__ == "__main__":
     """
@@ -132,7 +154,7 @@ if __name__ == "__main__":
             - Salva i dati preprocessati in un file CSV.
 
     Logs:
-        logging.info: Logga l'inizio e la fine del processo, il caricamento, la pulizia 
+        logging.info: Logga l'inizio e la fine del processo, il caricamento, la pulizia
                       e il salvataggio dei dati.
         logging.warning: Logga avvisi se i dati delle squadre o delle partite sono mancanti.
         logging.error: Logga errori non previsti durante il processo.
@@ -145,7 +167,7 @@ if __name__ == "__main__":
     teams_data = load_team_data()
     if teams_data:
         matches_df = load_all_team_matches()
-        
+
         if not matches_df.empty:
             matches_df = clean_data(matches_df)
             matches_df = add_features(matches_df)
@@ -156,5 +178,5 @@ if __name__ == "__main__":
             logging.warning("Non ci sono dati di partite da processare.")
     else:
         logging.warning("Non ci sono dati delle squadre da processare.")
-    
+
     logging.info("Processo di preprocessamento completato.")
