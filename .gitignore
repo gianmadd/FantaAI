@@ -15,6 +15,8 @@ __pycache__/
 
 # Ignora il file .env nella cartella config
 config/.env
+config/api_football_rapid_counter.json
+config/api_football_data_org_counter.json
 
 # Checkpoints di Jupyter Notebook
 .ipynb_checkpoints/

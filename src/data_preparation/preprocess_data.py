@@ -7,6 +7,7 @@ sys.path.insert(0, os.path.abspath(".."))
 import logging
 
 import pandas as pd
+from dotenv import load_dotenv
 
 from utils.save_data_utils import save_processed_data
 
@@ -15,9 +16,13 @@ logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
+# Carica la chiave API dal file .env
+load_dotenv("../../config/.env")
+
 # Percorsi principali
-DATA_RAW_PATH = os.path.abspath("../../data/raw/seriea")
-DATA_PROCESSED_PATH = os.path.abspath("../../data/processed/seriea")
+PROVIDER_NAME = os.getenv("PROVIDER_NAME")
+DATA_RAW_PATH = os.path.abspath(f"../../data/{PROVIDER_NAME}/raw/seriea")
+DATA_PROCESSED_PATH = os.path.abspath(f"../../data/{PROVIDER_NAME}/processed/seriea")
 
 
 def load_team_data():

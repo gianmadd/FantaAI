@@ -4,6 +4,7 @@ import sys
 sys.path.insert(0, os.path.abspath(".."))
 
 from data_provider.api_football_data_org_provider import FootballDataOrgAPI
+from data_provider.api_football_rapid_provider import FootballRapidAPI
 
 
 def get_data_provider(provider_name, api_key):
@@ -30,8 +31,8 @@ def get_data_provider(provider_name, api_key):
         provider = get_data_provider("api_football_data_org", "your_api_key")
     """
     if provider_name == "api_football_data_org":
-        return FootballDataOrgAPI(api_key)
-    # elif provider_name == "alternative_data":
-    #     return AlternativeAPIProvider(api_key)
+        return FootballDataOrgAPI(api_key, counter_dir="config")
+    elif provider_name == "api_football_rapid":
+        return FootballRapidAPI(api_key, counter_dir="config")
     else:
         raise ValueError(f"Provider {provider_name} non supportato.")

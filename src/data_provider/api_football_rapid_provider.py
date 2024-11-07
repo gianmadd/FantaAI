@@ -1,9 +1,11 @@
+import json
 import logging
 import os
 import time
-import json
 from datetime import datetime
+
 import requests
+
 from data_provider.data_provider_base import DataProviderBase
 
 
@@ -27,26 +29,36 @@ class FootballRapidAPI(DataProviderBase):
     RATE_LIMIT_MINUTE = 30
     DAILY_LIMIT = 100
     RATE_LIMIT_SLEEP = 60 / RATE_LIMIT_MINUTE
-    REQUEST_COUNTER_FILE = "request_counter.json"
 
-    def __init__(self, api_key):
+    def __init__(self, api_key, counter_dir="config"):
+        """
+        Inizializza il provider con la chiave API necessaria e il percorso di salvataggio del contatore.
+
+        Args:
+            api_key (str): La chiave API per autenticarsi con il servizio.
+            counter_dir (str): Directory dove salvare il file di contatore richieste.
+        """
         if not api_key:
             raise ValueError("La chiave API non è valida o mancante.")
 
         self.api_key = api_key
         self.headers = {
             "X-RapidAPI-Key": self.api_key,
-            "X-RapidAPI-Host": "api-football-v1.p.rapidapi.com"
+            "X-RapidAPI-Host": "api-football-v1.p.rapidapi.com",
         }
-        
+
+        # Nome del file di contatore specifico per la classe, nella directory specificata
+        self.request_counter_file = os.path.join(
+            counter_dir, f"{self.__class__.__name__.lower()}_request_counter.json"
+        )
         self.request_counter = self.load_request_counter()
 
     def load_request_counter(self):
         """
         Carica il contatore delle richieste dal file JSON, o inizializza se non esiste.
         """
-        if os.path.exists(self.REQUEST_COUNTER_FILE):
-            with open(self.REQUEST_COUNTER_FILE, "r") as f:
+        if os.path.exists(self.request_counter_file):
+            with open(self.request_counter_file, "r") as f:
                 data = json.load(f)
         else:
             data = {"count": 0, "date": datetime.now().strftime("%Y-%m-%d")}
@@ -56,7 +68,7 @@ class FootballRapidAPI(DataProviderBase):
         """
         Salva il contatore delle richieste nel file JSON.
         """
-        with open(self.REQUEST_COUNTER_FILE, "w") as f:
+        with open(self.request_counter_file, "w") as f:
             json.dump(self.request_counter, f)
 
     def reset_request_counter_if_new_day(self):
@@ -95,14 +107,17 @@ class FootballRapidAPI(DataProviderBase):
                 logging.info(f"{log_context} recuperati con successo.")
                 self.request_counter["count"] += 1
                 self.save_request_counter()
-                time.sleep(self.RATE_LIMIT_SLEEP)  # Pausa per rispettare il rate limit minuto
+                time.sleep(
+                    self.RATE_LIMIT_SLEEP
+                )  # Pausa per rispettare il rate limit minuto
                 return response.json()
 
             elif response.status_code == 429:
                 logging.warning(
-                    f"Limite di chiamate al minuto raggiunto. Pausa di {self.RATE_LIMIT_SLEEP} secondi..."
+                    f"Rate limit raggiunto. Pausa di {self.RATE_LIMIT_SLEEP} secondi."
                 )
                 time.sleep(self.RATE_LIMIT_SLEEP)
+                logging.info("Riprovo la richiesta dopo pausa.")
                 return self._make_request(url, log_context)  # Retry dopo la pausa
 
             else:
@@ -116,9 +131,33 @@ class FootballRapidAPI(DataProviderBase):
             return None
 
     def fetch_teams(self, league_id, season):
+        """
+        Recupera le squadre per una specifica lega e stagione.
+
+        Args:
+            league_id (str): L'ID della lega.
+            season (str): La stagione.
+
+        Returns:
+            dict: I dati JSON delle squadre o None se si supera il limite.
+        """
         url = f"{self.BASE_URL}/teams?league={league_id}&season={season}"
-        return self._make_request(url, f"Dati delle squadre per lega {league_id} e stagione {season}")
+        return self._make_request(
+            url, f"Dati delle squadre per lega {league_id} e stagione {season}"
+        )
 
     def fetch_team_matches(self, team_id, season):
+        """
+        Recupera le partite per una squadra e stagione specifica.
+
+        Args:
+            team_id (int): L'ID della squadra.
+            season (str): La stagione.
+
+        Returns:
+            dict: I dati JSON delle partite o None se si supera il limite.
+        """
         url = f"{self.BASE_URL}/fixtures?team={team_id}&season={season}"
-        return self._make_request(url, f"Dati delle partite per il team {team_id} e stagione {season}")
+        return self._make_request(
+            url, f"Dati delle partite per il team {team_id} e stagione {season}"
+        )
