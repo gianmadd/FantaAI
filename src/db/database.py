@@ -62,7 +62,7 @@ Base = declarative_base()
 
 
 @contextlib.contextmanager
-#Trasforma la funzione in un generatore compatibile con il contesto with
+# Trasforma la funzione in un generatore compatibile con il contesto with
 def get_db():
     """
     Genera una sessione del database, utilizzabile con il costrutto 'with'.
