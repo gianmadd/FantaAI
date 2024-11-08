@@ -112,18 +112,19 @@ class FootballRapidAPI(DataProviderBase):
             self.request_counter = {"count": 0, "date": current_date}
             self.save_request_counter()
 
-    def _make_request(self, url, log_context):
+    def _make_request(self, url, params, log_context):
         """
-        Effettua una singola richiesta API con gestione di rate limiting e limite giornaliero.
+        Effettua una singola richiesta API con gestione di rate limiting, limite giornaliero e paginazione.
 
         Args:
             url (str): L'URL da richiamare.
+            params (dict): Parametri della richiesta, inclusi quelli per la paginazione.
             log_context (str): Contesto per i log.
 
         Returns:
-            dict: Risultato JSON della richiesta o None se si supera il limite.
+            dict: JSON con tutte le risposte concatenate nella chiave `response`, mantenendo la struttura iniziale.
         """
-        # Controlla e resetta il contatore giornaliero se necessario
+        # Resetta il contatore giornaliero se necessario
         self.reset_request_counter_if_new_day()
 
         # Blocca se il limite giornaliero è stato raggiunto
@@ -131,45 +132,88 @@ class FootballRapidAPI(DataProviderBase):
             logging.warning("Limite giornaliero di richieste raggiunto.")
             return None
 
-        try:
-            # Effettua la richiesta
-            response = requests.get(url, headers=self.headers)
+        all_data = None  # Variabile per mantenere la struttura originale
+        page = 1  # Inizia dalla prima pagina
+        params["page"] = page  # Imposta il parametro della pagina
 
-            if response.status_code == 200:
+        while True:
+            try:
+                # Effettua la richiesta
+                response = requests.get(url, headers=self.headers, params=params)
 
-                remaining_requests = response.headers.get(
-                    "x-ratelimit-requests-remaining"
-                )
-                logging.info(f"Richieste rimanenti per oggi: {remaining_requests}")
+                if response.status_code == 200:
+                    remaining_requests = response.headers.get("x-ratelimit-requests-remaining")
+                    logging.info(f"Richieste rimanenti per oggi: {remaining_requests}")
 
-                logging.info(f"{log_context} recuperati con successo.")
-                self.request_counter["count"] += 1
-                self.save_request_counter()
-                time.sleep(
-                    self.RATE_LIMIT_SLEEP
-                )  # Pausa per rispettare il rate limit minuto
-                return response.json()
+                    data = response.json()
+                    logging.debug(f"Risposta JSON: {data}")  # Logga la risposta completa per il debug
 
-            elif response.status_code == 429:
-                logging.warning(
-                    f"Rate limit raggiunto. Pausa di {self.RATE_LIMIT_SLEEP} secondi."
-                )
-                time.sleep(self.RATE_LIMIT_SLEEP)
-                logging.info("Riprovo la richiesta dopo pausa.")
-                return self._make_request(url, log_context)  # Retry dopo la pausa
+                    # Inizializza `all_data` con il primo blocco di dati
+                    if all_data is None:
+                        all_data = data
+                        all_data["response"] = data["response"]
+                    else:
+                        # Aggiungi i dati di `response` alla chiave `response` di `all_data`
+                        all_data["response"].extend(data["response"])
 
-            else:
-                logging.error(
-                    f"Errore nella chiamata API ({log_context}) - Status code: {response.status_code}"
-                )
+                    logging.info(f"{log_context} recuperati con successo, pagina {page}.")
+
+                    # Verifica se ci sono altre pagine
+                    paging_info = data.get("paging", {})
+                    if paging_info.get("current", 1) >= paging_info.get("total", 1):
+                        logging.info("Tutte le pagine recuperate.")
+                        break  # Esci dal ciclo se non ci sono altre pagine
+
+                    # Altrimenti, passa alla pagina successiva
+                    page += 1
+                    params["page"] = page  # Aggiorna il parametro della pagina
+
+                    # Rispetta il rate limit
+                    time.sleep(self.RATE_LIMIT_SLEEP)
+
+                elif response.status_code == 429:
+                    logging.warning(f"Rate limit raggiunto. Pausa di {self.RATE_LIMIT_SLEEP} secondi.")
+                    time.sleep(self.RATE_LIMIT_SLEEP)
+                else:
+                    logging.error(f"Errore nella chiamata API ({log_context}) - Status code: {response.status_code}")
+                    return None
+
+            except requests.exceptions.RequestException as e:
+                logging.error(f"Errore di connessione durante {log_context}: {e}")
                 return None
 
-        except requests.exceptions.RequestException as e:
-            logging.error(f"Errore di connessione durante {log_context}: {e}")
-            return None
+        return all_data  # Restituisce i dati con `response` concatenato
+
+
 
     ##################################
 
     def fetch_static_data(self, endpoint):
         url = f"{self.BASE_URL}/{endpoint}"
         return self._make_request(url, f"Dati statici per {endpoint}")
+
+    def fetch_teams_from_league_season(self, league_id, season):
+        url = f"{self.BASE_URL}/teams"
+        params = {"league": league_id, "season": season}
+        return self._make_request(
+            url,
+            params,
+            f"Dati delle squadre del campionato {league_id} nella stagione {season}",
+        )
+
+    def fetch_players_from_team_season(self, team_id, season):
+        """
+        Recupera la lista di giocatori per una squadra e stagione specifica.
+
+        Args:
+            team_id (str): ID della squadra.
+            season (str): Anno della stagione.
+
+        Returns:
+            dict: Dati JSON dei giocatori.
+        """
+        url = f"{self.BASE_URL}/players"
+        params = {"team": team_id, "season": season}
+        return self._make_request(
+            url, params, f"Dati dei giocatori per squadra {team_id} e stagione {season}"
+        )

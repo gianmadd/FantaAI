@@ -14,3 +14,11 @@ class DataProviderBase(ABC):
     def fetch_static_data(self, endpoint):
         pass
 
+    
+    @abstractmethod
+    def fetch_teams_from_league_season(self, league_id, season):
+        pass
+
+    @abstractmethod
+    def fetch_players_from_team_season(self, team, season):
+        pass
