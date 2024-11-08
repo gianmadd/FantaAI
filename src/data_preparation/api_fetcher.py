@@ -18,7 +18,7 @@ load_dotenv("../../config/.env")
 
 # Percorsi principali
 PROVIDER_NAME = os.getenv("PROVIDER_NAME")
-DATA_RAW_PATH = os.path.abspath(f"../../data/{PROVIDER_NAME}/raw/seriea1")
+DATA_RAW_PATH = os.path.abspath(f"../../data/{PROVIDER_NAME}/raw/")
 TEAM_MATCHES_DIR = os.path.join(DATA_RAW_PATH, "team_matches")
 LEAGUE_ID = "135"  # ID della Serie A per Football API su RapidAPI
 SEASON = "2023"  # Stagione desiderata
@@ -59,21 +59,55 @@ def fetch_and_save_team_matches(team_id, team_name):
         logging.warning(f"Partite per {team_name} non recuperate.")
 
 
+def fetch_and_save_countries():
+    """
+    Recupera e salva i dati dei paesi.
+
+    Returns:
+        list: Una lista di dizionari contenenti le informazioni dei paesi,
+              oppure None in caso di errore.
+    """
+    countries_data = provider.fetch_countries()
+    if countries_data and "response" in countries_data:
+        save_data(countries_data, DATA_RAW_PATH, "countries.json")
+        logging.info("Dati dei paesi salvati correttamente.")
+        return countries_data["response"]
+    else:
+        logging.error("Impossibile recuperare i dati dei paesi.")
+        return None
+
+
+def fetch_and_save_leagues():
+    """
+    Recupera e salva i dati dei campionati.
+
+    Returns:
+        list: Una lista di dizionari contenenti le informazioni dei campionati,
+              oppure None in caso di errore.
+    """
+    leagues_data = provider.fetch_leagues()
+    if leagues_data and "response" in leagues_data:
+        save_data(leagues_data, DATA_RAW_PATH, "leagues.json")
+        logging.info("Dati dei campionati salvati correttamente.")
+        return leagues_data["response"]
+    else:
+        logging.error("Impossibile recuperare i dati dei campionati.")
+        return None
+
+
 if __name__ == "__main__":
     logging.info("Inizio del processo di acquisizione dati.")
     try:
-        teams = fetch_and_save_team_data()
-        if not teams:
-            logging.error("Nessuna squadra disponibile per il recupero delle partite.")
-            sys.exit(1)
+        
+        # Recupera e salva i dati dei paesi
+        countries = fetch_and_save_countries()
+        if not countries:
+            logging.error("Nessun paese disponibile.")
 
-        # for team in teams:
-        #     team_id = team.get("team", {}).get("id")
-        #     team_name = team.get("team", {}).get("name")
-        #     if team_id and team_name:
-        #         fetch_and_save_team_matches(team_id, team_name)
-
-        # logging.info("Processo di acquisizione dati completato.")
+        # Recupera e salva i dati dei campionati
+        leagues = fetch_and_save_leagues()
+        if not leagues:
+            logging.error("Nessun campionato disponibile.")
 
     except Exception as e:
         logging.error(f"Errore non previsto durante il processo: {e}")

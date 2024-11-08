@@ -25,9 +25,8 @@ class FootballDataOrgAPI(DataProviderBase):
     BASE_URL = "https://api.football-data.org/v4"
     RATE_LIMIT_SLEEP = 60  # Pausa di 60 secondi per rate limit
     DAILY_LIMIT = 100
-    PROVIDER_NAME = "api_football_data_org"
 
-    def __init__(self, api_key, counter_dir="config"):
+    def __init__(self, provider_name, api_key, counter_dir="../../config"):
         """
         Inizializza il provider con la chiave API e il percorso per il contatore.
 
@@ -40,10 +39,11 @@ class FootballDataOrgAPI(DataProviderBase):
 
         self.api_key = api_key
         self.headers = {"X-Auth-Token": self.api_key}
+        self.provider_name = provider_name
 
         # Nome del file di contatore specifico per la classe
         self.request_counter_file = os.path.join(
-            counter_dir, f"{self.__class__.__name__.lower()}_request_counter.json"
+            counter_dir, f"{self.provider_name}_counter.json"
         )
         self.request_counter = self.load_request_counter()
 

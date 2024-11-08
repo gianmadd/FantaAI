@@ -47,3 +47,12 @@ class DataProviderBase(ABC):
                        incontra problemi durante il recupero dei dati.
         """
         pass
+    
+    @abstractmethod
+    def fetch_countries(self):
+        pass
+    
+    @abstractmethod
+    def fetch_leagues(self):
+        pass
+    

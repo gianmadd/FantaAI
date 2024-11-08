@@ -30,7 +30,7 @@ class FootballRapidAPI(DataProviderBase):
     DAILY_LIMIT = 100
     RATE_LIMIT_SLEEP = 60 / RATE_LIMIT_MINUTE
 
-    def __init__(self, api_key, counter_dir="config"):
+    def __init__(self, provider_name, api_key, counter_dir="../../config"):
         """
         Inizializza il provider con la chiave API necessaria e il percorso di salvataggio del contatore.
 
@@ -46,30 +46,62 @@ class FootballRapidAPI(DataProviderBase):
             "X-RapidAPI-Key": self.api_key,
             "X-RapidAPI-Host": "api-football-v1.p.rapidapi.com",
         }
+        self.provider_name = provider_name
 
         # Nome del file di contatore specifico per la classe, nella directory specificata
         self.request_counter_file = os.path.join(
-            counter_dir, f"{self.__class__.__name__.lower()}_request_counter.json"
+            counter_dir, f"{self.provider_name}_counter.json"
         )
         self.request_counter = self.load_request_counter()
 
     def load_request_counter(self):
         """
-        Carica il contatore delle richieste dal file JSON, o inizializza se non esiste.
+        Carica il contatore delle richieste dal file JSON. Se il file è vuoto,
+        danneggiato, o non esiste, lo inizializza con i campi necessari.
         """
         if os.path.exists(self.request_counter_file):
-            with open(self.request_counter_file, "r") as f:
-                data = json.load(f)
+            try:
+                with open(self.request_counter_file, "r") as f:
+                    data = json.load(f)
+                    # Verifica che il file contenga i dati corretti
+                    if (
+                        not isinstance(data, dict)
+                        or "count" not in data
+                        or "date" not in data
+                    ):
+                        logging.warning(
+                            "File di contatore danneggiato o incompleto. Reinizializzo il contatore."
+                        )
+                        data = self.initialize_request_counter()
+            except json.JSONDecodeError:
+                logging.warning(
+                    "File di contatore vuoto o corrotto. Reinizializzo il contatore."
+                )
+                data = self.initialize_request_counter()
         else:
-            data = {"count": 0, "date": datetime.now().strftime("%Y-%m-%d")}
+            # Inizializza un nuovo contatore se il file non esiste
+            data = self.initialize_request_counter()
+
         return data
 
-    def save_request_counter(self):
+    def initialize_request_counter(self):
+        """
+        Inizializza il contatore con i campi necessari e lo salva nel file JSON.
+        """
+        data = {"count": 0, "date": datetime.now().strftime("%Y-%m-%d")}
+        self.save_request_counter(data)
+        return data
+
+    def save_request_counter(self, data=None):
         """
         Salva il contatore delle richieste nel file JSON.
         """
+        if data is None:
+            data = (
+                self.request_counter
+            )  # Usa self.request_counter solo se è stato già inizializzato
         with open(self.request_counter_file, "w") as f:
-            json.dump(self.request_counter, f)
+            json.dump(data, f)
 
     def reset_request_counter_if_new_day(self):
         """
@@ -104,6 +136,12 @@ class FootballRapidAPI(DataProviderBase):
             response = requests.get(url, headers=self.headers)
 
             if response.status_code == 200:
+
+                remaining_requests = response.headers.get(
+                    "x-ratelimit-requests-remaining"
+                )
+                logging.info(f"Richieste rimanenti per oggi: {remaining_requests}")
+
                 logging.info(f"{log_context} recuperati con successo.")
                 self.request_counter["count"] += 1
                 self.save_request_counter()
@@ -161,3 +199,23 @@ class FootballRapidAPI(DataProviderBase):
         return self._make_request(
             url, f"Dati delle partite per il team {team_id} e stagione {season}"
         )
+
+    def fetch_countries(self):
+        """
+        Recupera la lista dei paesi disponibili nell'API.
+
+        Returns:
+            dict: Dati JSON dei paesi o None se si supera il limite.
+        """
+        url = f"{self.BASE_URL}/countries"
+        return self._make_request(url, "Dati dei paesi")
+
+    def fetch_leagues(self):
+        """
+        Recupera la lista dei campionati disponibili nell'API.
+
+        Returns:
+            dict: Dati JSON dei campionati o None se si supera il limite.
+        """
+        url = f"{self.BASE_URL}/leagues"
+        return self._make_request(url, "Dati dei campionati")
