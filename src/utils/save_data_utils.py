@@ -77,3 +77,16 @@ def save_processed_data(matches_df, directory, filename):
     except OSError as e:
         logging.error(f"Errore nel salvataggio del file CSV: {e}")
         raise
+
+def replace_slash_with_underscore(input_string):
+    """
+    Sostituisce i caratteri '/' con '_' in una stringa.
+
+    Args:
+        input_string (str): La stringa di input contenente '/'.
+
+    Returns:
+        str: La stringa con '/' sostituiti da '_'.
+    """
+    return input_string.replace("/", "_")
+

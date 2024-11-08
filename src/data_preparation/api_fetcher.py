@@ -7,7 +7,7 @@ sys.path.insert(0, os.path.abspath(".."))
 from dotenv import load_dotenv
 
 from data_provider.factory import get_data_provider
-from utils.save_data_utils import save_data
+from utils.save_data_utils import save_data, replace_slash_with_underscore
 
 # Configura il logging
 logging.basicConfig(
@@ -36,78 +36,30 @@ if not API_KEY:
 provider = get_data_provider(PROVIDER_NAME, API_KEY)
 
 
-def fetch_and_save_team_data():
-    teams_data = provider.fetch_teams(league_id=LEAGUE_ID, season=SEASON)
-    if teams_data and "response" in teams_data:
-        save_data(teams_data, DATA_RAW_PATH, "teams.json")
-        logging.info("Dati delle squadre salvati correttamente.")
-        return teams_data["response"]
-    else:
-        logging.error("Impossibile recuperare i dati delle squadre.")
-        return None
-
-
-def fetch_and_save_team_matches(team_id, team_name):
-    matches_data = provider.fetch_team_matches(team_id=team_id, season=SEASON)
-    if matches_data and "response" in matches_data:
-        safe_team_name = "".join(
-            c for c in team_name if c.isalnum() or c in (" ", "_")
-        ).replace(" ", "_")
-        save_data(matches_data, TEAM_MATCHES_DIR, f"{safe_team_name}_matches.json")
-        logging.info(f"Dati delle partite per {team_name} salvati correttamente.")
-    else:
-        logging.warning(f"Partite per {team_name} non recuperate.")
-
-
-def fetch_and_save_countries():
+def fetch_and_save_static_data(endpoint):
     """
-    Recupera e salva i dati dei paesi.
+    Recupera e salva dati statici da un endpoint specifico.
 
-    Returns:
-        list: Una lista di dizionari contenenti le informazioni dei paesi,
-              oppure None in caso di errore.
+    Args:
+        endpoint (str): L'endpoint per i dati statici
+
+        countries, leagues, seasons, timezone, odds/bets, odds/bookmakers, odds/mapping, players/profiles, players/seasons, teams/countries
     """
-    countries_data = provider.fetch_countries()
-    if countries_data and "response" in countries_data:
-        save_data(countries_data, DATA_RAW_PATH, "countries.json")
-        logging.info("Dati dei paesi salvati correttamente.")
-        return countries_data["response"]
+    url = f"{provider.BASE_URL}/{endpoint}"
+    file_name = replace_slash_with_underscore(endpoint)
+    static_data = provider._make_request(url, f"Dati statici per {endpoint}")
+    if static_data and "response" in static_data:
+        save_data(static_data, DATA_RAW_PATH, f"generics/{file_name}.json")
+        logging.info(f"Dati statici per {endpoint} salvati correttamente.")
     else:
-        logging.error("Impossibile recuperare i dati dei paesi.")
-        return None
-
-
-def fetch_and_save_leagues():
-    """
-    Recupera e salva i dati dei campionati.
-
-    Returns:
-        list: Una lista di dizionari contenenti le informazioni dei campionati,
-              oppure None in caso di errore.
-    """
-    leagues_data = provider.fetch_leagues()
-    if leagues_data and "response" in leagues_data:
-        save_data(leagues_data, DATA_RAW_PATH, "leagues.json")
-        logging.info("Dati dei campionati salvati correttamente.")
-        return leagues_data["response"]
-    else:
-        logging.error("Impossibile recuperare i dati dei campionati.")
-        return None
+        logging.error(f"Impossibile recuperare i dati statici per {endpoint}.")
 
 
 if __name__ == "__main__":
     logging.info("Inizio del processo di acquisizione dati.")
     try:
-        
-        # Recupera e salva i dati dei paesi
-        countries = fetch_and_save_countries()
-        if not countries:
-            logging.error("Nessun paese disponibile.")
 
-        # Recupera e salva i dati dei campionati
-        leagues = fetch_and_save_leagues()
-        if not leagues:
-            logging.error("Nessun campionato disponibile.")
+        fetch_and_save_static_data("teams/countries")
 
     except Exception as e:
         logging.error(f"Errore non previsto durante il processo: {e}")

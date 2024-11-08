@@ -115,28 +115,6 @@ class FootballDataOrgAPI(DataProviderBase):
             logging.error(f"Errore di connessione durante {log_context}: {e}")
             return None
 
-    def fetch_teams(self, competition_id):
-        """
-        Recupera le squadre per una competizione specifica.
-
-        Args:
-            competition_id (str): ID della competizione (es. "SA" per Serie A).
-
-        Returns:
-            dict: Dati JSON delle squadre o None se si supera il limite.
-        """
-        url = f"{self.BASE_URL}/competitions/{competition_id}/teams"
-        return self._make_request(url, f"Dati delle squadre per competizione {competition_id}")
-
-    def fetch_team_matches(self, team_id):
-        """
-        Recupera le partite per una squadra specifica.
-
-        Args:
-            team_id (int): ID della squadra.
-
-        Returns:
-            dict: Dati JSON delle partite della squadra o None se si supera il limite.
-        """
-        url = f"{self.BASE_URL}/teams/{team_id}/matches"
-        return self._make_request(url, f"Dati delle partite per il team {team_id}")
+    def fetch_static_data(self, endpoint):
+        pass
+    

@@ -168,54 +168,8 @@ class FootballRapidAPI(DataProviderBase):
             logging.error(f"Errore di connessione durante {log_context}: {e}")
             return None
 
-    def fetch_teams(self, league_id, season):
-        """
-        Recupera le squadre per una specifica lega e stagione.
+    ##################################
 
-        Args:
-            league_id (str): L'ID della lega.
-            season (str): La stagione.
-
-        Returns:
-            dict: I dati JSON delle squadre o None se si supera il limite.
-        """
-        url = f"{self.BASE_URL}/teams?league={league_id}&season={season}"
-        return self._make_request(
-            url, f"Dati delle squadre per lega {league_id} e stagione {season}"
-        )
-
-    def fetch_team_matches(self, team_id, season):
-        """
-        Recupera le partite per una squadra e stagione specifica.
-
-        Args:
-            team_id (int): L'ID della squadra.
-            season (str): La stagione.
-
-        Returns:
-            dict: I dati JSON delle partite o None se si supera il limite.
-        """
-        url = f"{self.BASE_URL}/fixtures?team={team_id}&season={season}"
-        return self._make_request(
-            url, f"Dati delle partite per il team {team_id} e stagione {season}"
-        )
-
-    def fetch_countries(self):
-        """
-        Recupera la lista dei paesi disponibili nell'API.
-
-        Returns:
-            dict: Dati JSON dei paesi o None se si supera il limite.
-        """
-        url = f"{self.BASE_URL}/countries"
-        return self._make_request(url, "Dati dei paesi")
-
-    def fetch_leagues(self):
-        """
-        Recupera la lista dei campionati disponibili nell'API.
-
-        Returns:
-            dict: Dati JSON dei campionati o None se si supera il limite.
-        """
-        url = f"{self.BASE_URL}/leagues"
-        return self._make_request(url, "Dati dei campionati")
+    def fetch_static_data(self, endpoint):
+        url = f"{self.BASE_URL}/{endpoint}"
+        return self._make_request(url, f"Dati statici per {endpoint}")
