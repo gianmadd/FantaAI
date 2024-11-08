@@ -110,6 +110,7 @@ class FootballRapidAPI(DataProviderBase):
         current_date = datetime.now().strftime("%Y-%m-%d")
         if self.request_counter["date"] != current_date:
             self.request_counter = {"count": 0, "date": current_date}
+            logging.info("Contatore giornaliero azzerato")
             self.save_request_counter()
 
     def _make_request(self, url, params, log_context):
@@ -143,7 +144,11 @@ class FootballRapidAPI(DataProviderBase):
 
                 if response.status_code == 200:
                     remaining_requests = response.headers.get("x-ratelimit-requests-remaining")
+                    limit_requests = response.headers.get("x-ratelimit-requests-limit")
                     logging.info(f"Richieste rimanenti per oggi: {remaining_requests}")
+
+                    self.request_counter["count"] = int(limit_requests) - int(remaining_requests)
+                    self.save_request_counter()
 
                     data = response.json()
                     logging.debug(f"Risposta JSON: {data}")  # Logga la risposta completa per il debug
