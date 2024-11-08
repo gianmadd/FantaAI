@@ -1,13 +1,10 @@
 import contextlib
 import os
-
+import psycopg2
 from dotenv import load_dotenv
-from sqlalchemy import create_engine
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
 
 # Carica le variabili di ambiente dal file .env
-load_dotenv("config/.env")
+load_dotenv("../../config/.env")
 
 # Assegna le variabili di ambiente
 DB_NAME = os.getenv("DB_NAME")
@@ -22,7 +19,7 @@ def get_database_url():
     Costruisce e restituisce la stringa di connessione al database.
 
     Returns:
-        str: Stringa di connessione al database.
+        dict: Dizionario con i parametri di connessione al database.
 
     Raises:
         ValueError: Se una delle variabili di ambiente richieste è assente.
@@ -43,35 +40,36 @@ def get_database_url():
     if missing_vars:
         raise ValueError(f"Variabili di ambiente mancanti: {', '.join(missing_vars)}")
 
-    return (
-        f"postgresql+psycopg2://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
-    )
+    return {
+        "dbname": DB_NAME,
+        "user": DB_USER,
+        "password": DB_PASSWORD,
+        "host": DB_HOST,
+        "port": DB_PORT
+    }
 
 
-# Configura la stringa di connessione
-DATABASE_URL = get_database_url()
-
-# Crea l'engine di SQLAlchemy
-engine = create_engine(DATABASE_URL)
-
-# Gestione delle sessioni
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-
-# Classe base per definire le tabelle
-Base = declarative_base()
-
+# Parametri di connessione
+db_params = get_database_url()
 
 @contextlib.contextmanager
-# Trasforma la funzione in un generatore compatibile con il contesto with
 def get_db():
     """
-    Genera una sessione del database, utilizzabile con il costrutto 'with'.
+    Genera una connessione al database utilizzando `psycopg2`, compatibile con il costrutto 'with'.
 
     Yields:
-        Session: Una sessione del database per interazioni sicure.
+        conn: Una connessione al database PostgreSQL.
     """
-    db = SessionLocal()
+    conn = psycopg2.connect(**db_params)
     try:
-        yield db
+        yield conn
     finally:
-        db.close()
+        conn.close()
+
+# Esempio di utilizzo
+if __name__ == "__main__":
+    with get_db() as conn:
+        with conn.cursor() as cursor:
+            cursor.execute("SELECT version();")
+            db_version = cursor.fetchone()
+            print(f"Versione del database: {db_version}")
