@@ -1,0 +1,2831 @@
+{
+    "filters": {
+        "competitions": "SA,CIT,CL",
+        "permission": "TIER_ONE",
+        "limit": 100
+    },
+    "resultSet": {
+        "count": 46,
+        "competitions": "SA,CL",
+        "first": "2024-08-18",
+        "last": "2025-05-25",
+        "played": 14,
+        "wins": 4,
+        "draws": 39,
+        "losses": 4
+    },
+    "matches": [
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503043,
+            "utcDate": "2024-08-18T16:30:00Z",
+            "status": "FINISHED",
+            "matchday": 1,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-11-06T00:20:33Z",
+            "homeTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "awayTeam": {
+                "id": 115,
+                "name": "Udinese Calcio",
+                "shortName": "Udinese",
+                "tla": "UDI",
+                "crest": "https://crests.football-data.org/115.png"
+            },
+            "score": {
+                "winner": "DRAW",
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": 1,
+                    "away": 1
+                },
+                "halfTime": {
+                    "home": 0,
+                    "away": 0
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 212567,
+                    "name": "Maria Caputi",
+                    "type": "REFEREE",
+                    "nationality": "Italy"
+                }
+            ]
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503058,
+            "utcDate": "2024-08-25T18:45:00Z",
+            "status": "FINISHED",
+            "matchday": 2,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-11-06T00:20:33Z",
+            "homeTeam": {
+                "id": 113,
+                "name": "SSC Napoli",
+                "shortName": "Napoli",
+                "tla": "NAP",
+                "crest": "https://crests.football-data.org/113.png"
+            },
+            "awayTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "score": {
+                "winner": "HOME_TEAM",
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": 3,
+                    "away": 0
+                },
+                "halfTime": {
+                    "home": 1,
+                    "away": 0
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 11002,
+                    "name": "Luca Pairetto",
+                    "type": "REFEREE",
+                    "nationality": "Italy"
+                }
+            ]
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503063,
+            "utcDate": "2024-08-31T16:30:00Z",
+            "status": "FINISHED",
+            "matchday": 3,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-11-06T00:20:33Z",
+            "homeTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "awayTeam": {
+                "id": 445,
+                "name": "Empoli FC",
+                "shortName": "Empoli",
+                "tla": "EMP",
+                "crest": "https://crests.football-data.org/445.png"
+            },
+            "score": {
+                "winner": "DRAW",
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": 1,
+                    "away": 1
+                },
+                "halfTime": {
+                    "home": 1,
+                    "away": 1
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 11119,
+                    "name": "Livio Marinelli",
+                    "type": "REFEREE",
+                    "nationality": "Italy"
+                }
+            ]
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503075,
+            "utcDate": "2024-09-14T13:00:00Z",
+            "status": "FINISHED",
+            "matchday": 4,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-11-06T00:20:33Z",
+            "homeTeam": {
+                "id": 7397,
+                "name": "Como 1907",
+                "shortName": "Como 1907",
+                "tla": "COM",
+                "crest": "https://crests.football-data.org/7397.png"
+            },
+            "awayTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "score": {
+                "winner": "DRAW",
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": 2,
+                    "away": 2
+                },
+                "halfTime": {
+                    "home": 1,
+                    "away": 0
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 11039,
+                    "name": "Marco Piccinini",
+                    "type": "REFEREE",
+                    "nationality": "Italy"
+                }
+            ]
+        },
+        {
+            "area": {
+                "id": 2077,
+                "name": "Europe",
+                "code": "EUR",
+                "flag": "https://crests.football-data.org/EUR.svg"
+            },
+            "competition": {
+                "id": 2001,
+                "name": "UEFA Champions League",
+                "code": "CL",
+                "type": "CUP",
+                "emblem": "https://crests.football-data.org/CL.png"
+            },
+            "season": {
+                "id": 2350,
+                "startDate": "2024-09-17",
+                "endDate": "2025-05-31",
+                "currentMatchday": 4,
+                "winner": null
+            },
+            "id": 524049,
+            "utcDate": "2024-09-18T16:45:00Z",
+            "status": "FINISHED",
+            "matchday": 1,
+            "stage": "LEAGUE_STAGE",
+            "group": null,
+            "lastUpdated": "2024-11-06T00:20:33Z",
+            "homeTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "awayTeam": {
+                "id": 1887,
+                "name": "FK Shakhtar Donetsk",
+                "shortName": "Shaktar",
+                "tla": "SHD",
+                "crest": "https://crests.football-data.org/1887.png"
+            },
+            "score": {
+                "winner": "DRAW",
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": 0,
+                    "away": 0
+                },
+                "halfTime": {
+                    "home": 0,
+                    "away": 0
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 44921,
+                    "name": "Rohit Saggi",
+                    "type": "REFEREE",
+                    "nationality": "Norway"
+                }
+            ]
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503090,
+            "utcDate": "2024-09-22T13:00:00Z",
+            "status": "FINISHED",
+            "matchday": 5,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-11-06T00:20:33Z",
+            "homeTeam": {
+                "id": 5911,
+                "name": "AC Monza",
+                "shortName": "Monza",
+                "tla": "MON",
+                "crest": "https://crests.football-data.org/5911.png"
+            },
+            "awayTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "score": {
+                "winner": "AWAY_TEAM",
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": 1,
+                    "away": 2
+                },
+                "halfTime": {
+                    "home": 1,
+                    "away": 1
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 11029,
+                    "name": "Davide Massa",
+                    "type": "REFEREE",
+                    "nationality": "Italy"
+                }
+            ]
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503093,
+            "utcDate": "2024-09-28T18:45:00Z",
+            "status": "FINISHED",
+            "matchday": 6,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-11-06T00:20:33Z",
+            "homeTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "awayTeam": {
+                "id": 102,
+                "name": "Atalanta BC",
+                "shortName": "Atalanta",
+                "tla": "ATA",
+                "crest": "https://crests.football-data.org/102.png"
+            },
+            "score": {
+                "winner": "DRAW",
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": 1,
+                    "away": 1
+                },
+                "halfTime": {
+                    "home": 0,
+                    "away": 0
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 11018,
+                    "name": "Antonio Rapuano",
+                    "type": "REFEREE",
+                    "nationality": "Italy"
+                }
+            ]
+        },
+        {
+            "area": {
+                "id": 2077,
+                "name": "Europe",
+                "code": "EUR",
+                "flag": "https://crests.football-data.org/EUR.svg"
+            },
+            "competition": {
+                "id": 2001,
+                "name": "UEFA Champions League",
+                "code": "CL",
+                "type": "CUP",
+                "emblem": "https://crests.football-data.org/CL.png"
+            },
+            "season": {
+                "id": 2350,
+                "startDate": "2024-09-17",
+                "endDate": "2025-05-31",
+                "currentMatchday": 4,
+                "winner": null
+            },
+            "id": 523947,
+            "utcDate": "2024-10-02T19:00:00Z",
+            "status": "FINISHED",
+            "matchday": 2,
+            "stage": "LEAGUE_STAGE",
+            "group": null,
+            "lastUpdated": "2024-11-06T00:20:33Z",
+            "homeTeam": {
+                "id": 64,
+                "name": "Liverpool FC",
+                "shortName": "Liverpool",
+                "tla": "LIV",
+                "crest": "https://crests.football-data.org/64.png"
+            },
+            "awayTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "score": {
+                "winner": "HOME_TEAM",
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": 2,
+                    "away": 0
+                },
+                "halfTime": {
+                    "home": 1,
+                    "away": 0
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 15670,
+                    "name": "Nikola Dabanovi\u0107",
+                    "type": "REFEREE",
+                    "nationality": "Montenegro"
+                }
+            ]
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503104,
+            "utcDate": "2024-10-06T13:00:00Z",
+            "status": "FINISHED",
+            "matchday": 7,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-11-06T00:20:33Z",
+            "homeTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "awayTeam": {
+                "id": 112,
+                "name": "Parma Calcio 1913",
+                "shortName": "Parma",
+                "tla": "PAR",
+                "crest": "https://crests.football-data.org/112.png"
+            },
+            "score": {
+                "winner": "DRAW",
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": 0,
+                    "away": 0
+                },
+                "halfTime": {
+                    "home": 0,
+                    "away": 0
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 11060,
+                    "name": "Marco Di Bello",
+                    "type": "REFEREE",
+                    "nationality": "Italy"
+                }
+            ]
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503116,
+            "utcDate": "2024-10-19T13:00:00Z",
+            "status": "FINISHED",
+            "matchday": 8,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-11-06T00:20:33Z",
+            "homeTeam": {
+                "id": 107,
+                "name": "Genoa CFC",
+                "shortName": "Genoa",
+                "tla": "GEN",
+                "crest": "https://crests.football-data.org/107.png"
+            },
+            "awayTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "score": {
+                "winner": "DRAW",
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": 2,
+                    "away": 2
+                },
+                "halfTime": {
+                    "home": 0,
+                    "away": 1
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 11065,
+                    "name": "Daniele Doveri",
+                    "type": "REFEREE",
+                    "nationality": "Italy"
+                }
+            ]
+        },
+        {
+            "area": {
+                "id": 2077,
+                "name": "Europe",
+                "code": "EUR",
+                "flag": "https://crests.football-data.org/EUR.svg"
+            },
+            "competition": {
+                "id": 2001,
+                "name": "UEFA Champions League",
+                "code": "CL",
+                "type": "CUP",
+                "emblem": "https://crests.football-data.org/CL.png"
+            },
+            "season": {
+                "id": 2350,
+                "startDate": "2024-09-17",
+                "endDate": "2025-05-31",
+                "currentMatchday": 4,
+                "winner": null
+            },
+            "id": 524047,
+            "utcDate": "2024-10-22T19:00:00Z",
+            "status": "FINISHED",
+            "matchday": 3,
+            "stage": "LEAGUE_STAGE",
+            "group": null,
+            "lastUpdated": "2024-11-06T00:20:33Z",
+            "homeTeam": {
+                "id": 58,
+                "name": "Aston Villa FC",
+                "shortName": "Aston Villa",
+                "tla": "AVL",
+                "crest": "https://crests.football-data.org/58.png"
+            },
+            "awayTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "score": {
+                "winner": "HOME_TEAM",
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": 2,
+                    "away": 0
+                },
+                "halfTime": {
+                    "home": 0,
+                    "away": 0
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 38806,
+                    "name": "Jo\u00e3o Pinheiro",
+                    "type": "REFEREE",
+                    "nationality": "Portugal"
+                }
+            ]
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503124,
+            "utcDate": "2024-10-26T00:00:00Z",
+            "status": "POSTPONED",
+            "matchday": 9,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-10-26T16:00:42Z",
+            "homeTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "awayTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503134,
+            "utcDate": "2024-10-29T17:30:00Z",
+            "status": "FINISHED",
+            "matchday": 10,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-11-06T00:20:33Z",
+            "homeTeam": {
+                "id": 104,
+                "name": "Cagliari Calcio",
+                "shortName": "Cagliari",
+                "tla": "CAG",
+                "crest": "https://crests.football-data.org/104.png"
+            },
+            "awayTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "score": {
+                "winner": "AWAY_TEAM",
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": 0,
+                    "away": 2
+                },
+                "halfTime": {
+                    "home": 0,
+                    "away": 1
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 11129,
+                    "name": "Francesco Fourneau",
+                    "type": "REFEREE",
+                    "nationality": "Italy"
+                }
+            ]
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503143,
+            "utcDate": "2024-11-02T14:00:00Z",
+            "status": "FINISHED",
+            "matchday": 11,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-11-06T00:20:33Z",
+            "homeTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "awayTeam": {
+                "id": 5890,
+                "name": "US Lecce",
+                "shortName": "Lecce",
+                "tla": "USL",
+                "crest": "https://crests.football-data.org/5890.png"
+            },
+            "score": {
+                "winner": "HOME_TEAM",
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": 1,
+                    "away": 0
+                },
+                "halfTime": {
+                    "home": 0,
+                    "away": 0
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 97848,
+                    "name": "Giuseppe Collu",
+                    "type": "REFEREE",
+                    "nationality": "Italy"
+                }
+            ]
+        },
+        {
+            "area": {
+                "id": 2077,
+                "name": "Europe",
+                "code": "EUR",
+                "flag": "https://crests.football-data.org/EUR.svg"
+            },
+            "competition": {
+                "id": 2001,
+                "name": "UEFA Champions League",
+                "code": "CL",
+                "type": "CUP",
+                "emblem": "https://crests.football-data.org/CL.png"
+            },
+            "season": {
+                "id": 2350,
+                "startDate": "2024-09-17",
+                "endDate": "2025-05-31",
+                "currentMatchday": 4,
+                "winner": null
+            },
+            "id": 524051,
+            "utcDate": "2024-11-05T20:00:00Z",
+            "status": "FINISHED",
+            "matchday": 4,
+            "stage": "LEAGUE_STAGE",
+            "group": null,
+            "lastUpdated": "2024-11-06T00:20:33Z",
+            "homeTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "awayTeam": {
+                "id": 548,
+                "name": "AS Monaco FC",
+                "shortName": "Monaco",
+                "tla": "ASM",
+                "crest": "https://crests.football-data.org/548.png"
+            },
+            "score": {
+                "winner": "AWAY_TEAM",
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": 0,
+                    "away": 1
+                },
+                "halfTime": {
+                    "home": 0,
+                    "away": 0
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 221755,
+                    "name": "\u00c4liyar A\u011fayev",
+                    "type": "REFEREE",
+                    "nationality": "Azerbaijan"
+                }
+            ]
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503161,
+            "utcDate": "2024-11-10T14:00:00Z",
+            "status": "TIMED",
+            "matchday": 12,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-11-05T01:32:04Z",
+            "homeTeam": {
+                "id": 100,
+                "name": "AS Roma",
+                "shortName": "Roma",
+                "tla": "ROM",
+                "crest": "https://crests.football-data.org/100.png"
+            },
+            "awayTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503167,
+            "utcDate": "2024-11-24T19:45:00Z",
+            "status": "TIMED",
+            "matchday": 13,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-09-06T10:20:54Z",
+            "homeTeam": {
+                "id": 110,
+                "name": "SS Lazio",
+                "shortName": "Lazio",
+                "tla": "LAZ",
+                "crest": "https://crests.football-data.org/110.png"
+            },
+            "awayTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2077,
+                "name": "Europe",
+                "code": "EUR",
+                "flag": "https://crests.football-data.org/EUR.svg"
+            },
+            "competition": {
+                "id": 2001,
+                "name": "UEFA Champions League",
+                "code": "CL",
+                "type": "CUP",
+                "emblem": "https://crests.football-data.org/CL.png"
+            },
+            "season": {
+                "id": 2350,
+                "startDate": "2024-09-17",
+                "endDate": "2025-05-31",
+                "currentMatchday": 4,
+                "winner": null
+            },
+            "id": 524050,
+            "utcDate": "2024-11-27T20:00:00Z",
+            "status": "TIMED",
+            "matchday": 5,
+            "stage": "LEAGUE_STAGE",
+            "group": null,
+            "lastUpdated": "2024-08-31T17:14:30Z",
+            "homeTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "awayTeam": {
+                "id": 521,
+                "name": "Lille OSC",
+                "shortName": "Lille",
+                "tla": "LIL",
+                "crest": "https://crests.football-data.org/521.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503173,
+            "utcDate": "2024-11-30T19:45:00Z",
+            "status": "TIMED",
+            "matchday": 14,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-10-15T10:21:02Z",
+            "homeTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "awayTeam": {
+                "id": 454,
+                "name": "Venezia FC",
+                "shortName": "Venezia FC",
+                "tla": "VEN",
+                "crest": "https://crests.football-data.org/454.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503188,
+            "utcDate": "2024-12-07T17:00:00Z",
+            "status": "TIMED",
+            "matchday": 15,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-10-15T10:21:02Z",
+            "homeTeam": {
+                "id": 109,
+                "name": "Juventus FC",
+                "shortName": "Juventus",
+                "tla": "JUV",
+                "crest": "https://crests.football-data.org/109.png"
+            },
+            "awayTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2077,
+                "name": "Europe",
+                "code": "EUR",
+                "flag": "https://crests.football-data.org/EUR.svg"
+            },
+            "competition": {
+                "id": 2001,
+                "name": "UEFA Champions League",
+                "code": "CL",
+                "type": "CUP",
+                "emblem": "https://crests.football-data.org/CL.png"
+            },
+            "season": {
+                "id": 2350,
+                "startDate": "2024-09-17",
+                "endDate": "2025-05-31",
+                "currentMatchday": 4,
+                "winner": null
+            },
+            "id": 523987,
+            "utcDate": "2024-12-11T20:00:00Z",
+            "status": "TIMED",
+            "matchday": 6,
+            "stage": "LEAGUE_STAGE",
+            "group": null,
+            "lastUpdated": "2024-08-31T17:14:30Z",
+            "homeTeam": {
+                "id": 1903,
+                "name": "Sport Lisboa e Benfica",
+                "shortName": "SL Benfica",
+                "tla": "BEN",
+                "crest": "https://crests.football-data.org/1903.png"
+            },
+            "awayTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503193,
+            "utcDate": "2024-12-15T14:00:00Z",
+            "status": "TIMED",
+            "matchday": 16,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-10-15T10:21:02Z",
+            "homeTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "awayTeam": {
+                "id": 99,
+                "name": "ACF Fiorentina",
+                "shortName": "Fiorentina",
+                "tla": "FIO",
+                "crest": "https://crests.football-data.org/99.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503211,
+            "utcDate": "2024-12-21T14:00:00Z",
+            "status": "TIMED",
+            "matchday": 17,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-10-15T10:21:02Z",
+            "homeTeam": {
+                "id": 586,
+                "name": "Torino FC",
+                "shortName": "Torino",
+                "tla": "TOR",
+                "crest": "https://crests.football-data.org/586.png"
+            },
+            "awayTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503213,
+            "utcDate": "2024-12-30T19:45:00Z",
+            "status": "TIMED",
+            "matchday": 18,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-10-15T10:21:02Z",
+            "homeTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "awayTeam": {
+                "id": 450,
+                "name": "Hellas Verona FC",
+                "shortName": "Verona",
+                "tla": "HVE",
+                "crest": "https://crests.football-data.org/450.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503233,
+            "utcDate": "2025-01-12T17:00:00Z",
+            "status": "TIMED",
+            "matchday": 20,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-11-05T15:21:04Z",
+            "homeTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "awayTeam": {
+                "id": 100,
+                "name": "AS Roma",
+                "shortName": "Roma",
+                "tla": "ROM",
+                "crest": "https://crests.football-data.org/100.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503227,
+            "utcDate": "2025-01-15T19:45:00Z",
+            "status": "TIMED",
+            "matchday": 19,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-11-05T15:21:04Z",
+            "homeTeam": {
+                "id": 108,
+                "name": "FC Internazionale Milano",
+                "shortName": "Inter",
+                "tla": "INT",
+                "crest": "https://crests.football-data.org/108.png"
+            },
+            "awayTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503244,
+            "utcDate": "2025-01-19T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 21,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:25:00Z",
+            "homeTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "awayTeam": {
+                "id": 5911,
+                "name": "AC Monza",
+                "shortName": "Monza",
+                "tla": "MON",
+                "crest": "https://crests.football-data.org/5911.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2077,
+                "name": "Europe",
+                "code": "EUR",
+                "flag": "https://crests.football-data.org/EUR.svg"
+            },
+            "competition": {
+                "id": 2001,
+                "name": "UEFA Champions League",
+                "code": "CL",
+                "type": "CUP",
+                "emblem": "https://crests.football-data.org/CL.png"
+            },
+            "season": {
+                "id": 2350,
+                "startDate": "2024-09-17",
+                "endDate": "2025-05-31",
+                "currentMatchday": 4,
+                "winner": null
+            },
+            "id": 524048,
+            "utcDate": "2025-01-21T20:00:00Z",
+            "status": "TIMED",
+            "matchday": 7,
+            "stage": "LEAGUE_STAGE",
+            "group": null,
+            "lastUpdated": "2024-08-31T17:14:30Z",
+            "homeTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "awayTeam": {
+                "id": 4,
+                "name": "Borussia Dortmund",
+                "shortName": "Dortmund",
+                "tla": "BVB",
+                "crest": "https://crests.football-data.org/4.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503254,
+            "utcDate": "2025-01-26T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 22,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:59Z",
+            "homeTeam": {
+                "id": 445,
+                "name": "Empoli FC",
+                "shortName": "Empoli",
+                "tla": "EMP",
+                "crest": "https://crests.football-data.org/445.png"
+            },
+            "awayTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2077,
+                "name": "Europe",
+                "code": "EUR",
+                "flag": "https://crests.football-data.org/EUR.svg"
+            },
+            "competition": {
+                "id": 2001,
+                "name": "UEFA Champions League",
+                "code": "CL",
+                "type": "CUP",
+                "emblem": "https://crests.football-data.org/CL.png"
+            },
+            "season": {
+                "id": 2350,
+                "startDate": "2024-09-17",
+                "endDate": "2025-05-31",
+                "currentMatchday": 4,
+                "winner": null
+            },
+            "id": 524035,
+            "utcDate": "2025-01-29T20:00:00Z",
+            "status": "TIMED",
+            "matchday": 8,
+            "stage": "LEAGUE_STAGE",
+            "group": null,
+            "lastUpdated": "2024-08-31T17:14:30Z",
+            "homeTeam": {
+                "id": 498,
+                "name": "Sporting Clube de Portugal",
+                "shortName": "Sporting CP",
+                "tla": "SPO",
+                "crest": "https://crests.football-data.org/498.png"
+            },
+            "awayTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503264,
+            "utcDate": "2025-02-02T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 23,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:59Z",
+            "homeTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "awayTeam": {
+                "id": 7397,
+                "name": "Como 1907",
+                "shortName": "Como 1907",
+                "tla": "COM",
+                "crest": "https://crests.football-data.org/7397.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503279,
+            "utcDate": "2025-02-09T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 24,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:58Z",
+            "homeTeam": {
+                "id": 5890,
+                "name": "US Lecce",
+                "shortName": "Lecce",
+                "tla": "USL",
+                "crest": "https://crests.football-data.org/5890.png"
+            },
+            "awayTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503284,
+            "utcDate": "2025-02-16T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 25,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:57Z",
+            "homeTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "awayTeam": {
+                "id": 586,
+                "name": "Torino FC",
+                "shortName": "Torino",
+                "tla": "TOR",
+                "crest": "https://crests.football-data.org/586.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503299,
+            "utcDate": "2025-02-23T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 26,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:56Z",
+            "homeTeam": {
+                "id": 112,
+                "name": "Parma Calcio 1913",
+                "shortName": "Parma",
+                "tla": "PAR",
+                "crest": "https://crests.football-data.org/112.png"
+            },
+            "awayTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503304,
+            "utcDate": "2025-03-02T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 27,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:56Z",
+            "homeTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "awayTeam": {
+                "id": 104,
+                "name": "Cagliari Calcio",
+                "shortName": "Cagliari",
+                "tla": "CAG",
+                "crest": "https://crests.football-data.org/104.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503316,
+            "utcDate": "2025-03-09T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 28,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:55Z",
+            "homeTeam": {
+                "id": 450,
+                "name": "Hellas Verona FC",
+                "shortName": "Verona",
+                "tla": "HVE",
+                "crest": "https://crests.football-data.org/450.png"
+            },
+            "awayTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503324,
+            "utcDate": "2025-03-16T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 29,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:54Z",
+            "homeTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "awayTeam": {
+                "id": 110,
+                "name": "SS Lazio",
+                "shortName": "Lazio",
+                "tla": "LAZ",
+                "crest": "https://crests.football-data.org/110.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503342,
+            "utcDate": "2025-03-30T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 30,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:53Z",
+            "homeTeam": {
+                "id": 454,
+                "name": "Venezia FC",
+                "shortName": "Venezia FC",
+                "tla": "VEN",
+                "crest": "https://crests.football-data.org/454.png"
+            },
+            "awayTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503344,
+            "utcDate": "2025-04-06T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 31,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:52Z",
+            "homeTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "awayTeam": {
+                "id": 113,
+                "name": "SSC Napoli",
+                "shortName": "Napoli",
+                "tla": "NAP",
+                "crest": "https://crests.football-data.org/113.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503353,
+            "utcDate": "2025-04-13T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 32,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:52Z",
+            "homeTeam": {
+                "id": 102,
+                "name": "Atalanta BC",
+                "shortName": "Atalanta",
+                "tla": "ATA",
+                "crest": "https://crests.football-data.org/102.png"
+            },
+            "awayTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503363,
+            "utcDate": "2025-04-20T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 33,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-08-30T05:21:19Z",
+            "homeTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "awayTeam": {
+                "id": 108,
+                "name": "FC Internazionale Milano",
+                "shortName": "Inter",
+                "tla": "INT",
+                "crest": "https://crests.football-data.org/108.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503381,
+            "utcDate": "2025-04-27T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 34,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:49Z",
+            "homeTeam": {
+                "id": 115,
+                "name": "Udinese Calcio",
+                "shortName": "Udinese",
+                "tla": "UDI",
+                "crest": "https://crests.football-data.org/115.png"
+            },
+            "awayTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503383,
+            "utcDate": "2025-05-04T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 35,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-08-30T05:21:19Z",
+            "homeTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "awayTeam": {
+                "id": 109,
+                "name": "Juventus FC",
+                "shortName": "Juventus",
+                "tla": "JUV",
+                "crest": "https://crests.football-data.org/109.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503398,
+            "utcDate": "2025-05-11T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 36,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:48Z",
+            "homeTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "awayTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503404,
+            "utcDate": "2025-05-18T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 37,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:48Z",
+            "homeTeam": {
+                "id": 99,
+                "name": "ACF Fiorentina",
+                "shortName": "Fiorentina",
+                "tla": "FIO",
+                "crest": "https://crests.football-data.org/99.png"
+            },
+            "awayTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 11,
+                "winner": null
+            },
+            "id": 503414,
+            "utcDate": "2025-05-25T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 38,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:47Z",
+            "homeTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "awayTeam": {
+                "id": 107,
+                "name": "Genoa CFC",
+                "shortName": "Genoa",
+                "tla": "GEN",
+                "crest": "https://crests.football-data.org/107.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        }
+    ]
+}

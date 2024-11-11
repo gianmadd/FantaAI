@@ -1,0 +1,2831 @@
+{
+    "filters": {
+        "competitions": "SA,CIT,CL",
+        "permission": "TIER_ONE",
+        "limit": 100
+    },
+    "resultSet": {
+        "count": 46,
+        "competitions": "SA,CL",
+        "first": "2024-08-17",
+        "last": "2025-05-25",
+        "played": 14,
+        "wins": 7,
+        "draws": 34,
+        "losses": 5
+    },
+    "matches": [
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503051,
+            "utcDate": "2024-08-17T18:45:00Z",
+            "status": "FINISHED",
+            "matchday": 1,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-11-06T20:20:57Z",
+            "homeTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "awayTeam": {
+                "id": 586,
+                "name": "Torino FC",
+                "shortName": "Torino",
+                "tla": "TOR",
+                "crest": "https://crests.football-data.org/586.png"
+            },
+            "score": {
+                "winner": "DRAW",
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": 2,
+                    "away": 2
+                },
+                "halfTime": {
+                    "home": 0,
+                    "away": 1
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 10977,
+                    "name": "Fabio Maresca",
+                    "type": "REFEREE",
+                    "nationality": "Italy"
+                }
+            ]
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503059,
+            "utcDate": "2024-08-24T16:30:00Z",
+            "status": "FINISHED",
+            "matchday": 2,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-11-06T20:20:57Z",
+            "homeTeam": {
+                "id": 112,
+                "name": "Parma Calcio 1913",
+                "shortName": "Parma",
+                "tla": "PAR",
+                "crest": "https://crests.football-data.org/112.png"
+            },
+            "awayTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "score": {
+                "winner": "HOME_TEAM",
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": 2,
+                    "away": 1
+                },
+                "halfTime": {
+                    "home": 1,
+                    "away": 0
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 206189,
+                    "name": "Juan Luca Sacchi",
+                    "type": "REFEREE",
+                    "nationality": "Italy"
+                }
+            ]
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503068,
+            "utcDate": "2024-08-31T18:45:00Z",
+            "status": "FINISHED",
+            "matchday": 3,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-11-06T20:20:57Z",
+            "homeTeam": {
+                "id": 110,
+                "name": "SS Lazio",
+                "shortName": "Lazio",
+                "tla": "LAZ",
+                "crest": "https://crests.football-data.org/110.png"
+            },
+            "awayTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "score": {
+                "winner": "DRAW",
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": 2,
+                    "away": 2
+                },
+                "halfTime": {
+                    "home": 0,
+                    "away": 1
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 11029,
+                    "name": "Davide Massa",
+                    "type": "REFEREE",
+                    "nationality": "Italy"
+                }
+            ]
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503079,
+            "utcDate": "2024-09-14T18:45:00Z",
+            "status": "FINISHED",
+            "matchday": 4,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-11-06T20:20:57Z",
+            "homeTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "awayTeam": {
+                "id": 454,
+                "name": "Venezia FC",
+                "shortName": "Venezia FC",
+                "tla": "VEN",
+                "crest": "https://crests.football-data.org/454.png"
+            },
+            "score": {
+                "winner": "HOME_TEAM",
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": 4,
+                    "away": 0
+                },
+                "halfTime": {
+                    "home": 4,
+                    "away": 0
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 145272,
+                    "name": "Davide Di Marco",
+                    "type": "REFEREE",
+                    "nationality": "Italy"
+                }
+            ]
+        },
+        {
+            "area": {
+                "id": 2077,
+                "name": "Europe",
+                "code": "EUR",
+                "flag": "https://crests.football-data.org/EUR.svg"
+            },
+            "competition": {
+                "id": 2001,
+                "name": "UEFA Champions League",
+                "code": "CL",
+                "type": "CUP",
+                "emblem": "https://crests.football-data.org/CL.png"
+            },
+            "season": {
+                "id": 2350,
+                "startDate": "2024-09-17",
+                "endDate": "2025-05-31",
+                "currentMatchday": 4,
+                "winner": null
+            },
+            "id": 523968,
+            "utcDate": "2024-09-17T19:00:00Z",
+            "status": "FINISHED",
+            "matchday": 1,
+            "stage": "LEAGUE_STAGE",
+            "group": null,
+            "lastUpdated": "2024-11-06T15:21:02Z",
+            "homeTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "awayTeam": {
+                "id": 64,
+                "name": "Liverpool FC",
+                "shortName": "Liverpool",
+                "tla": "LIV",
+                "crest": "https://crests.football-data.org/64.png"
+            },
+            "score": {
+                "winner": "AWAY_TEAM",
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": 1,
+                    "away": 3
+                },
+                "halfTime": {
+                    "home": 1,
+                    "away": 2
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 215543,
+                    "name": "Espen Esk\u00e5s",
+                    "type": "REFEREE",
+                    "nationality": "Norway"
+                }
+            ]
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503087,
+            "utcDate": "2024-09-22T18:45:00Z",
+            "status": "FINISHED",
+            "matchday": 5,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-11-06T20:20:57Z",
+            "homeTeam": {
+                "id": 108,
+                "name": "FC Internazionale Milano",
+                "shortName": "Inter",
+                "tla": "INT",
+                "crest": "https://crests.football-data.org/108.png"
+            },
+            "awayTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "score": {
+                "winner": "AWAY_TEAM",
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": 1,
+                    "away": 2
+                },
+                "halfTime": {
+                    "home": 1,
+                    "away": 1
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 11043,
+                    "name": "Maurizio Mariani",
+                    "type": "REFEREE",
+                    "nationality": "Italy"
+                }
+            ]
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503097,
+            "utcDate": "2024-09-27T18:45:00Z",
+            "status": "FINISHED",
+            "matchday": 6,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-11-06T20:20:57Z",
+            "homeTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "awayTeam": {
+                "id": 5890,
+                "name": "US Lecce",
+                "shortName": "Lecce",
+                "tla": "USL",
+                "crest": "https://crests.football-data.org/5890.png"
+            },
+            "score": {
+                "winner": "HOME_TEAM",
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": 3,
+                    "away": 0
+                },
+                "halfTime": {
+                    "home": 3,
+                    "away": 0
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 57764,
+                    "name": "Luca Zufferli",
+                    "type": "REFEREE",
+                    "nationality": "Italy"
+                }
+            ]
+        },
+        {
+            "area": {
+                "id": 2077,
+                "name": "Europe",
+                "code": "EUR",
+                "flag": "https://crests.football-data.org/EUR.svg"
+            },
+            "competition": {
+                "id": 2001,
+                "name": "UEFA Champions League",
+                "code": "CL",
+                "type": "CUP",
+                "emblem": "https://crests.football-data.org/CL.png"
+            },
+            "season": {
+                "id": 2350,
+                "startDate": "2024-09-17",
+                "endDate": "2025-05-31",
+                "currentMatchday": 4,
+                "winner": null
+            },
+            "id": 523981,
+            "utcDate": "2024-10-01T19:00:00Z",
+            "status": "FINISHED",
+            "matchday": 2,
+            "stage": "LEAGUE_STAGE",
+            "group": null,
+            "lastUpdated": "2024-11-06T15:21:02Z",
+            "homeTeam": {
+                "id": 3,
+                "name": "Bayer 04 Leverkusen",
+                "shortName": "Leverkusen",
+                "tla": "B04",
+                "crest": "https://crests.football-data.org/3.png"
+            },
+            "awayTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "score": {
+                "winner": "HOME_TEAM",
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": 1,
+                    "away": 0
+                },
+                "halfTime": {
+                    "home": 0,
+                    "away": 0
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 31823,
+                    "name": "Sandro Sch\u00e4rer",
+                    "type": "REFEREE",
+                    "nationality": "Switzerland"
+                }
+            ]
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503105,
+            "utcDate": "2024-10-06T18:45:00Z",
+            "status": "FINISHED",
+            "matchday": 7,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-11-06T20:20:57Z",
+            "homeTeam": {
+                "id": 99,
+                "name": "ACF Fiorentina",
+                "shortName": "Fiorentina",
+                "tla": "FIO",
+                "crest": "https://crests.football-data.org/99.png"
+            },
+            "awayTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "score": {
+                "winner": "HOME_TEAM",
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": 2,
+                    "away": 1
+                },
+                "halfTime": {
+                    "home": 1,
+                    "away": 0
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 11002,
+                    "name": "Luca Pairetto",
+                    "type": "REFEREE",
+                    "nationality": "Italy"
+                }
+            ]
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503120,
+            "utcDate": "2024-10-19T16:00:00Z",
+            "status": "FINISHED",
+            "matchday": 8,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-11-06T20:20:57Z",
+            "homeTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "awayTeam": {
+                "id": 115,
+                "name": "Udinese Calcio",
+                "shortName": "Udinese",
+                "tla": "UDI",
+                "crest": "https://crests.football-data.org/115.png"
+            },
+            "score": {
+                "winner": "HOME_TEAM",
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": 1,
+                    "away": 0
+                },
+                "halfTime": {
+                    "home": 1,
+                    "away": 0
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 11053,
+                    "name": "Daniele Chiffi",
+                    "type": "REFEREE",
+                    "nationality": "Italy"
+                }
+            ]
+        },
+        {
+            "area": {
+                "id": 2077,
+                "name": "Europe",
+                "code": "EUR",
+                "flag": "https://crests.football-data.org/EUR.svg"
+            },
+            "competition": {
+                "id": 2001,
+                "name": "UEFA Champions League",
+                "code": "CL",
+                "type": "CUP",
+                "emblem": "https://crests.football-data.org/CL.png"
+            },
+            "season": {
+                "id": 2350,
+                "startDate": "2024-09-17",
+                "endDate": "2025-05-31",
+                "currentMatchday": 4,
+                "winner": null
+            },
+            "id": 523969,
+            "utcDate": "2024-10-22T16:45:00Z",
+            "status": "FINISHED",
+            "matchday": 3,
+            "stage": "LEAGUE_STAGE",
+            "group": null,
+            "lastUpdated": "2024-11-06T15:21:02Z",
+            "homeTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "awayTeam": {
+                "id": 851,
+                "name": "Club Brugge KV",
+                "shortName": "Club Brugge",
+                "tla": "CLU",
+                "crest": "https://crests.football-data.org/851.png"
+            },
+            "score": {
+                "winner": "HOME_TEAM",
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": 3,
+                    "away": 1
+                },
+                "halfTime": {
+                    "home": 1,
+                    "away": 0
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 43878,
+                    "name": "Felix Zwayer",
+                    "type": "REFEREE",
+                    "nationality": "Germany"
+                }
+            ]
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503124,
+            "utcDate": "2024-10-26T00:00:00Z",
+            "status": "POSTPONED",
+            "matchday": 9,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-10-26T16:00:42Z",
+            "homeTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "awayTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503140,
+            "utcDate": "2024-10-29T19:45:00Z",
+            "status": "FINISHED",
+            "matchday": 10,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-11-06T20:20:57Z",
+            "homeTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "awayTeam": {
+                "id": 113,
+                "name": "SSC Napoli",
+                "shortName": "Napoli",
+                "tla": "NAP",
+                "crest": "https://crests.football-data.org/113.png"
+            },
+            "score": {
+                "winner": "AWAY_TEAM",
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": 0,
+                    "away": 2
+                },
+                "halfTime": {
+                    "home": 0,
+                    "away": 2
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 57878,
+                    "name": "Andrea Colombo",
+                    "type": "REFEREE",
+                    "nationality": "Italy"
+                }
+            ]
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503148,
+            "utcDate": "2024-11-02T19:45:00Z",
+            "status": "FINISHED",
+            "matchday": 11,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-11-06T20:20:57Z",
+            "homeTeam": {
+                "id": 5911,
+                "name": "AC Monza",
+                "shortName": "Monza",
+                "tla": "MON",
+                "crest": "https://crests.football-data.org/5911.png"
+            },
+            "awayTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "score": {
+                "winner": "AWAY_TEAM",
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": 0,
+                    "away": 1
+                },
+                "halfTime": {
+                    "home": 0,
+                    "away": 1
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 57882,
+                    "name": "Ermanno Feliciani",
+                    "type": "REFEREE",
+                    "nationality": "Italy"
+                }
+            ]
+        },
+        {
+            "area": {
+                "id": 2077,
+                "name": "Europe",
+                "code": "EUR",
+                "flag": "https://crests.football-data.org/EUR.svg"
+            },
+            "competition": {
+                "id": 2001,
+                "name": "UEFA Champions League",
+                "code": "CL",
+                "type": "CUP",
+                "emblem": "https://crests.football-data.org/CL.png"
+            },
+            "season": {
+                "id": 2350,
+                "startDate": "2024-09-17",
+                "endDate": "2025-05-31",
+                "currentMatchday": 4,
+                "winner": null
+            },
+            "id": 523965,
+            "utcDate": "2024-11-05T20:00:00Z",
+            "status": "FINISHED",
+            "matchday": 4,
+            "stage": "LEAGUE_STAGE",
+            "group": null,
+            "lastUpdated": "2024-11-06T15:21:02Z",
+            "homeTeam": {
+                "id": 86,
+                "name": "Real Madrid CF",
+                "shortName": "Real Madrid",
+                "tla": "RMA",
+                "crest": "https://crests.football-data.org/86.png"
+            },
+            "awayTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "score": {
+                "winner": "AWAY_TEAM",
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": 1,
+                    "away": 3
+                },
+                "halfTime": {
+                    "home": 1,
+                    "away": 2
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": [
+                {
+                    "id": 9351,
+                    "name": "Slavko Vin\u010di\u010d",
+                    "type": "REFEREE",
+                    "nationality": "Slovenia"
+                }
+            ]
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503154,
+            "utcDate": "2024-11-09T17:00:00Z",
+            "status": "TIMED",
+            "matchday": 12,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-11-03T01:32:06Z",
+            "homeTeam": {
+                "id": 104,
+                "name": "Cagliari Calcio",
+                "shortName": "Cagliari",
+                "tla": "CAG",
+                "crest": "https://crests.football-data.org/104.png"
+            },
+            "awayTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503168,
+            "utcDate": "2024-11-23T17:00:00Z",
+            "status": "TIMED",
+            "matchday": 13,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-09-06T10:20:54Z",
+            "homeTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "awayTeam": {
+                "id": 109,
+                "name": "Juventus FC",
+                "shortName": "Juventus",
+                "tla": "JUV",
+                "crest": "https://crests.football-data.org/109.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2077,
+                "name": "Europe",
+                "code": "EUR",
+                "flag": "https://crests.football-data.org/EUR.svg"
+            },
+            "competition": {
+                "id": 2001,
+                "name": "UEFA Champions League",
+                "code": "CL",
+                "type": "CUP",
+                "emblem": "https://crests.football-data.org/CL.png"
+            },
+            "season": {
+                "id": 2350,
+                "startDate": "2024-09-17",
+                "endDate": "2025-05-31",
+                "currentMatchday": 4,
+                "winner": null
+            },
+            "id": 524057,
+            "utcDate": "2024-11-26T17:45:00Z",
+            "status": "TIMED",
+            "matchday": 5,
+            "stage": "LEAGUE_STAGE",
+            "group": null,
+            "lastUpdated": "2024-08-31T17:14:30Z",
+            "homeTeam": {
+                "id": 7509,
+                "name": "\u0160K Slovan Bratislava",
+                "shortName": "Sl. Bratislava",
+                "tla": "SBA",
+                "crest": "https://crests.football-data.org/7509.png"
+            },
+            "awayTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503178,
+            "utcDate": "2024-11-30T17:00:00Z",
+            "status": "TIMED",
+            "matchday": 14,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-10-15T10:21:02Z",
+            "homeTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "awayTeam": {
+                "id": 445,
+                "name": "Empoli FC",
+                "shortName": "Empoli",
+                "tla": "EMP",
+                "crest": "https://crests.football-data.org/445.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503183,
+            "utcDate": "2024-12-06T19:45:00Z",
+            "status": "TIMED",
+            "matchday": 15,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-10-15T10:21:02Z",
+            "homeTeam": {
+                "id": 102,
+                "name": "Atalanta BC",
+                "shortName": "Atalanta",
+                "tla": "ATA",
+                "crest": "https://crests.football-data.org/102.png"
+            },
+            "awayTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2077,
+                "name": "Europe",
+                "code": "EUR",
+                "flag": "https://crests.football-data.org/EUR.svg"
+            },
+            "competition": {
+                "id": 2001,
+                "name": "UEFA Champions League",
+                "code": "CL",
+                "type": "CUP",
+                "emblem": "https://crests.football-data.org/CL.png"
+            },
+            "season": {
+                "id": 2350,
+                "startDate": "2024-09-17",
+                "endDate": "2025-05-31",
+                "currentMatchday": 4,
+                "winner": null
+            },
+            "id": 523970,
+            "utcDate": "2024-12-11T20:00:00Z",
+            "status": "TIMED",
+            "matchday": 6,
+            "stage": "LEAGUE_STAGE",
+            "group": null,
+            "lastUpdated": "2024-08-31T17:14:30Z",
+            "homeTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "awayTeam": {
+                "id": 7283,
+                "name": "FK Crvena Zvezda",
+                "shortName": "Crvena Zvedza",
+                "tla": "CRV",
+                "crest": "https://crests.football-data.org/7283.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503200,
+            "utcDate": "2024-12-15T19:45:00Z",
+            "status": "TIMED",
+            "matchday": 16,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-10-15T10:21:02Z",
+            "homeTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "awayTeam": {
+                "id": 107,
+                "name": "Genoa CFC",
+                "shortName": "Genoa",
+                "tla": "GEN",
+                "crest": "https://crests.football-data.org/107.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503206,
+            "utcDate": "2024-12-20T19:45:00Z",
+            "status": "TIMED",
+            "matchday": 17,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-10-15T10:21:02Z",
+            "homeTeam": {
+                "id": 450,
+                "name": "Hellas Verona FC",
+                "shortName": "Verona",
+                "tla": "HVE",
+                "crest": "https://crests.football-data.org/450.png"
+            },
+            "awayTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503219,
+            "utcDate": "2024-12-29T19:45:00Z",
+            "status": "TIMED",
+            "matchday": 18,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-10-15T10:21:02Z",
+            "homeTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "awayTeam": {
+                "id": 100,
+                "name": "AS Roma",
+                "shortName": "Roma",
+                "tla": "ROM",
+                "crest": "https://crests.football-data.org/100.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503237,
+            "utcDate": "2025-01-11T19:45:00Z",
+            "status": "TIMED",
+            "matchday": 20,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-11-05T15:21:04Z",
+            "homeTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "awayTeam": {
+                "id": 104,
+                "name": "Cagliari Calcio",
+                "shortName": "Cagliari",
+                "tla": "CAG",
+                "crest": "https://crests.football-data.org/104.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503224,
+            "utcDate": "2025-01-14T17:30:00Z",
+            "status": "TIMED",
+            "matchday": 19,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-11-05T15:21:04Z",
+            "homeTeam": {
+                "id": 7397,
+                "name": "Como 1907",
+                "shortName": "Como 1907",
+                "tla": "COM",
+                "crest": "https://crests.football-data.org/7397.png"
+            },
+            "awayTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503250,
+            "utcDate": "2025-01-19T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 21,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-08-30T05:21:19Z",
+            "homeTeam": {
+                "id": 109,
+                "name": "Juventus FC",
+                "shortName": "Juventus",
+                "tla": "JUV",
+                "crest": "https://crests.football-data.org/109.png"
+            },
+            "awayTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2077,
+                "name": "Europe",
+                "code": "EUR",
+                "flag": "https://crests.football-data.org/EUR.svg"
+            },
+            "competition": {
+                "id": 2001,
+                "name": "UEFA Champions League",
+                "code": "CL",
+                "type": "CUP",
+                "emblem": "https://crests.football-data.org/CL.png"
+            },
+            "season": {
+                "id": 2350,
+                "startDate": "2024-09-17",
+                "endDate": "2025-05-31",
+                "currentMatchday": 4,
+                "winner": null
+            },
+            "id": 523971,
+            "utcDate": "2025-01-22T20:00:00Z",
+            "status": "TIMED",
+            "matchday": 7,
+            "stage": "LEAGUE_STAGE",
+            "group": null,
+            "lastUpdated": "2024-08-31T17:14:30Z",
+            "homeTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "awayTeam": {
+                "id": 298,
+                "name": "Girona FC",
+                "shortName": "Girona",
+                "tla": "GIR",
+                "crest": "https://crests.football-data.org/298.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503258,
+            "utcDate": "2025-01-26T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 22,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:59Z",
+            "homeTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "awayTeam": {
+                "id": 112,
+                "name": "Parma Calcio 1913",
+                "shortName": "Parma",
+                "tla": "PAR",
+                "crest": "https://crests.football-data.org/112.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2077,
+                "name": "Europe",
+                "code": "EUR",
+                "flag": "https://crests.football-data.org/EUR.svg"
+            },
+            "competition": {
+                "id": 2001,
+                "name": "UEFA Champions League",
+                "code": "CL",
+                "type": "CUP",
+                "emblem": "https://crests.football-data.org/CL.png"
+            },
+            "season": {
+                "id": 2350,
+                "startDate": "2024-09-17",
+                "endDate": "2025-05-31",
+                "currentMatchday": 4,
+                "winner": null
+            },
+            "id": 524009,
+            "utcDate": "2025-01-29T20:00:00Z",
+            "status": "TIMED",
+            "matchday": 8,
+            "stage": "LEAGUE_STAGE",
+            "group": null,
+            "lastUpdated": "2024-08-31T17:14:30Z",
+            "homeTeam": {
+                "id": 755,
+                "name": "GNK Dinamo Zagreb",
+                "shortName": "Dinamo Zagreb",
+                "tla": "DIN",
+                "crest": "https://crests.football-data.org/755.png"
+            },
+            "awayTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503268,
+            "utcDate": "2025-02-02T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 23,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-08-30T05:21:19Z",
+            "homeTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "awayTeam": {
+                "id": 108,
+                "name": "FC Internazionale Milano",
+                "shortName": "Inter",
+                "tla": "INT",
+                "crest": "https://crests.football-data.org/108.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503275,
+            "utcDate": "2025-02-09T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 24,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:58Z",
+            "homeTeam": {
+                "id": 445,
+                "name": "Empoli FC",
+                "shortName": "Empoli",
+                "tla": "EMP",
+                "crest": "https://crests.football-data.org/445.png"
+            },
+            "awayTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503289,
+            "utcDate": "2025-02-16T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 25,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:57Z",
+            "homeTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "awayTeam": {
+                "id": 450,
+                "name": "Hellas Verona FC",
+                "shortName": "Verona",
+                "tla": "HVE",
+                "crest": "https://crests.football-data.org/450.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503301,
+            "utcDate": "2025-02-23T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 26,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:56Z",
+            "homeTeam": {
+                "id": 586,
+                "name": "Torino FC",
+                "shortName": "Torino",
+                "tla": "TOR",
+                "crest": "https://crests.football-data.org/586.png"
+            },
+            "awayTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503308,
+            "utcDate": "2025-03-02T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 27,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:55Z",
+            "homeTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "awayTeam": {
+                "id": 110,
+                "name": "SS Lazio",
+                "shortName": "Lazio",
+                "tla": "LAZ",
+                "crest": "https://crests.football-data.org/110.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503320,
+            "utcDate": "2025-03-09T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 28,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:54Z",
+            "homeTeam": {
+                "id": 5890,
+                "name": "US Lecce",
+                "shortName": "Lecce",
+                "tla": "USL",
+                "crest": "https://crests.football-data.org/5890.png"
+            },
+            "awayTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503327,
+            "utcDate": "2025-03-16T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 29,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:54Z",
+            "homeTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "awayTeam": {
+                "id": 7397,
+                "name": "Como 1907",
+                "shortName": "Como 1907",
+                "tla": "COM",
+                "crest": "https://crests.football-data.org/7397.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503341,
+            "utcDate": "2025-03-30T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 30,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:53Z",
+            "homeTeam": {
+                "id": 113,
+                "name": "SSC Napoli",
+                "shortName": "Napoli",
+                "tla": "NAP",
+                "crest": "https://crests.football-data.org/113.png"
+            },
+            "awayTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503348,
+            "utcDate": "2025-04-06T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 31,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:52Z",
+            "homeTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "awayTeam": {
+                "id": 99,
+                "name": "ACF Fiorentina",
+                "shortName": "Fiorentina",
+                "tla": "FIO",
+                "crest": "https://crests.football-data.org/99.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503361,
+            "utcDate": "2025-04-13T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 32,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:51Z",
+            "homeTeam": {
+                "id": 115,
+                "name": "Udinese Calcio",
+                "shortName": "Udinese",
+                "tla": "UDI",
+                "crest": "https://crests.football-data.org/115.png"
+            },
+            "awayTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503368,
+            "utcDate": "2025-04-20T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 33,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:50Z",
+            "homeTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "awayTeam": {
+                "id": 102,
+                "name": "Atalanta BC",
+                "shortName": "Atalanta",
+                "tla": "ATA",
+                "crest": "https://crests.football-data.org/102.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503382,
+            "utcDate": "2025-04-27T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 34,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:49Z",
+            "homeTeam": {
+                "id": 454,
+                "name": "Venezia FC",
+                "shortName": "Venezia FC",
+                "tla": "VEN",
+                "crest": "https://crests.football-data.org/454.png"
+            },
+            "awayTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503386,
+            "utcDate": "2025-05-04T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 35,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:49Z",
+            "homeTeam": {
+                "id": 107,
+                "name": "Genoa CFC",
+                "shortName": "Genoa",
+                "tla": "GEN",
+                "crest": "https://crests.football-data.org/107.png"
+            },
+            "awayTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503398,
+            "utcDate": "2025-05-11T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 36,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:48Z",
+            "homeTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "awayTeam": {
+                "id": 103,
+                "name": "Bologna FC 1909",
+                "shortName": "Bologna",
+                "tla": "BOL",
+                "crest": "https://crests.football-data.org/103.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503412,
+            "utcDate": "2025-05-18T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 37,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:47Z",
+            "homeTeam": {
+                "id": 100,
+                "name": "AS Roma",
+                "shortName": "Roma",
+                "tla": "ROM",
+                "crest": "https://crests.football-data.org/100.png"
+            },
+            "awayTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        },
+        {
+            "area": {
+                "id": 2114,
+                "name": "Italy",
+                "code": "ITA",
+                "flag": "https://crests.football-data.org/784.svg"
+            },
+            "competition": {
+                "id": 2019,
+                "name": "Serie A",
+                "code": "SA",
+                "type": "LEAGUE",
+                "emblem": "https://crests.football-data.org/SA.png"
+            },
+            "season": {
+                "id": 2310,
+                "startDate": "2024-08-18",
+                "endDate": "2025-05-25",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "id": 503418,
+            "utcDate": "2025-05-25T00:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 38,
+            "stage": "REGULAR_SEASON",
+            "group": null,
+            "lastUpdated": "2024-07-05T14:24:47Z",
+            "homeTeam": {
+                "id": 98,
+                "name": "AC Milan",
+                "shortName": "Milan",
+                "tla": "MIL",
+                "crest": "https://crests.football-data.org/98.png"
+            },
+            "awayTeam": {
+                "id": 5911,
+                "name": "AC Monza",
+                "shortName": "Monza",
+                "tla": "MON",
+                "crest": "https://crests.football-data.org/5911.png"
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "home": null,
+                    "away": null
+                },
+                "halfTime": {
+                    "home": null,
+                    "away": null
+                }
+            },
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "referees": []
+        }
+    ]
+}
