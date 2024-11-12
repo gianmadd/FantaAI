@@ -24,26 +24,28 @@ DATA_RAW_PATH_SPECIFIC = os.path.abspath(f"../../data/{PROVIDER_NAME}/raw/specif
 LEAGUE = "135"  
 SEASON = "2023"  
 
-# ATALANTA = "499"
-# BOLOGNA = "500"
-# CAGLIARI = "490"
-# EMPOLI = "511"
-# FIORENTINA = "502"
-FROSINONE = "512"
-GENOA = "495"
-# INTER = "505"
-# JUVENTUS = "496"
-# LAZIO = "487"
-LECCE = "867"
-# MILAN = "489"
-MONZA = "1579"
-# NAPOLI = "492"
-# ROMA = "497"
-SALERNITANA = "514"
-SASSUOLO = "488"
-TORINO = "503"
-UDINESE = "494"
-VERONA = "504"
+team_ids = {
+    "ATALANTA": "499",
+    "BOLOGNA": "500",
+    "CAGLIARI": "490",
+    "EMPOLI": "511",
+    "FIORENTINA": "502",
+    "FROSINONE": "512",
+    "GENOA": "495",
+    "INTER": "505",
+    "JUVENTUS": "496",
+    "LAZIO": "487",
+    "LECCE": "867",
+    "MILAN": "489",
+    "MONZA": "1579",
+    "NAPOLI": "492",
+    "ROMA": "497",
+    "SALERNITANA": "514",
+    "SASSUOLO": "488",
+    "TORINO": "503",
+    "UDINESE": "494",
+    "VERONA": "504",
+}
 
 
 # Carica la chiave API dal file .env
@@ -116,11 +118,14 @@ def fetch_and_save_players_from_team_season(team_id, season):
 
 if __name__ == "__main__":
     logging.info("Inizio del processo di acquisizione dati.")
-    try:
 
+    try:
         fetch_and_save_teams_from_league_season(league_id=LEAGUE, season=SEASON)
-        # fetch_and_save_players_from_team_season(team_id=FROSINONE, season=SEASON)
-        # fetch_and_save_players_from_team_season(team_id=GENOA, season=SEASON)
+
+
+
+        fetch_and_save_players_from_team_season(team_id=team_ids.get["FROSINONE"], season=SEASON)
+        fetch_and_save_players_from_team_season(team_id=team_ids.get["GENOA"], season=SEASON)
         
 
     except Exception as e:
