@@ -62,6 +62,8 @@ def get_db():
     """
     conn = psycopg2.connect(**db_params)
     try:
+        with conn.cursor() as cursor:
+            cursor.execute("SET search_path TO fanta_ai")
         yield conn
     finally:
         conn.close()
