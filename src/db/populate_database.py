@@ -325,6 +325,8 @@ def populate_tables():
         #     load_json_data(os.path.join(f"{DATA_PATH_GENERIC}", "stadium.json")), conn
         # )
 
+        # DA RIVEREDERE TABELLA STADIUM (venue - sull'api si recuperano dal nome del paese)
+
         insert_leagues(
             load_json_data(os.path.join(f"{DATA_PATH_GENERIC}", "leagues.json")), conn
         )
