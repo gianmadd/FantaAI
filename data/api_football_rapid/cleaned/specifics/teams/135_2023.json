@@ -1,0 +1,9 @@
+{
+    "get": "teams",
+    "parameters": {
+        "league": "135",
+        "page": "1",
+        "season": "2023"
+    },
+    "response": []
+}
