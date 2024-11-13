@@ -115,31 +115,35 @@ class FootballRapidAPI(DataProviderBase):
 
     def _make_request(self, url, params, log_context):
         """
-        Effettua una singola richiesta API con gestione di rate limiting, limite giornaliero e paginazione.
+        Effettua una singola richiesta API con gestione di rate limiting, limite giornaliero e, se supportata,
+        la paginazione.
 
         Args:
             url (str): L'URL da richiamare.
-            params (dict): Parametri della richiesta, inclusi quelli per la paginazione.
+            params (dict): Parametri della richiesta, escluso 'page' che viene aggiunto solo se necessario.
             log_context (str): Contesto per i log.
 
         Returns:
             dict: JSON con tutte le risposte concatenate nella chiave `response`, mantenendo la struttura iniziale.
         """
-        # Resetta il contatore giornaliero se necessario
         self.reset_request_counter_if_new_day()
 
-        # Blocca se il limite giornaliero è stato raggiunto
         if self.request_counter["count"] >= self.DAILY_LIMIT:
             logging.warning("Limite giornaliero di richieste raggiunto.")
             return None
 
-        all_data = None  # Variabile per mantenere la struttura originale
-        page = 1  # Inizia dalla prima pagina
-        params["page"] = page  # Imposta il parametro della pagina
+        all_data = None
+        page = 1
+        use_pagination = False
 
         while True:
             try:
-                # Effettua la richiesta
+                # Aggiunge `page` ai parametri solo se `use_pagination` è True
+                if use_pagination:
+                    params["page"] = page
+                else:
+                    params.pop("page", None)  # Rimuove `page` dai parametri se non supportato
+
                 response = requests.get(url, headers=self.headers, params=params)
 
                 if response.status_code == 200:
@@ -151,29 +155,31 @@ class FootballRapidAPI(DataProviderBase):
                     self.save_request_counter()
 
                     data = response.json()
-                    logging.debug(f"Risposta JSON: {data}")  # Logga la risposta completa per il debug
+                    logging.debug(f"Risposta JSON: {data}")
 
                     # Inizializza `all_data` con il primo blocco di dati
                     if all_data is None:
                         all_data = data
                         all_data["response"] = data["response"]
+
+                        # Controlla se è supportata la paginazione
+                        paging_info = data.get("paging")
+                        if paging_info and paging_info.get("total", 1) > 1:
+                            use_pagination = True
+
                     else:
-                        # Aggiungi i dati di `response` alla chiave `response` di `all_data`
                         all_data["response"].extend(data["response"])
 
                     logging.info(f"{log_context} recuperati con successo, pagina {page}.")
 
-                    # Verifica se ci sono altre pagine
+                    # Condizioni di uscita: se non serve paginazione o abbiamo raggiunto l'ultima pagina
                     paging_info = data.get("paging", {})
-                    if paging_info.get("current", 1) >= paging_info.get("total", 1):
-                        logging.info("Tutte le pagine recuperate.")
-                        break  # Esci dal ciclo se non ci sono altre pagine
+                    if not use_pagination or paging_info.get("current", 1) >= paging_info.get("total", 1):
+                        logging.info("Recupero completo.")
+                        break
 
-                    # Altrimenti, passa alla pagina successiva
+                    # Incrementa per la pagina successiva
                     page += 1
-                    params["page"] = page  # Aggiorna il parametro della pagina
-
-                    # Rispetta il rate limit
                     time.sleep(self.RATE_LIMIT_SLEEP)
 
                 elif response.status_code == 429:
@@ -187,7 +193,8 @@ class FootballRapidAPI(DataProviderBase):
                 logging.error(f"Errore di connessione durante {log_context}: {e}")
                 return None
 
-        return all_data  # Restituisce i dati con `response` concatenato
+        return all_data
+
 
 
 

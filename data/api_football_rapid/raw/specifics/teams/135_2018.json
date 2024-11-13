@@ -2,7 +2,7 @@
     "get": "teams",
     "parameters": {
         "league": "135",
-        "season": "2023"
+        "season": "2018"
     },
     "errors": [],
     "results": 20,
@@ -93,6 +93,26 @@
         },
         {
             "team": {
+                "id": 491,
+                "name": "Chievo",
+                "code": "CHI",
+                "country": "Italy",
+                "founded": 1929,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/491.png"
+            },
+            "venue": {
+                "id": 890,
+                "name": "Stadio Marc'Antonio Bentegodi",
+                "address": "Piazzale Olimpia",
+                "city": "Verona",
+                "capacity": 39211,
+                "surface": "grass",
+                "image": "https://media.api-sports.io/football/venues/890.png"
+            }
+        },
+        {
+            "team": {
                 "id": 492,
                 "name": "Napoli",
                 "code": "NAP",
@@ -109,6 +129,26 @@
                 "capacity": 60240,
                 "surface": "grass",
                 "image": "https://media.api-sports.io/football/venues/11904.png"
+            }
+        },
+        {
+            "team": {
+                "id": 493,
+                "name": "Spal",
+                "code": "SPA",
+                "country": "Italy",
+                "founded": 1907,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/493.png"
+            },
+            "venue": {
+                "id": 938,
+                "name": "Stadio Paolo Mazza",
+                "address": "Corso Piave, 28",
+                "city": "Ferrara",
+                "capacity": 16134,
+                "surface": "grass",
+                "image": "https://media.api-sports.io/football/venues/938.png"
             }
         },
         {
@@ -193,6 +233,26 @@
         },
         {
             "team": {
+                "id": 498,
+                "name": "Sampdoria",
+                "code": "SAM",
+                "country": "Italy",
+                "founded": 1946,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/498.png"
+            },
+            "venue": {
+                "id": 905,
+                "name": "Stadio Comunale Luigi Ferraris",
+                "address": "Via Giovanni De Pr\u00e0, 1",
+                "city": "Genova",
+                "capacity": 36703,
+                "surface": "grass",
+                "image": "https://media.api-sports.io/football/venues/905.png"
+            }
+        },
+        {
+            "team": {
                 "id": 499,
                 "name": "Atalanta",
                 "code": "ATA",
@@ -273,26 +333,6 @@
         },
         {
             "team": {
-                "id": 504,
-                "name": "Verona",
-                "code": "VER",
-                "country": "Italy",
-                "founded": 1903,
-                "national": false,
-                "logo": "https://media.api-sports.io/football/teams/504.png"
-            },
-            "venue": {
-                "id": 890,
-                "name": "Stadio Marc'Antonio Bentegodi",
-                "address": "Piazzale Olimpia",
-                "city": "Verona",
-                "capacity": 39211,
-                "surface": "grass",
-                "image": "https://media.api-sports.io/football/venues/890.png"
-            }
-        },
-        {
-            "team": {
                 "id": 505,
                 "name": "Inter",
                 "code": "INT",
@@ -353,62 +393,22 @@
         },
         {
             "team": {
-                "id": 514,
-                "name": "Salernitana",
-                "code": "SAL",
+                "id": 523,
+                "name": "Parma",
+                "code": "PAR",
                 "country": "Italy",
-                "founded": 2011,
+                "founded": 1913,
                 "national": false,
-                "logo": "https://media.api-sports.io/football/teams/514.png"
+                "logo": "https://media.api-sports.io/football/teams/523.png"
             },
             "venue": {
-                "id": 933,
-                "name": "Stadio Arechi",
-                "address": "Via Salvador Allende",
-                "city": "Salerno",
-                "capacity": 37245,
+                "id": 921,
+                "name": "Stadio Ennio Tardini",
+                "address": "Via Partigiani d&apos;Italia, 1",
+                "city": "Parma",
+                "capacity": 21473,
                 "surface": "grass",
-                "image": "https://media.api-sports.io/football/venues/933.png"
-            }
-        },
-        {
-            "team": {
-                "id": 867,
-                "name": "Lecce",
-                "code": "LEC",
-                "country": "Italy",
-                "founded": 1908,
-                "national": false,
-                "logo": "https://media.api-sports.io/football/teams/867.png"
-            },
-            "venue": {
-                "id": 911,
-                "name": "Stadio Comunale Via del Mare",
-                "address": "Viale dello Stadio",
-                "city": "Lecce",
-                "capacity": 33876,
-                "surface": "grass",
-                "image": "https://media.api-sports.io/football/venues/911.png"
-            }
-        },
-        {
-            "team": {
-                "id": 1579,
-                "name": "Monza",
-                "code": "MON",
-                "country": "Italy",
-                "founded": 1912,
-                "national": false,
-                "logo": "https://media.api-sports.io/football/teams/1579.png"
-            },
-            "venue": {
-                "id": 12086,
-                "name": "U-Power Stadium",
-                "address": "Via Franco Tognini",
-                "city": "Monza",
-                "capacity": 18568,
-                "surface": "grass",
-                "image": "https://media.api-sports.io/football/venues/12086.png"
+                "image": "https://media.api-sports.io/football/venues/921.png"
             }
         }
     ]
