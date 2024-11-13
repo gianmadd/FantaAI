@@ -17,6 +17,7 @@ __pycache__/
 config/.env
 config/api_football_rapid_counter.json
 config/api_football_data_org_counter.json
+.vscode
 
 # Checkpoints di Jupyter Notebook
 .ipynb_checkpoints/
