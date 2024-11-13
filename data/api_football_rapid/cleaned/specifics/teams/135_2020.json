@@ -2,7 +2,7 @@
     "get": "teams",
     "parameters": {
         "league": "135",
-        "season": "2023"
+        "season": "2020"
     },
     "response": [
         {
@@ -187,6 +187,26 @@
         },
         {
             "team": {
+                "id": 498,
+                "name": "Sampdoria",
+                "code": "SAM",
+                "country": "Italy",
+                "founded": 1946,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/498.png"
+            },
+            "venue": {
+                "id": 905,
+                "name": "Stadio Comunale Luigi Ferraris",
+                "address": "Via Giovanni De Pr\u00e0, 1",
+                "city": "Genova",
+                "capacity": 36703,
+                "surface": "grass",
+                "image": "https://media.api-sports.io/football/venues/905.png"
+            }
+        },
+        {
+            "team": {
                 "id": 499,
                 "name": "Atalanta",
                 "code": "ATA",
@@ -223,6 +243,26 @@
                 "capacity": 39279,
                 "surface": "grass",
                 "image": "https://media.api-sports.io/football/venues/881.png"
+            }
+        },
+        {
+            "team": {
+                "id": 501,
+                "name": "Crotone",
+                "code": "CRO",
+                "country": "Italy",
+                "founded": 1923,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/501.png"
+            },
+            "venue": {
+                "id": 895,
+                "name": "Stadio Ezio Scida",
+                "address": "Via Cutro",
+                "city": "Crotone",
+                "capacity": 16108,
+                "surface": "grass",
+                "image": "https://media.api-sports.io/football/venues/895.png"
             }
         },
         {
@@ -307,102 +347,62 @@
         },
         {
             "team": {
-                "id": 511,
-                "name": "Empoli",
-                "code": "EMP",
+                "id": 506,
+                "name": "Benevento",
+                "code": "BEN",
                 "country": "Italy",
-                "founded": 1920,
+                "founded": 1929,
                 "national": false,
-                "logo": "https://media.api-sports.io/football/teams/511.png"
+                "logo": "https://media.api-sports.io/football/teams/506.png"
             },
             "venue": {
-                "id": 20109,
-                "name": "Stadio Carlo Castellani \u2013 Computer Gross Arena",
-                "address": "Viale delle Olimpiadi",
-                "city": "Empoli",
-                "capacity": 16284,
+                "id": 880,
+                "name": "Stadio Ciro Vigorito",
+                "address": "Piazzale degli Atleti",
+                "city": "Benevento",
+                "capacity": 17554,
                 "surface": "grass",
-                "image": "https://media.api-sports.io/football/venues/20109.png"
+                "image": "https://media.api-sports.io/football/venues/880.png"
             }
         },
         {
             "team": {
-                "id": 512,
-                "name": "Frosinone",
-                "code": "FRO",
+                "id": 515,
+                "name": "Spezia",
+                "code": "SPE",
                 "country": "Italy",
-                "founded": 1928,
+                "founded": 1906,
                 "national": false,
-                "logo": "https://media.api-sports.io/football/teams/512.png"
+                "logo": "https://media.api-sports.io/football/teams/515.png"
             },
             "venue": {
-                "id": 904,
-                "name": "Stadio Benito Stirpe",
-                "address": "Viale Olimpia",
-                "city": "Frosinone",
-                "capacity": 16310,
-                "surface": "grass",
-                "image": "https://media.api-sports.io/football/venues/904.png"
+                "id": 939,
+                "name": "Stadio Alberto Picco",
+                "address": "Via Nicol\u00f2 Fieschi, 18",
+                "city": "La Spezia",
+                "capacity": 11767,
+                "surface": "artificial turf",
+                "image": "https://media.api-sports.io/football/venues/939.png"
             }
         },
         {
             "team": {
-                "id": 514,
-                "name": "Salernitana",
-                "code": "SAL",
+                "id": 523,
+                "name": "Parma",
+                "code": "PAR",
                 "country": "Italy",
-                "founded": 2011,
+                "founded": 1913,
                 "national": false,
-                "logo": "https://media.api-sports.io/football/teams/514.png"
+                "logo": "https://media.api-sports.io/football/teams/523.png"
             },
             "venue": {
-                "id": 933,
-                "name": "Stadio Arechi",
-                "address": "Via Salvador Allende",
-                "city": "Salerno",
-                "capacity": 37245,
+                "id": 921,
+                "name": "Stadio Ennio Tardini",
+                "address": "Via Partigiani d&apos;Italia, 1",
+                "city": "Parma",
+                "capacity": 21473,
                 "surface": "grass",
-                "image": "https://media.api-sports.io/football/venues/933.png"
-            }
-        },
-        {
-            "team": {
-                "id": 867,
-                "name": "Lecce",
-                "code": "LEC",
-                "country": "Italy",
-                "founded": 1908,
-                "national": false,
-                "logo": "https://media.api-sports.io/football/teams/867.png"
-            },
-            "venue": {
-                "id": 911,
-                "name": "Stadio Comunale Via del Mare",
-                "address": "Viale dello Stadio",
-                "city": "Lecce",
-                "capacity": 33876,
-                "surface": "grass",
-                "image": "https://media.api-sports.io/football/venues/911.png"
-            }
-        },
-        {
-            "team": {
-                "id": 1579,
-                "name": "Monza",
-                "code": "MON",
-                "country": "Italy",
-                "founded": 1912,
-                "national": false,
-                "logo": "https://media.api-sports.io/football/teams/1579.png"
-            },
-            "venue": {
-                "id": 12086,
-                "name": "U-Power Stadium",
-                "address": "Via Franco Tognini",
-                "city": "Monza",
-                "capacity": 18568,
-                "surface": "grass",
-                "image": "https://media.api-sports.io/football/venues/12086.png"
+                "image": "https://media.api-sports.io/football/venues/921.png"
             }
         }
     ]

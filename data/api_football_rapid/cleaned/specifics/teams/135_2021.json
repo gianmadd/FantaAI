@@ -2,7 +2,7 @@
     "get": "teams",
     "parameters": {
         "league": "135",
-        "season": "2023"
+        "season": "2021"
     },
     "response": [
         {
@@ -187,6 +187,26 @@
         },
         {
             "team": {
+                "id": 498,
+                "name": "Sampdoria",
+                "code": "SAM",
+                "country": "Italy",
+                "founded": 1946,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/498.png"
+            },
+            "venue": {
+                "id": 905,
+                "name": "Stadio Comunale Luigi Ferraris",
+                "address": "Via Giovanni De Pr\u00e0, 1",
+                "city": "Genova",
+                "capacity": 36703,
+                "surface": "grass",
+                "image": "https://media.api-sports.io/football/venues/905.png"
+            }
+        },
+        {
+            "team": {
                 "id": 499,
                 "name": "Atalanta",
                 "code": "ATA",
@@ -327,26 +347,6 @@
         },
         {
             "team": {
-                "id": 512,
-                "name": "Frosinone",
-                "code": "FRO",
-                "country": "Italy",
-                "founded": 1928,
-                "national": false,
-                "logo": "https://media.api-sports.io/football/teams/512.png"
-            },
-            "venue": {
-                "id": 904,
-                "name": "Stadio Benito Stirpe",
-                "address": "Viale Olimpia",
-                "city": "Frosinone",
-                "capacity": 16310,
-                "surface": "grass",
-                "image": "https://media.api-sports.io/football/venues/904.png"
-            }
-        },
-        {
-            "team": {
                 "id": 514,
                 "name": "Salernitana",
                 "code": "SAL",
@@ -367,42 +367,42 @@
         },
         {
             "team": {
-                "id": 867,
-                "name": "Lecce",
-                "code": "LEC",
+                "id": 515,
+                "name": "Spezia",
+                "code": "SPE",
                 "country": "Italy",
-                "founded": 1908,
+                "founded": 1906,
                 "national": false,
-                "logo": "https://media.api-sports.io/football/teams/867.png"
+                "logo": "https://media.api-sports.io/football/teams/515.png"
             },
             "venue": {
-                "id": 911,
-                "name": "Stadio Comunale Via del Mare",
-                "address": "Viale dello Stadio",
-                "city": "Lecce",
-                "capacity": 33876,
-                "surface": "grass",
-                "image": "https://media.api-sports.io/football/venues/911.png"
+                "id": 939,
+                "name": "Stadio Alberto Picco",
+                "address": "Via Nicol\u00f2 Fieschi, 18",
+                "city": "La Spezia",
+                "capacity": 11767,
+                "surface": "artificial turf",
+                "image": "https://media.api-sports.io/football/venues/939.png"
             }
         },
         {
             "team": {
-                "id": 1579,
-                "name": "Monza",
-                "code": "MON",
+                "id": 517,
+                "name": "Venezia",
+                "code": "VEN",
                 "country": "Italy",
-                "founded": 1912,
+                "founded": 1907,
                 "national": false,
-                "logo": "https://media.api-sports.io/football/teams/1579.png"
+                "logo": "https://media.api-sports.io/football/teams/517.png"
             },
             "venue": {
-                "id": 12086,
-                "name": "U-Power Stadium",
-                "address": "Via Franco Tognini",
-                "city": "Monza",
-                "capacity": 18568,
+                "id": 948,
+                "name": "Stadio Pierluigi Penzo",
+                "address": "Isola di Sant&apos;Elena",
+                "city": "Venezia",
+                "capacity": 11150,
                 "surface": "grass",
-                "image": "https://media.api-sports.io/football/venues/12086.png"
+                "image": "https://media.api-sports.io/football/venues/948.png"
             }
         }
     ]
