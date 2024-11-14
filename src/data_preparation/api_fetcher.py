@@ -40,7 +40,7 @@ team_ids = {
     # "FIORENTINA": "502",
     # "TORINO": "503",
     # "VERONA": "504",
-    "INTER": "505",
+    # "INTER": "505",
     "EMPOLI": "511",
     "FROSINONE": "512",
     "SALERNITANA": "514",
@@ -111,7 +111,7 @@ if __name__ == "__main__":
     logging.info("Inizio del processo di acquisizione dati.")
 
     try:
-        fetch_and_save_teams_from_league_season(league_id=LEAGUE, season="20")
+        # fetch_and_save_teams_from_league_season(league_id=LEAGUE, season="20")
 
 
         # Esempio per recuperare i giocatori di alcune squadre
@@ -129,13 +129,13 @@ if __name__ == "__main__":
         # fetch_and_save_players_from_team_season(team_id=team_ids.get("FIORENTINA"), season=SEASON)
         # fetch_and_save_players_from_team_season(team_id=team_ids.get("TORINO"), season=SEASON)
         # fetch_and_save_players_from_team_season(team_id=team_ids.get("VERONA"), season=SEASON)
-
         # fetch_and_save_players_from_team_season(team_id=team_ids.get("INTER"), season=SEASON)
-        # fetch_and_save_players_from_team_season(team_id=team_ids.get("EMPOLI"), season=SEASON)
-        # fetch_and_save_players_from_team_season(team_id=team_ids.get("FROSINONE"), season=SEASON)
-        # fetch_and_save_players_from_team_season(team_id=team_ids.get("SALERNITANA"), season=SEASON)
-        # fetch_and_save_players_from_team_season(team_id=team_ids.get("LECCE"), season=SEASON)
-        # fetch_and_save_players_from_team_season(team_id=team_ids.get("MONZA"), season=SEASON)
+
+        fetch_and_save_players_from_team_season(team_id=team_ids.get("EMPOLI"), season=SEASON)
+        fetch_and_save_players_from_team_season(team_id=team_ids.get("FROSINONE"), season=SEASON)
+        fetch_and_save_players_from_team_season(team_id=team_ids.get("SALERNITANA"), season=SEASON)
+        fetch_and_save_players_from_team_season(team_id=team_ids.get("LECCE"), season=SEASON)
+        fetch_and_save_players_from_team_season(team_id=team_ids.get("MONZA"), season=SEASON)
 
 
 
