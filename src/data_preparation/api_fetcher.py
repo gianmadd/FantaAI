@@ -23,23 +23,23 @@ DATA_RAW_PATH_GENERIC = os.path.abspath(f"../../data/{PROVIDER_NAME}/raw/generic
 DATA_RAW_PATH_SPECIFIC = os.path.abspath(f"../../data/{PROVIDER_NAME}/raw/specifics")
 
 LEAGUE = "135"
-SEASON = "2023"
+SEASON = "2022"
 
 team_ids = {
-    "LAZIO": "487",
-    "SASSUOLO": "488",
-    "MILAN": "489",
-    "CAGLIARI": "490",
-    "NAPOLI": "492",
-    "UDINESE": "494",
-    "GENOA": "495",
-    "JUVENTUS": "496",
-    "ROMA": "497",
-    "ATALANTA": "499",
-    "BOLOGNA": "500",
-    "FIORENTINA": "502",
-    "TORINO": "503",
-    "VERONA": "504",
+    # "LAZIO": "487",
+    # "SASSUOLO": "488",
+    # "MILAN": "489",
+    # "CAGLIARI": "490",
+    # "NAPOLI": "492",
+    # "UDINESE": "494",
+    # "GENOA": "495",
+    # "JUVENTUS": "496",
+    # "ROMA": "497",
+    # "ATALANTA": "499",
+    # "BOLOGNA": "500",
+    # "FIORENTINA": "502",
+    # "TORINO": "503",
+    # "VERONA": "504",
     "INTER": "505",
     "EMPOLI": "511",
     "FROSINONE": "512",
@@ -99,7 +99,7 @@ def fetch_and_save_players_from_team_season(team_id, season):
     if players_data and "response" in players_data:
         save_data(
             players_data,
-            f"{DATA_RAW_PATH_SPECIFIC}/players",
+            f"{DATA_RAW_PATH_SPECIFIC}/players/{SEASON}",
             f"{team_id}_{season}.json",
         )
         logging.info(f"Dati giocatori per squadra {team_id} salvati correttamente.")
@@ -111,10 +111,11 @@ if __name__ == "__main__":
     logging.info("Inizio del processo di acquisizione dati.")
 
     try:
-        # fetch_and_save_teams_from_league_season(league_id=LEAGUE, season="2022")
+        fetch_and_save_teams_from_league_season(league_id=LEAGUE, season="20")
+
 
         # Esempio per recuperare i giocatori di alcune squadre
-        fetch_and_save_players_from_team_season(team_id=team_ids.get("LAZIO"), season=SEASON)
+        # fetch_and_save_players_from_team_season(team_id=team_ids.get("LAZIO"), season=SEASON)
         # fetch_and_save_players_from_team_season(team_id=team_ids.get("SASSUOLO"), season=SEASON)
         # fetch_and_save_players_from_team_season(team_id=team_ids.get("MILAN"), season=SEASON)
         # fetch_and_save_players_from_team_season(team_id=team_ids.get("CAGLIARI"), season=SEASON)
@@ -128,6 +129,7 @@ if __name__ == "__main__":
         # fetch_and_save_players_from_team_season(team_id=team_ids.get("FIORENTINA"), season=SEASON)
         # fetch_and_save_players_from_team_season(team_id=team_ids.get("TORINO"), season=SEASON)
         # fetch_and_save_players_from_team_season(team_id=team_ids.get("VERONA"), season=SEASON)
+
         # fetch_and_save_players_from_team_season(team_id=team_ids.get("INTER"), season=SEASON)
         # fetch_and_save_players_from_team_season(team_id=team_ids.get("EMPOLI"), season=SEASON)
         # fetch_and_save_players_from_team_season(team_id=team_ids.get("FROSINONE"), season=SEASON)
