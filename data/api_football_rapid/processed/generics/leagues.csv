@@ -1,0 +1,1164 @@
+id,country_id,name,type,logo_url
+4,168.0,Euro Championship,Cup,https://media.api-sports.io/football/leagues/4.png
+21,168.0,Confederations Cup,Cup,https://media.api-sports.io/football/leagues/21.png
+61,56.0,Ligue 1,League,https://media.api-sports.io/football/leagues/61.png
+144,16.0,Jupiler Pro League,League,https://media.api-sports.io/football/leagues/144.png
+71,24.0,Serie A,League,https://media.api-sports.io/football/leagues/71.png
+39,49.0,Premier League,League,https://media.api-sports.io/football/leagues/39.png
+78,60.0,Bundesliga,League,https://media.api-sports.io/football/leagues/78.png
+135,79.0,Serie A,League,https://media.api-sports.io/football/leagues/135.png
+88,115.0,Eredivisie,League,https://media.api-sports.io/football/leagues/88.png
+94,129.0,Primeira Liga,League,https://media.api-sports.io/football/leagues/94.png
+140,145.0,La Liga,League,https://media.api-sports.io/football/leagues/140.png
+179,136.0,Premiership,League,https://media.api-sports.io/football/leagues/179.png
+180,136.0,Championship,League,https://media.api-sports.io/football/leagues/180.png
+1,168.0,World Cup,Cup,https://media.api-sports.io/football/leagues/1.png
+803,168.0,Asian Games,Cup,https://media.api-sports.io/football/leagues/803.png
+804,168.0,Caribbean Cup,Cup,https://media.api-sports.io/football/leagues/804.png
+62,56.0,Ligue 2,League,https://media.api-sports.io/football/leagues/62.png
+2,168.0,UEFA Champions League,Cup,https://media.api-sports.io/football/leagues/2.png
+311,1.0,1st Division,League,https://media.api-sports.io/football/leagues/311.png
+310,1.0,Superliga,League,https://media.api-sports.io/football/leagues/310.png
+186,2.0,Ligue 1,League,https://media.api-sports.io/football/leagues/186.png
+187,2.0,Ligue 2,League,https://media.api-sports.io/football/leagues/187.png
+571,151.0,Vysshaya Liga,League,https://media.api-sports.io/football/leagues/571.png
+586,123.0,West Bank Premier League,League,https://media.api-sports.io/football/leagues/586.png
+588,112.0,National League,League,https://media.api-sports.io/football/leagues/588.png
+591,155.0,Pro League,League,https://media.api-sports.io/football/leagues/591.png
+335,,Cup,Cup,https://media.api-sports.io/football/leagues/335.png
+336,,Druha Liga,League,https://media.api-sports.io/football/leagues/336.png
+334,,Persha Liga,League,https://media.api-sports.io/football/leagues/334.png
+333,,Premier League,League,https://media.api-sports.io/football/leagues/333.png
+301,161.0,Pro League,League,https://media.api-sports.io/football/leagues/301.png
+303,161.0,Division 1,League,https://media.api-sports.io/football/leagues/303.png
+302,161.0,League Cup,Cup,https://media.api-sports.io/football/leagues/302.png
+269,162.0,Segunda División,League,https://media.api-sports.io/football/leagues/269.png
+202,156.0,Ligue 1,League,https://media.api-sports.io/football/leagues/202.png
+203,157.0,Süper Lig,League,https://media.api-sports.io/football/leagues/203.png
+204,157.0,1. Lig,League,https://media.api-sports.io/football/leagues/204.png
+205,157.0,2. Lig,League,https://media.api-sports.io/football/leagues/205.png
+206,157.0,Cup,Cup,https://media.api-sports.io/football/leagues/206.png
+552,157.0,3. Lig - Group 1,League,https://media.api-sports.io/football/leagues/552.png
+553,157.0,3. Lig - Group 2,League,https://media.api-sports.io/football/leagues/553.png
+554,157.0,3. Lig - Group 3,League,https://media.api-sports.io/football/leagues/554.png
+63,56.0,National 1,League,https://media.api-sports.io/football/leagues/63.png
+66,56.0,Coupe de France,Cup,https://media.api-sports.io/football/leagues/66.png
+65,56.0,Coupe de la Ligue,Cup,https://media.api-sports.io/football/leagues/65.png
+67,56.0,National 2 - Group A,League,https://media.api-sports.io/football/leagues/67.png
+68,56.0,National 2 - Group B,League,https://media.api-sports.io/football/leagues/68.png
+69,56.0,National 2 - Group C,League,https://media.api-sports.io/football/leagues/69.png
+70,56.0,National 2 - Group D,League,https://media.api-sports.io/football/leagues/70.png
+233,47.0,Premier League,League,https://media.api-sports.io/football/leagues/233.png
+370,48.0,Primera Division,League,https://media.api-sports.io/football/leagues/370.png
+328,50.0,Esiliiga A,League,https://media.api-sports.io/football/leagues/328.png
+329,50.0,Meistriliiga,League,https://media.api-sports.io/football/leagues/329.png
+326,59.0,Erovnuli Liga 2,League,https://media.api-sports.io/football/leagues/326.png
+570,61.0,Premier League,League,https://media.api-sports.io/football/leagues/570.png
+377,65.0,Division d'Honneur,League,https://media.api-sports.io/football/leagues/377.png
+339,66.0,Liga Nacional,League,https://media.api-sports.io/football/leagues/339.png
+338,66.0,Primera Division,League,https://media.api-sports.io/football/leagues/338.png
+199,63.0,Cup,Cup,https://media.api-sports.io/football/leagues/199.png
+198,63.0,Football League,League,https://media.api-sports.io/football/leagues/198.png
+197,63.0,Super League 1,League,https://media.api-sports.io/football/leagues/197.png
+79,60.0,2. Bundesliga,League,https://media.api-sports.io/football/leagues/79.png
+80,60.0,3. Liga,League,https://media.api-sports.io/football/leagues/80.png
+529,60.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/529.png
+81,60.0,DFB Pokal,Cup,https://media.api-sports.io/football/leagues/81.png
+7,168.0,Asian Cup,Cup,https://media.api-sports.io/football/leagues/7.png
+8,168.0,World Cup - Women,Cup,https://media.api-sports.io/football/leagues/8.png
+512,1.0,2nd Division - Group A,League,https://media.api-sports.io/football/leagues/512.png
+513,1.0,2nd Division - Group B,League,https://media.api-sports.io/football/leagues/513.png
+312,3.0,1a Divisió,League,https://media.api-sports.io/football/leagues/312.png
+313,3.0,2a Divisió,League,https://media.api-sports.io/football/leagues/313.png
+131,6.0,Primera B Metropolitana,League,https://media.api-sports.io/football/leagues/131.png
+294,144.0,FA Cup,Cup,https://media.api-sports.io/football/leagues/294.png
+129,6.0,Primera Nacional,League,https://media.api-sports.io/football/leagues/129.png
+132,6.0,Primera C,League,https://media.api-sports.io/football/leagues/132.png
+133,6.0,Primera D,League,https://media.api-sports.io/football/leagues/133.png
+134,6.0,Torneo Federal A,League,https://media.api-sports.io/football/leagues/134.png
+188,9.0,A-League,League,https://media.api-sports.io/football/leagues/188.png
+191,9.0,Brisbane Premier League,League,https://media.api-sports.io/football/leagues/191.png
+193,9.0,Northern Territory Premier League,League,https://media.api-sports.io/football/leagues/193.png
+220,10.0,Cup,Cup,https://media.api-sports.io/football/leagues/220.png
+219,10.0,2. Liga,League,https://media.api-sports.io/football/leagues/219.png
+218,10.0,Bundesliga,League,https://media.api-sports.io/football/leagues/218.png
+418,11.0,Birinci Dasta,League,https://media.api-sports.io/football/leagues/418.png
+419,11.0,Premyer Liqa,League,https://media.api-sports.io/football/leagues/419.png
+222,10.0,Regionalliga - Mitte,League,https://media.api-sports.io/football/leagues/222.png
+221,10.0,Regionalliga - Ost,League,https://media.api-sports.io/football/leagues/221.png
+223,10.0,Regionalliga - West,League,https://media.api-sports.io/football/leagues/223.png
+110,167.0,Premier League,League,https://media.api-sports.io/football/leagues/110.png
+112,167.0,Welsh Cup,Cup,https://media.api-sports.io/football/leagues/112.png
+299,165.0,Primera División,League,https://media.api-sports.io/football/leagues/299.png
+300,165.0,Segunda División,League,https://media.api-sports.io/football/leagues/300.png
+406,121.0,Professional League,League,https://media.api-sports.io/football/leagues/406.png
+322,81.0,Premier League,League,https://media.api-sports.io/football/leagues/322.png
+387,83.0,League,League,https://media.api-sports.io/football/leagues/387.png
+388,84.0,1. Division,League,https://media.api-sports.io/football/leagues/388.png
+330,87.0,Premier League,League,https://media.api-sports.io/football/leagues/330.png
+119,44.0,Superliga,League,https://media.api-sports.io/football/leagues/119.png
+120,44.0,1. Division,League,https://media.api-sports.io/football/leagues/120.png
+124,44.0,Denmark Series - Group 1,League,https://media.api-sports.io/football/leagues/124.png
+125,44.0,Denmark Series - Group 2,League,https://media.api-sports.io/football/leagues/125.png
+126,44.0,Denmark Series - Group 3,League,https://media.api-sports.io/football/leagues/126.png
+234,69.0,Liga Nacional,League,https://media.api-sports.io/football/leagues/234.png
+381,70.0,HKFA 1st Division,League,https://media.api-sports.io/football/leagues/381.png
+380,70.0,Premier League,League,https://media.api-sports.io/football/leagues/380.png
+273,71.0,Magyar Kupa,Cup,https://media.api-sports.io/football/leagues/273.png
+271,71.0,NB I,League,https://media.api-sports.io/football/leagues/271.png
+272,71.0,NB II,League,https://media.api-sports.io/football/leagues/272.png
+390,91.0,Premier League,League,https://media.api-sports.io/football/leagues/390.png
+261,97.0,National Division,League,https://media.api-sports.io/football/leagues/261.png
+306,130.0,Second Division,League,https://media.api-sports.io/football/leagues/306.png
+305,130.0,Stars League,League,https://media.api-sports.io/football/leagues/305.png
+40,49.0,Championship,League,https://media.api-sports.io/football/leagues/40.png
+46,49.0,EFL Trophy,Cup,https://media.api-sports.io/football/leagues/46.png
+45,49.0,FA Cup,Cup,https://media.api-sports.io/football/leagues/45.png
+47,49.0,FA Trophy,Cup,https://media.api-sports.io/football/leagues/47.png
+48,49.0,League Cup,Cup,https://media.api-sports.io/football/leagues/48.png
+43,49.0,National League,League,https://media.api-sports.io/football/leagues/43.png
+41,49.0,League One,League,https://media.api-sports.io/football/leagues/41.png
+42,49.0,League Two,League,https://media.api-sports.io/football/leagues/42.png
+568,147.0,Eerste Divisie,League,https://media.api-sports.io/football/leagues/568.png
+15,168.0,FIFA Intercontinental Cup,Cup,https://media.api-sports.io/football/leagues/15.png
+422,14.0,Premier League,League,https://media.api-sports.io/football/leagues/422.png
+480,168.0,Olympics Men,Cup,https://media.api-sports.io/football/leagues/480.png
+535,168.0,CECAFA Senior Challenge Cup,Cup,https://media.api-sports.io/football/leagues/535.png
+72,24.0,Serie B,League,https://media.api-sports.io/football/leagues/72.png
+75,24.0,Serie C,League,https://media.api-sports.io/football/leagues/75.png
+76,24.0,Serie D,League,https://media.api-sports.io/football/leagues/76.png
+585,159.0,Premier League,League,https://media.api-sports.io/football/leagues/585.png
+598,103.0,Première Division,League,https://media.api-sports.io/football/leagues/598.png
+253,163.0,Major League Soccer,League,https://media.api-sports.io/football/leagues/253.png
+257,163.0,US Open Cup,Cup,https://media.api-sports.io/football/leagues/257.png
+268,162.0,Primera División - Apertura,League,https://media.api-sports.io/football/leagues/268.png
+270,162.0,Primera División - Clausura,League,https://media.api-sports.io/football/leagues/270.png
+369,164.0,Super League,League,https://media.api-sports.io/football/leagues/369.png
+296,153.0,Thai League 1,League,https://media.api-sports.io/football/leagues/296.png
+297,153.0,Thai League 2,League,https://media.api-sports.io/football/leagues/297.png
+551,157.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/551.png
+366,53.0,1. Deild,League,https://media.api-sports.io/football/leagues/366.png
+367,53.0,Meistaradeildin,League,https://media.api-sports.io/football/leagues/367.png
+245,55.0,Ykkönen,League,https://media.api-sports.io/football/leagues/245.png
+244,55.0,Veikkausliiga,League,https://media.api-sports.io/football/leagues/244.png
+246,55.0,Suomen Cup,Cup,https://media.api-sports.io/football/leagues/246.png
+247,55.0,Kakkonen - Lohko A,League,https://media.api-sports.io/football/leagues/247.png
+248,55.0,Kakkonen - Lohko B,League,https://media.api-sports.io/football/leagues/248.png
+249,55.0,Kakkonen - Lohko C,League,https://media.api-sports.io/football/leagues/249.png
+526,56.0,Trophée des Champions,Cup,https://media.api-sports.io/football/leagues/526.png
+242,46.0,Liga Pro,League,https://media.api-sports.io/football/leagues/242.png
+243,46.0,Liga Pro Serie B,League,https://media.api-sports.io/football/leagues/243.png
+539,47.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/539.png
+397,4.0,Girabola,League,https://media.api-sports.io/football/leagues/397.png
+343,7.0,First League,League,https://media.api-sports.io/football/leagues/343.png
+342,7.0,Premier League,League,https://media.api-sports.io/football/leagues/342.png
+481,9.0,Northern NSW NPL,League,https://media.api-sports.io/football/leagues/481.png
+116,15.0,Premier League,League,https://media.api-sports.io/football/leagues/116.png
+117,15.0,1. Division,League,https://media.api-sports.io/football/leagues/117.png
+118,15.0,2. Division,League,https://media.api-sports.io/football/leagues/118.png
+400,170.0,Super League,League,https://media.api-sports.io/football/leagues/400.png
+340,166.0,V.League 1,League,https://media.api-sports.io/football/leagues/340.png
+102,82.0,Emperor Cup,Cup,https://media.api-sports.io/football/leagues/102.png
+101,82.0,J-League Cup,Cup,https://media.api-sports.io/football/leagues/101.png
+98,82.0,J1 League,League,https://media.api-sports.io/football/leagues/98.png
+99,82.0,J2 League,League,https://media.api-sports.io/football/leagues/99.png
+100,82.0,J3 League,League,https://media.api-sports.io/football/leagues/100.png
+389,84.0,Premier League,League,https://media.api-sports.io/football/leagues/389.png
+276,85.0,FKF Premier League,League,https://media.api-sports.io/football/leagues/276.png
+121,44.0,DBU Pokalen,Cup,https://media.api-sports.io/football/leagues/121.png
+379,68.0,Ligue Haïtienne,League,https://media.api-sports.io/football/leagues/379.png
+364,90.0,1. Liga,League,https://media.api-sports.io/football/leagues/364.png
+365,90.0,Virsliga,League,https://media.api-sports.io/football/leagues/365.png
+361,96.0,1 Lyga,League,https://media.api-sports.io/football/leagues/361.png
+362,96.0,A Lyga,League,https://media.api-sports.io/football/leagues/362.png
+528,49.0,Community Shield,Cup,https://media.api-sports.io/football/leagues/528.png
+505,139.0,League Cup,Cup,https://media.api-sports.io/football/leagues/505.png
+28,168.0,SAFF Championship,Cup,https://media.api-sports.io/football/leagues/28.png
+421,8.0,Division di Honor,League,https://media.api-sports.io/football/leagues/421.png
+420,11.0,Cup,Cup,https://media.api-sports.io/football/leagues/420.png
+298,153.0,FA Cup,Cup,https://media.api-sports.io/football/leagues/298.png
+376,54.0,National Football League,League,https://media.api-sports.io/football/leagues/376.png
+64,56.0,Feminine Division 1,League,https://media.api-sports.io/football/leagues/64.png
+3,168.0,UEFA Europa League,Cup,https://media.api-sports.io/football/leagues/3.png
+327,59.0,Erovnuli Liga,League,https://media.api-sports.io/football/leagues/327.png
+378,67.0,Ligue 1,League,https://media.api-sports.io/football/leagues/378.png
+37,168.0,World Cup - Qualification Intercontinental Play-offs,Cup,https://media.api-sports.io/football/leagues/37.png
+520,24.0,Acreano,League,https://media.api-sports.io/football/leagues/520.png
+807,168.0,AFC Challenge Cup,Cup,https://media.api-sports.io/football/leagues/807.png
+547,79.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/547.png
+19,168.0,African Nations Championship,Cup,https://media.api-sports.io/football/leagues/19.png
+24,168.0,AFF Championship,Cup,https://media.api-sports.io/football/leagues/24.png
+128,6.0,Liga Profesional Argentina,League,https://media.api-sports.io/football/leagues/128.png
+183,136.0,League One,League,https://media.api-sports.io/football/leagues/183.png
+184,136.0,League Two,League,https://media.api-sports.io/football/leagues/184.png
+22,168.0,CONCACAF Gold Cup,Cup,https://media.api-sports.io/football/leagues/22.png
+23,168.0,EAFF E-1 Football Championship,Cup,https://media.api-sports.io/football/leagues/23.png
+27,168.0,OFC Champions League,Cup,https://media.api-sports.io/football/leagues/27.png
+519,16.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/519.png
+527,31.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/527.png
+6,168.0,Africa Cup of Nations,Cup,https://media.api-sports.io/football/leagues/6.png
+9,168.0,Copa America,Cup,https://media.api-sports.io/football/leagues/9.png
+925,43.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/925.png
+255,163.0,USL Championship,League,https://media.api-sports.io/football/leagues/255.png
+363,52.0,Premier League,League,https://media.api-sports.io/football/leagues/363.png
+122,44.0,2nd Division - Group 1,League,https://media.api-sports.io/football/leagues/122.png
+123,44.0,2nd Division - Group 2,League,https://media.api-sports.io/football/leagues/123.png
+567,152.0,Ligi kuu Bara,League,https://media.api-sports.io/football/leagues/567.png
+550,129.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/550.png
+555,131.0,Supercupa,Cup,https://media.api-sports.io/football/leagues/555.png
+556,145.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/556.png
+497,82.0,Japan Football League,League,https://media.api-sports.io/football/leagues/497.png
+127,44.0,Denmark Series - Group 4,League,https://media.api-sports.io/football/leagues/127.png
+563,148.0,Ettan - Norra,League,https://media.api-sports.io/football/leagues/563.png
+564,148.0,Ettan - Södra,League,https://media.api-sports.io/football/leagues/564.png
+317,22.0,1st League - RS,League,https://media.api-sports.io/football/leagues/317.png
+316,22.0,1st League - FBiH,League,https://media.api-sports.io/football/leagues/316.png
+295,144.0,K3 League,League,https://media.api-sports.io/football/leagues/295.png
+495,75.0,Hazfi Cup,Cup,https://media.api-sports.io/football/leagues/495.png
+496,78.0,Liga Alef,League,https://media.api-sports.io/football/leagues/496.png
+506,140.0,2. liga,League,https://media.api-sports.io/football/leagues/506.png
+514,2.0,Coupe Nationale,Cup,https://media.api-sports.io/football/leagues/514.png
+521,24.0,Amapaense,League,https://media.api-sports.io/football/leagues/521.png
+522,24.0,Amazonense,League,https://media.api-sports.io/football/leagues/522.png
+524,168.0,Olympics Women,Cup,https://media.api-sports.io/football/leagues/524.png
+531,168.0,UEFA Super Cup,Cup,https://media.api-sports.io/football/leagues/531.png
+543,115.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/543.png
+166,72.0,2. Deild,League,https://media.api-sports.io/football/leagues/166.png
+368,139.0,Premier League,League,https://media.api-sports.io/football/leagues/368.png
+314,22.0,Cup,Cup,https://media.api-sports.io/football/leagues/314.png
+315,22.0,Premijer Liga,League,https://media.api-sports.io/football/leagues/315.png
+371,99.0,First League,League,https://media.api-sports.io/football/leagues/371.png
+382,78.0,Liga Leumit,League,https://media.api-sports.io/football/leagues/382.png
+383,78.0,Ligat Ha'al,League,https://media.api-sports.io/football/leagues/383.png
+386,80.0,Ligue 1,League,https://media.api-sports.io/football/leagues/386.png
+392,104.0,Challenge League,League,https://media.api-sports.io/football/leagues/392.png
+393,104.0,Premier League,League,https://media.api-sports.io/football/leagues/393.png
+394,108.0,Super Liga,League,https://media.api-sports.io/football/leagues/394.png
+396,117.0,Primera Division,League,https://media.api-sports.io/football/leagues/396.png
+96,129.0,Taça de Portugal,Cup,https://media.api-sports.io/football/leagues/96.png
+399,118.0,NPFL,League,https://media.api-sports.io/football/leagues/399.png
+401,171.0,Premier Soccer League,League,https://media.api-sports.io/football/leagues/401.png
+402,146.0,Sudani Premier League,League,https://media.api-sports.io/football/leagues/402.png
+403,137.0,Ligue 1,League,https://media.api-sports.io/football/leagues/403.png
+404,134.0,Campionato,League,https://media.api-sports.io/football/leagues/404.png
+411,29.0,Elite One,League,https://media.api-sports.io/football/leagues/411.png
+410,28.0,C-League,League,https://media.api-sports.io/football/leagues/410.png
+417,12.0,Premier League,League,https://media.api-sports.io/football/leagues/417.png
+415,18.0,Championnat National,League,https://media.api-sports.io/football/leagues/415.png
+414,19.0,Premier League,League,https://media.api-sports.io/football/leagues/414.png
+413,20.0,Super League,League,https://media.api-sports.io/football/leagues/413.png
+412,23.0,Premier League,League,https://media.api-sports.io/football/leagues/412.png
+398,13.0,Premier League,League,https://media.api-sports.io/football/leagues/398.png
+16,168.0,CONCACAF Champions League,Cup,https://media.api-sports.io/football/leagues/16.png
+17,168.0,AFC Champions League,Cup,https://media.api-sports.io/football/leagues/17.png
+25,168.0,Gulf Cup of Nations,Cup,https://media.api-sports.io/football/leagues/25.png
+26,168.0,International Champions Cup,Cup,https://media.api-sports.io/football/leagues/26.png
+141,145.0,Segunda División,League,https://media.api-sports.io/football/leagues/141.png
+136,79.0,Serie B,League,https://media.api-sports.io/football/leagues/136.png
+103,120.0,Eliteserien,League,https://media.api-sports.io/football/leagues/103.png
+89,115.0,Eerste Divisie,League,https://media.api-sports.io/football/leagues/89.png
+95,129.0,Segunda Liga,League,https://media.api-sports.io/football/leagues/95.png
+113,148.0,Allsvenskan,League,https://media.api-sports.io/football/leagues/113.png
+162,37.0,Primera División,League,https://media.api-sports.io/football/leagues/162.png
+164,72.0,Úrvalsdeild,League,https://media.api-sports.io/football/leagues/164.png
+169,32.0,Super League,League,https://media.api-sports.io/football/leagues/169.png
+137,79.0,Coppa Italia,Cup,https://media.api-sports.io/football/leagues/137.png
+200,111.0,Botola Pro,League,https://media.api-sports.io/football/leagues/200.png
+207,149.0,Super League,League,https://media.api-sports.io/football/leagues/207.png
+210,39.0,HNL,League,https://media.api-sports.io/football/leagues/210.png
+235,132.0,Premier League,League,https://media.api-sports.io/football/leagues/235.png
+239,34.0,Primera A,League,https://media.api-sports.io/football/leagues/239.png
+250,125.0,Division Profesional - Apertura,League,https://media.api-sports.io/football/leagues/250.png
+73,24.0,Copa Do Brasil,Cup,https://media.api-sports.io/football/leagues/73.png
+90,115.0,KNVB Beker,Cup,https://media.api-sports.io/football/leagues/90.png
+145,16.0,Challenger Pro League,League,https://media.api-sports.io/football/leagues/145.png
+173,25.0,Second League,League,https://media.api-sports.io/football/leagues/173.png
+170,32.0,League One,League,https://media.api-sports.io/football/leagues/170.png
+189,9.0,Capital Territory NPL,League,https://media.api-sports.io/football/leagues/189.png
+240,34.0,Primera B,League,https://media.api-sports.io/football/leagues/240.png
+211,39.0,First NL,League,https://media.api-sports.io/football/leagues/211.png
+138,79.0,Serie C - Girone A,League,https://media.api-sports.io/football/leagues/138.png
+146,16.0,Super League Women,League,https://media.api-sports.io/football/leagues/146.png
+74,24.0,Brasileiro Women,League,https://media.api-sports.io/football/leagues/74.png
+44,49.0,FA WSL,League,https://media.api-sports.io/football/leagues/44.png
+82,60.0,Frauen Bundesliga,League,https://media.api-sports.io/football/leagues/82.png
+139,79.0,Serie A Women,League,https://media.api-sports.io/football/leagues/139.png
+91,115.0,Eredivisie Women,League,https://media.api-sports.io/football/leagues/91.png
+142,145.0,Primera División Femenina,League,https://media.api-sports.io/football/leagues/142.png
+130,6.0,Copa Argentina,Cup,https://media.api-sports.io/football/leagues/130.png
+190,9.0,A-League Women,League,https://media.api-sports.io/football/leagues/190.png
+236,132.0,First League,League,https://media.api-sports.io/football/leagues/236.png
+165,72.0,1. Deild,League,https://media.api-sports.io/football/leagues/165.png
+251,125.0,Division Intermedia,League,https://media.api-sports.io/football/leagues/251.png
+104,120.0,1. Division,League,https://media.api-sports.io/football/leagues/104.png
+114,148.0,Superettan,League,https://media.api-sports.io/football/leagues/114.png
+208,149.0,Challenge League,League,https://media.api-sports.io/football/leagues/208.png
+262,107.0,Liga MX,League,https://media.api-sports.io/football/leagues/262.png
+263,107.0,Liga de Expansión MX,League,https://media.api-sports.io/football/leagues/263.png
+259,30.0,Canadian Championship,Cup,https://media.api-sports.io/football/leagues/259.png
+278,101.0,Super League,League,https://media.api-sports.io/football/leagues/278.png
+279,101.0,Premier League,League,https://media.api-sports.io/football/leagues/279.png
+280,116.0,Premiership,League,https://media.api-sports.io/football/leagues/280.png
+281,126.0,Primera División,League,https://media.api-sports.io/football/leagues/281.png
+282,126.0,Segunda División,League,https://media.api-sports.io/football/leagues/282.png
+283,131.0,Liga I,League,https://media.api-sports.io/football/leagues/283.png
+284,131.0,Liga II,League,https://media.api-sports.io/football/leagues/284.png
+286,138.0,Super Liga,League,https://media.api-sports.io/football/leagues/286.png
+287,138.0,Prva Liga,League,https://media.api-sports.io/football/leagues/287.png
+288,143.0,Premier Soccer League,League,https://media.api-sports.io/football/leagues/288.png
+289,143.0,1st Division,League,https://media.api-sports.io/football/leagues/289.png
+290,75.0,Persian Gulf Pro League,League,https://media.api-sports.io/football/leagues/290.png
+291,75.0,Azadegan League,League,https://media.api-sports.io/football/leagues/291.png
+292,144.0,K League 1,League,https://media.api-sports.io/football/leagues/292.png
+293,144.0,K League 2,League,https://media.api-sports.io/football/leagues/293.png
+307,135.0,Pro League,League,https://media.api-sports.io/football/leagues/307.png
+308,135.0,Division 1,League,https://media.api-sports.io/football/leagues/308.png
+309,135.0,Division 2,League,https://media.api-sports.io/football/leagues/309.png
+252,125.0,Division Profesional - Clausura,League,https://media.api-sports.io/football/leagues/252.png
+569,88.0,Premier League,League,https://media.api-sports.io/football/leagues/569.png
+592,148.0,Division 2 - Norra Götaland,League,https://media.api-sports.io/football/leagues/592.png
+593,148.0,Division 2 - Norra Svealand,League,https://media.api-sports.io/football/leagues/593.png
+594,148.0,Division 2 - Norrland,League,https://media.api-sports.io/football/leagues/594.png
+595,148.0,Division 2 - Södra Svealand,League,https://media.api-sports.io/football/leagues/595.png
+596,148.0,Division 2 - Västra Götaland,League,https://media.api-sports.io/football/leagues/596.png
+597,148.0,Division 2 - Östra Götaland,League,https://media.api-sports.io/football/leagues/597.png
+511,156.0,Cup,Cup,https://media.api-sports.io/football/leagues/511.png
+488,60.0,U19 Bundesliga,League,https://media.api-sports.io/football/leagues/488.png
+805,168.0,Copa Centroamericana,Cup,https://media.api-sports.io/football/leagues/805.png
+806,168.0,OFC Nations Cup,Cup,https://media.api-sports.io/football/leagues/806.png
+766,168.0,China Cup,Cup,https://media.api-sports.io/football/leagues/766.png
+827,135.0,Crown Prince Cup,Cup,https://media.api-sports.io/football/leagues/827.png
+372,99.0,Second League,League,https://media.api-sports.io/football/leagues/372.png
+174,25.0,Cup,Cup,https://media.api-sports.io/football/leagues/174.png
+10,168.0,Friendlies,Cup,https://media.api-sports.io/football/leagues/10.png
+14,168.0,UEFA Youth League,League,https://media.api-sports.io/football/leagues/14.png
+18,168.0,AFC Cup,Cup,https://media.api-sports.io/football/leagues/18.png
+20,168.0,CAF Confederation Cup,Cup,https://media.api-sports.io/football/leagues/20.png
+559,119.0,League Cup,Cup,https://media.api-sports.io/football/leagues/559.png
+560,161.0,Presidents Cup,Cup,https://media.api-sports.io/football/leagues/560.png
+561,119.0,Premier Intermediate League,League,https://media.api-sports.io/football/leagues/561.png
+407,119.0,Championship,League,https://media.api-sports.io/football/leagues/407.png
+408,119.0,Premiership,League,https://media.api-sports.io/football/leagues/408.png
+331,87.0,Division 1,League,https://media.api-sports.io/football/leagues/331.png
+38,168.0,UEFA U21 Championship,Cup,https://media.api-sports.io/football/leagues/38.png
+425,150.0,Premier League,League,https://media.api-sports.io/football/leagues/425.png
+77,24.0,Alagoano,Cup,https://media.api-sports.io/football/leagues/77.png
+337,,Druha Liga - Group B,League,https://media.api-sports.io/football/leagues/337.png
+185,136.0,League Cup,Cup,https://media.api-sports.io/football/leagues/185.png
+490,168.0,World Cup - U20,Cup,https://media.api-sports.io/football/leagues/490.png
+492,115.0,Tweede Divisie,League,https://media.api-sports.io/football/leagues/492.png
+498,84.0,Cup,Cup,https://media.api-sports.io/football/leagues/498.png
+504,135.0,King's Cup,Cup,https://media.api-sports.io/football/leagues/504.png
+507,143.0,Cup,Cup,https://media.api-sports.io/football/leagues/507.png
+508,143.0,League Cup,Cup,https://media.api-sports.io/football/leagues/508.png
+510,149.0,1. Liga Promotion,League,https://media.api-sports.io/football/leagues/510.png
+584,94.0,Premier League,League,https://media.api-sports.io/football/leagues/584.png
+589,33.0,Taiwan Football Premier League,League,https://media.api-sports.io/football/leagues/589.png
+258,30.0,Canadian Soccer League,League,https://media.api-sports.io/football/leagues/258.png
+274,74.0,Liga 1,League,https://media.api-sports.io/football/leagues/274.png
+304,124.0,Liga Panameña de Fútbol,League,https://media.api-sports.io/football/leagues/304.png
+106,128.0,Ekstraklasa,League,https://media.api-sports.io/football/leagues/106.png
+172,25.0,First League,League,https://media.api-sports.io/football/leagues/172.png
+5,168.0,UEFA Nations League,Cup,https://media.api-sports.io/football/leagues/5.png
+163,37.0,Liga de Ascenso,League,https://media.api-sports.io/football/leagues/163.png
+111,167.0,FAW Championship,League,https://media.api-sports.io/football/leagues/111.png
+265,31.0,Primera División,League,https://media.api-sports.io/football/leagues/265.png
+266,31.0,Primera B,League,https://media.api-sports.io/football/leagues/266.png
+277,85.0,Super League,League,https://media.api-sports.io/football/leagues/277.png
+318,42.0,1. Division,League,https://media.api-sports.io/football/leagues/318.png
+319,42.0,2. Division,League,https://media.api-sports.io/football/leagues/319.png
+320,42.0,3. Division,League,https://media.api-sports.io/football/leagues/320.png
+201,111.0,Botola 2,League,https://media.api-sports.io/football/leagues/201.png
+323,73.0,Indian Super League,League,https://media.api-sports.io/football/leagues/323.png
+324,73.0,I-League,League,https://media.api-sports.io/football/leagues/324.png
+107,128.0,I Liga,League,https://media.api-sports.io/football/leagues/107.png
+332,140.0,Super Liga,League,https://media.api-sports.io/football/leagues/332.png
+345,43.0,Czech Liga,League,https://media.api-sports.io/football/leagues/345.png
+346,43.0,FNL,League,https://media.api-sports.io/football/leagues/346.png
+355,110.0,First League,League,https://media.api-sports.io/football/leagues/355.png
+356,110.0,Second League,League,https://media.api-sports.io/football/leagues/356.png
+344,21.0,Primera División,League,https://media.api-sports.io/football/leagues/344.png
+256,163.0,USL League Two,League,https://media.api-sports.io/football/leagues/256.png
+544,70.0,FA Cup,Cup,https://media.api-sports.io/football/leagues/544.png
+545,73.0,AIFF Super Cup,Cup,https://media.api-sports.io/football/leagues/545.png
+557,120.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/557.png
+808,168.0,CONCACAF Nations League - Qualification,Cup,https://media.api-sports.io/football/leagues/808.png
+373,141.0,1. SNL,League,https://media.api-sports.io/football/leagues/373.png
+374,141.0,2. SNL,League,https://media.api-sports.io/football/leagues/374.png
+391,100.0,Super League,League,https://media.api-sports.io/football/leagues/391.png
+143,145.0,Copa del Rey,Cup,https://media.api-sports.io/football/leagues/143.png
+405,133.0,National Soccer League,League,https://media.api-sports.io/football/leagues/405.png
+409,113.0,Premier League,League,https://media.api-sports.io/football/leagues/409.png
+416,17.0,Premier League,League,https://media.api-sports.io/football/leagues/416.png
+212,39.0,Cup,Cup,https://media.api-sports.io/football/leagues/212.png
+384,78.0,State Cup,Cup,https://media.api-sports.io/football/leagues/384.png
+285,131.0,Cupa României,Cup,https://media.api-sports.io/football/leagues/285.png
+321,42.0,Cup,Cup,https://media.api-sports.io/football/leagues/321.png
+31,168.0,World Cup - Qualification CONCACAF,Cup,https://media.api-sports.io/football/leagues/31.png
+32,168.0,World Cup - Qualification Europe,Cup,https://media.api-sports.io/football/leagues/32.png
+33,168.0,World Cup - Qualification Oceania,Cup,https://media.api-sports.io/football/leagues/33.png
+34,168.0,World Cup - Qualification South America,Cup,https://media.api-sports.io/football/leagues/34.png
+29,168.0,World Cup - Qualification Africa,Cup,https://media.api-sports.io/football/leagues/29.png
+30,168.0,World Cup - Qualification Asia,Cup,https://media.api-sports.io/football/leagues/30.png
+942,79.0,Serie C - Girone B,League,https://media.api-sports.io/football/leagues/942.png
+943,79.0,Serie C - Girone C,League,https://media.api-sports.io/football/leagues/943.png
+530,59.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/530.png
+718,74.0,Piala Indonesia,Cup,https://media.api-sports.io/football/leagues/718.png
+149,16.0,Second Amateur Division - VFV A,League,https://media.api-sports.io/football/leagues/149.png
+150,16.0,Second Amateur Division - VFV B,League,https://media.api-sports.io/football/leagues/150.png
+151,16.0,Third Amateur Division - VFV A,League,https://media.api-sports.io/football/leagues/151.png
+152,16.0,Third Amateur Division - VFV B,League,https://media.api-sports.io/football/leagues/152.png
+175,25.0,Third League - Northeast,League,https://media.api-sports.io/football/leagues/175.png
+176,25.0,Third League - Northwest,League,https://media.api-sports.io/football/leagues/176.png
+177,25.0,Third League - Southeast,League,https://media.api-sports.io/football/leagues/177.png
+178,25.0,Third League - Southwest,League,https://media.api-sports.io/football/leagues/178.png
+49,49.0,National League - Play-offs,League,https://media.api-sports.io/football/leagues/49.png
+491,53.0,Løgmanssteypid,Cup,https://media.api-sports.io/football/leagues/491.png
+493,168.0,UEFA U19 Championship,Cup,https://media.api-sports.io/football/leagues/493.png
+499,101.0,Malaysia Cup,Cup,https://media.api-sports.io/football/leagues/499.png
+516,2.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/516.png
+537,168.0,CONCACAF U20,Cup,https://media.api-sports.io/football/leagues/537.png
+224,10.0,Landesliga - Burgenland,League,https://media.api-sports.io/football/leagues/224.png
+225,10.0,Landesliga - Karnten,League,https://media.api-sports.io/football/leagues/225.png
+226,10.0,Landesliga - Niederosterreich,League,https://media.api-sports.io/football/leagues/226.png
+227,10.0,Landesliga - Oberosterreich,League,https://media.api-sports.io/football/leagues/227.png
+228,10.0,Landesliga - Salzburg,League,https://media.api-sports.io/football/leagues/228.png
+229,10.0,Landesliga - Steiermark,League,https://media.api-sports.io/football/leagues/229.png
+230,10.0,Landesliga - Tirol,League,https://media.api-sports.io/football/leagues/230.png
+231,10.0,Landesliga - Vorarlbergliga,League,https://media.api-sports.io/football/leagues/231.png
+232,10.0,Landesliga - Wien,League,https://media.api-sports.io/football/leagues/232.png
+661,96.0,Cup,Cup,https://media.api-sports.io/football/leagues/661.png
+148,16.0,Second Amateur Division - ACFF,League,https://media.api-sports.io/football/leagues/148.png
+153,16.0,Provincial - Antwerpen,League,https://media.api-sports.io/football/leagues/153.png
+154,16.0,Provincial - Brabant VFV,League,https://media.api-sports.io/football/leagues/154.png
+155,16.0,Provincial - Hainaut,League,https://media.api-sports.io/football/leagues/155.png
+156,16.0,Provincial - Liege,League,https://media.api-sports.io/football/leagues/156.png
+157,16.0,Provincial - Limburg,League,https://media.api-sports.io/football/leagues/157.png
+158,16.0,Provincial - Luxembourg,League,https://media.api-sports.io/football/leagues/158.png
+159,16.0,Provincial - Namur,League,https://media.api-sports.io/football/leagues/159.png
+160,16.0,Provincial - Oost-Vlaanderen,League,https://media.api-sports.io/football/leagues/160.png
+161,16.0,Provincial - West-Vlaanderen,League,https://media.api-sports.io/football/leagues/161.png
+423,26.0,Ligue 1,League,https://media.api-sports.io/football/leagues/423.png
+424,36.0,Ligue 1,League,https://media.api-sports.io/football/leagues/424.png
+213,39.0,Third NL - Istok,League,https://media.api-sports.io/football/leagues/213.png
+214,39.0,Third NL - Jug,League,https://media.api-sports.io/football/leagues/214.png
+215,39.0,Third NL - Sjever,League,https://media.api-sports.io/football/leagues/215.png
+216,39.0,Third NL - Sredite,League,https://media.api-sports.io/football/leagues/216.png
+217,39.0,Third NL - Zapad,League,https://media.api-sports.io/football/leagues/217.png
+348,43.0,3. liga - CFL A,League,https://media.api-sports.io/football/leagues/348.png
+349,43.0,3. liga - MSFL,League,https://media.api-sports.io/football/leagues/349.png
+350,43.0,4. liga - Divizie A,League,https://media.api-sports.io/football/leagues/350.png
+351,43.0,4. liga - Divizie B,League,https://media.api-sports.io/football/leagues/351.png
+352,43.0,4. liga - Divizie C,League,https://media.api-sports.io/football/leagues/352.png
+353,43.0,4. liga - Divizie D,League,https://media.api-sports.io/football/leagues/353.png
+354,43.0,4. liga - Divizie E,League,https://media.api-sports.io/football/leagues/354.png
+50,49.0,National League - North,League,https://media.api-sports.io/football/leagues/50.png
+51,49.0,National League - South,League,https://media.api-sports.io/football/leagues/51.png
+52,49.0,Non League Div One - Isthmian North,League,https://media.api-sports.io/football/leagues/52.png
+53,49.0,Non League Div One - Isthmian South Central,League,https://media.api-sports.io/football/leagues/53.png
+54,49.0,Non League Div One - Northern West,League,https://media.api-sports.io/football/leagues/54.png
+55,49.0,Non League Div One - Northern Midlands,League,https://media.api-sports.io/football/leagues/55.png
+56,49.0,Non League Div One - Southern South,League,https://media.api-sports.io/football/leagues/56.png
+57,49.0,Non League Div One - Isthmian South East,League,https://media.api-sports.io/football/leagues/57.png
+58,49.0,Non League Premier - Isthmian,League,https://media.api-sports.io/football/leagues/58.png
+59,49.0,Non League Premier - Northern,League,https://media.api-sports.io/football/leagues/59.png
+60,49.0,Non League Premier - Southern South,League,https://media.api-sports.io/football/leagues/60.png
+92,115.0,Derde Divisie - Saturday,League,https://media.api-sports.io/football/leagues/92.png
+93,115.0,Derde Divisie - Sunday,League,https://media.api-sports.io/football/leagues/93.png
+109,128.0,II Liga - East,League,https://media.api-sports.io/football/leagues/109.png
+341,166.0,Cup,Cup,https://media.api-sports.io/football/leagues/341.png
+238,132.0,Youth Championship,League,https://media.api-sports.io/football/leagues/238.png
+83,60.0,Regionalliga - Bayern,League,https://media.api-sports.io/football/leagues/83.png
+84,60.0,Regionalliga - Nord,League,https://media.api-sports.io/football/leagues/84.png
+85,60.0,Regionalliga - Nordost,League,https://media.api-sports.io/football/leagues/85.png
+86,60.0,Regionalliga - SudWest,League,https://media.api-sports.io/football/leagues/86.png
+87,60.0,Regionalliga - West,League,https://media.api-sports.io/football/leagues/87.png
+426,79.0,Serie D - Girone A,League,https://media.api-sports.io/football/leagues/426.png
+427,79.0,Serie D - Girone B,League,https://media.api-sports.io/football/leagues/427.png
+428,79.0,Serie D - Girone C,League,https://media.api-sports.io/football/leagues/428.png
+429,79.0,Serie D - Girone D,League,https://media.api-sports.io/football/leagues/429.png
+430,79.0,Serie D - Girone E,League,https://media.api-sports.io/football/leagues/430.png
+431,79.0,Serie D - Girone F,League,https://media.api-sports.io/football/leagues/431.png
+432,79.0,Serie D - Girone G,League,https://media.api-sports.io/football/leagues/432.png
+433,79.0,Serie D - Girone H,League,https://media.api-sports.io/football/leagues/433.png
+434,79.0,Serie D - Girone I,League,https://media.api-sports.io/football/leagues/434.png
+435,145.0,Primera División RFEF - Group 1,League,https://media.api-sports.io/football/leagues/435.png
+436,145.0,Primera División RFEF - Group 2,League,https://media.api-sports.io/football/leagues/436.png
+437,145.0,Primera División RFEF - Group 3,League,https://media.api-sports.io/football/leagues/437.png
+438,145.0,Primera División RFEF - Group 4,League,https://media.api-sports.io/football/leagues/438.png
+439,145.0,Tercera División RFEF - Group 1,League,https://media.api-sports.io/football/leagues/439.png
+440,145.0,Tercera División RFEF - Group 2,League,https://media.api-sports.io/football/leagues/440.png
+441,145.0,Tercera División RFEF - Group 3,League,https://media.api-sports.io/football/leagues/441.png
+442,145.0,Tercera División RFEF - Group 4,League,https://media.api-sports.io/football/leagues/442.png
+443,145.0,Tercera División RFEF - Group 5,League,https://media.api-sports.io/football/leagues/443.png
+444,145.0,Tercera División RFEF - Group 6,League,https://media.api-sports.io/football/leagues/444.png
+445,145.0,Tercera División RFEF - Group 7,League,https://media.api-sports.io/football/leagues/445.png
+446,145.0,Tercera División RFEF - Group 8,League,https://media.api-sports.io/football/leagues/446.png
+447,145.0,Tercera División RFEF - Group 9,League,https://media.api-sports.io/football/leagues/447.png
+448,145.0,Tercera División RFEF - Group 10,League,https://media.api-sports.io/football/leagues/448.png
+449,145.0,Tercera División RFEF - Group 11,League,https://media.api-sports.io/football/leagues/449.png
+450,145.0,Tercera División RFEF - Group 12,League,https://media.api-sports.io/football/leagues/450.png
+451,145.0,Tercera División RFEF - Group 13,League,https://media.api-sports.io/football/leagues/451.png
+452,145.0,Tercera División RFEF - Group 14,League,https://media.api-sports.io/football/leagues/452.png
+453,145.0,Tercera División RFEF - Group 15,League,https://media.api-sports.io/football/leagues/453.png
+454,145.0,Tercera División RFEF - Group 16,League,https://media.api-sports.io/football/leagues/454.png
+455,145.0,Tercera División RFEF - Group 17,League,https://media.api-sports.io/football/leagues/455.png
+456,145.0,Tercera División RFEF - Group 18,League,https://media.api-sports.io/football/leagues/456.png
+457,129.0,Campeonato de Portugal Prio - Group A,League,https://media.api-sports.io/football/leagues/457.png
+458,129.0,Campeonato de Portugal Prio - Group B,League,https://media.api-sports.io/football/leagues/458.png
+459,129.0,Campeonato de Portugal Prio - Group C,League,https://media.api-sports.io/football/leagues/459.png
+460,129.0,Campeonato de Portugal Prio - Group D,League,https://media.api-sports.io/football/leagues/460.png
+461,56.0,National 3 - Group A,League,https://media.api-sports.io/football/leagues/461.png
+462,56.0,National 3 - Group B,League,https://media.api-sports.io/football/leagues/462.png
+463,56.0,National 3 - Group C,League,https://media.api-sports.io/football/leagues/463.png
+464,56.0,National 3 - Group D,League,https://media.api-sports.io/football/leagues/464.png
+465,56.0,National 3 - Group E,League,https://media.api-sports.io/football/leagues/465.png
+466,56.0,National 3 - Group F,League,https://media.api-sports.io/football/leagues/466.png
+467,56.0,National 3 - Group H,League,https://media.api-sports.io/football/leagues/467.png
+468,56.0,National 3 - Group I,League,https://media.api-sports.io/football/leagues/468.png
+469,56.0,National 3 - Group J,League,https://media.api-sports.io/football/leagues/469.png
+470,56.0,National 3 - Group K,League,https://media.api-sports.io/football/leagues/470.png
+471,56.0,National 3 - Group L,League,https://media.api-sports.io/football/leagues/471.png
+472,56.0,National 3 - Group M,League,https://media.api-sports.io/football/leagues/472.png
+473,120.0,2. Division - Group 1,League,https://media.api-sports.io/football/leagues/473.png
+474,120.0,2. Division - Group 2,League,https://media.api-sports.io/football/leagues/474.png
+484,10.0,Frauenliga,League,https://media.api-sports.io/football/leagues/484.png
+485,12.0,Federation Cup,Cup,https://media.api-sports.io/football/leagues/485.png
+486,15.0,Coppa,Cup,https://media.api-sports.io/football/leagues/486.png
+487,16.0,First Amateur Division,League,https://media.api-sports.io/football/leagues/487.png
+489,163.0,USL League One,League,https://media.api-sports.io/football/leagues/489.png
+494,63.0,Super League 2,League,https://media.api-sports.io/football/leagues/494.png
+501,125.0,Copa Paraguay,Cup,https://media.api-sports.io/football/leagues/501.png
+502,126.0,Copa Bicentenario,Cup,https://media.api-sports.io/football/leagues/502.png
+503,126.0,Copa Perú,Cup,https://media.api-sports.io/football/leagues/503.png
+509,143.0,8 Cup,Cup,https://media.api-sports.io/football/leagues/509.png
+515,2.0,U21 League 1,League,https://media.api-sports.io/football/leagues/515.png
+517,6.0,Trofeo de Campeones de la Superliga,Cup,https://media.api-sports.io/football/leagues/517.png
+518,16.0,Reserve Pro League,League,https://media.api-sports.io/football/leagues/518.png
+523,163.0,NISA,League,https://media.api-sports.io/football/leagues/523.png
+525,168.0,UEFA Champions League Women,Cup,https://media.api-sports.io/football/leagues/525.png
+533,168.0,CAF Super Cup,Cup,https://media.api-sports.io/football/leagues/533.png
+534,168.0,CONCACAF Caribbean Club Shield,Cup,https://media.api-sports.io/football/leagues/534.png
+275,74.0,Liga 2,League,https://media.api-sports.io/football/leagues/275.png
+395,108.0,Liga 1,League,https://media.api-sports.io/football/leagues/395.png
+267,31.0,Copa Chile,Cup,https://media.api-sports.io/football/leagues/267.png
+171,32.0,FA Cup,Cup,https://media.api-sports.io/football/leagues/171.png
+241,34.0,Copa Colombia,Cup,https://media.api-sports.io/football/leagues/241.png
+147,16.0,Cup,Cup,https://media.api-sports.io/football/leagues/147.png
+167,72.0,Cup,Cup,https://media.api-sports.io/football/leagues/167.png
+168,72.0,League Cup,Cup,https://media.api-sports.io/football/leagues/168.png
+359,77.0,FAI Cup,Cup,https://media.api-sports.io/football/leagues/359.png
+360,77.0,League Cup,Cup,https://media.api-sports.io/football/leagues/360.png
+385,78.0,Toto Cup Ligat Al,Cup,https://media.api-sports.io/football/leagues/385.png
+264,107.0,Copa MX,Cup,https://media.api-sports.io/football/leagues/264.png
+11,168.0,CONMEBOL Sudamericana,Cup,https://media.api-sports.io/football/leagues/11.png
+12,168.0,CAF Champions League,Cup,https://media.api-sports.io/football/leagues/12.png
+13,168.0,CONMEBOL Libertadores,Cup,https://media.api-sports.io/football/leagues/13.png
+209,149.0,Schweizer Cup,Cup,https://media.api-sports.io/football/leagues/209.png
+115,148.0,Svenska Cupen,Cup,https://media.api-sports.io/football/leagues/115.png
+375,141.0,Cup,Cup,https://media.api-sports.io/football/leagues/375.png
+181,136.0,FA Cup,Cup,https://media.api-sports.io/football/leagues/181.png
+182,136.0,Challenge Cup,Cup,https://media.api-sports.io/football/leagues/182.png
+237,132.0,Cup,Cup,https://media.api-sports.io/football/leagues/237.png
+97,129.0,Taça da Liga,Cup,https://media.api-sports.io/football/leagues/97.png
+108,128.0,Cup,Cup,https://media.api-sports.io/football/leagues/108.png
+105,120.0,NM Cupen,Cup,https://media.api-sports.io/football/leagues/105.png
+325,73.0,Santosh Trophy,Cup,https://media.api-sports.io/football/leagues/325.png
+347,43.0,Cup,Cup,https://media.api-sports.io/football/leagues/347.png
+35,168.0,Asian Cup - Qualification,Cup,https://media.api-sports.io/football/leagues/35.png
+254,163.0,NWSL Women,League,https://media.api-sports.io/football/leagues/254.png
+260,30.0,Pacific Coast Soccer League,League,https://media.api-sports.io/football/leagues/260.png
+192,9.0,New South Wales NPL,League,https://media.api-sports.io/football/leagues/192.png
+194,9.0,South Australia NPL,League,https://media.api-sports.io/football/leagues/194.png
+195,9.0,Victoria NPL,League,https://media.api-sports.io/football/leagues/195.png
+196,9.0,Western Australia NPL,League,https://media.api-sports.io/football/leagues/196.png
+357,77.0,Premier Division,League,https://media.api-sports.io/football/leagues/357.png
+358,77.0,First Division,League,https://media.api-sports.io/football/leagues/358.png
+768,168.0,Arab Club Champions Cup,Cup,https://media.api-sports.io/football/leagues/768.png
+769,168.0,Premier League Asia Trophy,Cup,https://media.api-sports.io/football/leagues/769.png
+770,168.0,Pacific Games,Cup,https://media.api-sports.io/football/leagues/770.png
+772,168.0,Leagues Cup,Cup,https://media.api-sports.io/football/leagues/772.png
+773,168.0,Sudamericano U20,Cup,https://media.api-sports.io/football/leagues/773.png
+546,77.0,FAI President's Cup,Cup,https://media.api-sports.io/football/leagues/546.png
+482,9.0,Queensland NPL,League,https://media.api-sports.io/football/leagues/482.png
+566,27.0,Ligue A,League,https://media.api-sports.io/football/leagues/566.png
+642,41.0,Curaçao Sekshon Pagá,League,https://media.api-sports.io/football/leagues/642.png
+655,3.0,Copa Constitució,Cup,https://media.api-sports.io/football/leagues/655.png
+664,86.0,Superliga,League,https://media.api-sports.io/football/leagues/664.png
+665,86.0,Cup,Cup,https://media.api-sports.io/football/leagues/665.png
+677,130.0,QSL Cup,Cup,https://media.api-sports.io/football/leagues/677.png
+698,49.0,FA Women's Cup,Cup,https://media.api-sports.io/football/leagues/698.png
+714,47.0,Cup,Cup,https://media.api-sports.io/football/leagues/714.png
+716,70.0,Senior Shield,Cup,https://media.api-sports.io/football/leagues/716.png
+572,138.0,Srpska Liga - Belgrade,League,https://media.api-sports.io/football/leagues/572.png
+573,138.0,Srpska Liga - Vojvodina,League,https://media.api-sports.io/football/leagues/573.png
+574,138.0,Srpska Liga - East,League,https://media.api-sports.io/football/leagues/574.png
+575,138.0,Srpska Liga - West,League,https://media.api-sports.io/football/leagues/575.png
+576,63.0,Gamma Ethniki - Group 1,League,https://media.api-sports.io/football/leagues/576.png
+577,63.0,Gamma Ethniki - Group 2,League,https://media.api-sports.io/football/leagues/577.png
+578,63.0,Gamma Ethniki - Group 3,League,https://media.api-sports.io/football/leagues/578.png
+579,63.0,Gamma Ethniki - Group 4,League,https://media.api-sports.io/football/leagues/579.png
+580,63.0,Gamma Ethniki - Group 5,League,https://media.api-sports.io/football/leagues/580.png
+581,63.0,Gamma Ethniki - Group 6,League,https://media.api-sports.io/football/leagues/581.png
+582,63.0,Gamma Ethniki - Group 7,League,https://media.api-sports.io/football/leagues/582.png
+583,63.0,Gamma Ethniki - Group 8,League,https://media.api-sports.io/football/leagues/583.png
+587,168.0,World Cup - U17,Cup,https://media.api-sports.io/football/leagues/587.png
+590,114.0,A Division,League,https://media.api-sports.io/football/leagues/590.png
+599,149.0,1. Liga Classic - Group 1,League,https://media.api-sports.io/football/leagues/599.png
+600,149.0,1. Liga Classic - Group 2,League,https://media.api-sports.io/football/leagues/600.png
+601,149.0,1. Liga Classic - Group 3,League,https://media.api-sports.io/football/leagues/601.png
+613,24.0,Baiano - 2,League,https://media.api-sports.io/football/leagues/613.png
+620,24.0,Cearense - 2,League,https://media.api-sports.io/football/leagues/620.png
+625,24.0,Carioca - 2,League,https://media.api-sports.io/football/leagues/625.png
+633,71.0,NB III - Northeast,League,https://media.api-sports.io/football/leagues/633.png
+634,71.0,NB III - Southwest,League,https://media.api-sports.io/football/leagues/634.png
+635,71.0,NB III - Northwest,League,https://media.api-sports.io/football/leagues/635.png
+638,44.0,Kvindeliga,League,https://media.api-sports.io/football/leagues/638.png
+602,24.0,Baiano - 1,League,https://media.api-sports.io/football/leagues/602.png
+603,24.0,Paraibano,League,https://media.api-sports.io/football/leagues/603.png
+604,24.0,Catarinense - 1,League,https://media.api-sports.io/football/leagues/604.png
+605,24.0,Paulista - A3,League,https://media.api-sports.io/football/leagues/605.png
+606,24.0,Paranaense - 1,League,https://media.api-sports.io/football/leagues/606.png
+607,24.0,Roraimense,League,https://media.api-sports.io/football/leagues/607.png
+608,24.0,Maranhense,League,https://media.api-sports.io/football/leagues/608.png
+609,24.0,Cearense - 1,League,https://media.api-sports.io/football/leagues/609.png
+610,24.0,Brasiliense,League,https://media.api-sports.io/football/leagues/610.png
+611,24.0,Capixaba,League,https://media.api-sports.io/football/leagues/611.png
+612,24.0,Copa do Nordeste,Cup,https://media.api-sports.io/football/leagues/612.png
+614,24.0,Paranaense - 2,League,https://media.api-sports.io/football/leagues/614.png
+615,24.0,Rondoniense,League,https://media.api-sports.io/football/leagues/615.png
+616,24.0,Potiguar,League,https://media.api-sports.io/football/leagues/616.png
+617,24.0,Copa do Brasil U20,Cup,https://media.api-sports.io/football/leagues/617.png
+618,24.0,São Paulo Youth Cup,Cup,https://media.api-sports.io/football/leagues/618.png
+619,24.0,Mineiro - 2,League,https://media.api-sports.io/football/leagues/619.png
+621,24.0,Piauiense,League,https://media.api-sports.io/football/leagues/621.png
+622,24.0,Pernambucano - 1,League,https://media.api-sports.io/football/leagues/622.png
+623,24.0,Sul-Matogrossense,League,https://media.api-sports.io/football/leagues/623.png
+624,24.0,Carioca - 1,League,https://media.api-sports.io/football/leagues/624.png
+626,24.0,Sergipano,League,https://media.api-sports.io/football/leagues/626.png
+627,24.0,Paraense,League,https://media.api-sports.io/football/leagues/627.png
+628,24.0,Goiano - 1,League,https://media.api-sports.io/football/leagues/628.png
+629,24.0,Mineiro - 1,League,https://media.api-sports.io/football/leagues/629.png
+630,24.0,Matogrossense,League,https://media.api-sports.io/football/leagues/630.png
+631,24.0,Tocantinense,League,https://media.api-sports.io/football/leagues/631.png
+632,24.0,Supercopa do Brasil,Cup,https://media.api-sports.io/football/leagues/632.png
+636,158.0,Ýokary Liga,League,https://media.api-sports.io/football/leagues/636.png
+637,166.0,V.League 2,League,https://media.api-sports.io/football/leagues/637.png
+639,72.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/639.png
+640,55.0,Kansallinen Liiga,League,https://media.api-sports.io/football/leagues/640.png
+641,163.0,NWSL Women - Challenge Cup,Cup,https://media.api-sports.io/football/leagues/641.png
+729,134.0,Coppa Titano,Cup,https://media.api-sports.io/football/leagues/729.png
+730,136.0,Football League - Highland League,League,https://media.api-sports.io/football/leagues/730.png
+731,136.0,Football League - Lowland League,League,https://media.api-sports.io/football/leagues/731.png
+732,138.0,Cup,Cup,https://media.api-sports.io/football/leagues/732.png
+733,140.0,I Liga - Women,League,https://media.api-sports.io/football/leagues/733.png
+734,143.0,Diski Challenge,League,https://media.api-sports.io/football/leagues/734.png
+735,145.0,Copa Federacion,Cup,https://media.api-sports.io/football/leagues/735.png
+737,148.0,Svenska Cupen - Women,Cup,https://media.api-sports.io/football/leagues/737.png
+738,167.0,League Cup,Cup,https://media.api-sports.io/football/leagues/738.png
+739,149.0,AXA Women’s Super League,League,https://media.api-sports.io/football/leagues/739.png
+740,24.0,CBF Brasileiro U20,Cup,https://media.api-sports.io/football/leagues/740.png
+741,24.0,Brasileiro de Aspirantes,Cup,https://media.api-sports.io/football/leagues/741.png
+742,24.0,Copa Paulista,Cup,https://media.api-sports.io/football/leagues/742.png
+744,60.0,Oberliga - Schleswig-Holstein,League,https://media.api-sports.io/football/leagues/744.png
+745,60.0,Oberliga - Hamburg,League,https://media.api-sports.io/football/leagues/745.png
+746,60.0,Oberliga - Mittelrhein,League,https://media.api-sports.io/football/leagues/746.png
+747,60.0,Oberliga - Westfalen,League,https://media.api-sports.io/football/leagues/747.png
+748,60.0,Oberliga - Niedersachsen,League,https://media.api-sports.io/football/leagues/748.png
+749,60.0,Oberliga - Bremen,League,https://media.api-sports.io/football/leagues/749.png
+750,60.0,Oberliga - Hessen,League,https://media.api-sports.io/football/leagues/750.png
+751,60.0,Oberliga - Niederrhein,League,https://media.api-sports.io/football/leagues/751.png
+752,60.0,Oberliga - Rheinland-Pfalz / Saar,League,https://media.api-sports.io/football/leagues/752.png
+753,60.0,Oberliga - Baden-Württemberg,League,https://media.api-sports.io/football/leagues/753.png
+754,60.0,Oberliga - Nordost-Nord,League,https://media.api-sports.io/football/leagues/754.png
+755,60.0,Oberliga - Nordost-Süd,League,https://media.api-sports.io/football/leagues/755.png
+756,99.0,Cup,Cup,https://media.api-sports.io/football/leagues/756.png
+757,119.0,Irish Cup,Cup,https://media.api-sports.io/football/leagues/757.png
+758,62.0,Premier Division,League,https://media.api-sports.io/football/leagues/758.png
+759,45.0,Liga Mayor,League,https://media.api-sports.io/football/leagues/759.png
+760,93.0,LFA First Division,League,https://media.api-sports.io/football/leagues/760.png
+761,95.0,Cup,Cup,https://media.api-sports.io/football/leagues/761.png
+762,105.0,Premier League,League,https://media.api-sports.io/football/leagues/762.png
+763,106.0,Mauritian League,League,https://media.api-sports.io/football/leagues/763.png
+764,109.0,Premier League,League,https://media.api-sports.io/football/leagues/764.png
+765,127.0,PFL,League,https://media.api-sports.io/football/leagues/765.png
+767,168.0,CONCACAF League,Cup,https://media.api-sports.io/football/leagues/767.png
+771,168.0,COSAFA U20 Championship,Cup,https://media.api-sports.io/football/leagues/771.png
+774,120.0,3. Division - Girone 1,League,https://media.api-sports.io/football/leagues/774.png
+775,120.0,3. Division - Girone 2,League,https://media.api-sports.io/football/leagues/775.png
+776,120.0,3. Division - Girone 3,League,https://media.api-sports.io/football/leagues/776.png
+777,120.0,3. Division - Girone 4,League,https://media.api-sports.io/football/leagues/777.png
+778,120.0,3. Division - Girone 5,League,https://media.api-sports.io/football/leagues/778.png
+779,120.0,3. Division - Girone 6,League,https://media.api-sports.io/football/leagues/779.png
+780,128.0,III Liga - Group 1,League,https://media.api-sports.io/football/leagues/780.png
+781,128.0,III Liga - Group 2,League,https://media.api-sports.io/football/leagues/781.png
+782,128.0,III Liga - Group 3,League,https://media.api-sports.io/football/leagues/782.png
+783,128.0,III Liga - Group 4,League,https://media.api-sports.io/football/leagues/783.png
+784,131.0,Liga III - Serie 1,League,https://media.api-sports.io/football/leagues/784.png
+785,131.0,Liga III - Serie 2,League,https://media.api-sports.io/football/leagues/785.png
+786,131.0,Liga III - Serie 3,League,https://media.api-sports.io/football/leagues/786.png
+787,131.0,Liga III - Serie 4,League,https://media.api-sports.io/football/leagues/787.png
+788,131.0,Liga III - Serie 5,League,https://media.api-sports.io/football/leagues/788.png
+789,131.0,Liga III - Serie 6,League,https://media.api-sports.io/football/leagues/789.png
+790,131.0,Liga III - Serie 7,League,https://media.api-sports.io/football/leagues/790.png
+791,131.0,Liga III - Serie 8,League,https://media.api-sports.io/football/leagues/791.png
+792,131.0,Liga III - Serie 9,League,https://media.api-sports.io/football/leagues/792.png
+793,131.0,Liga III - Serie 10,League,https://media.api-sports.io/football/leagues/793.png
+794,141.0,3. SNL - East,League,https://media.api-sports.io/football/leagues/794.png
+795,141.0,3. SNL - West,League,https://media.api-sports.io/football/leagues/795.png
+796,149.0,2. Liga Interregional - Group 1,League,https://media.api-sports.io/football/leagues/796.png
+797,149.0,2. Liga Interregional - Group 2,League,https://media.api-sports.io/football/leagues/797.png
+798,149.0,2. Liga Interregional - Group 3,League,https://media.api-sports.io/football/leagues/798.png
+799,149.0,2. Liga Interregional - Group 4,League,https://media.api-sports.io/football/leagues/799.png
+800,149.0,2. Liga Interregional - Group 5,League,https://media.api-sports.io/football/leagues/800.png
+801,149.0,2. Liga Interregional - Group 6,League,https://media.api-sports.io/football/leagues/801.png
+802,164.0,Cup,Cup,https://media.api-sports.io/football/leagues/802.png
+809,3.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/809.png
+810,6.0,Super Copa,Cup,https://media.api-sports.io/football/leagues/810.png
+811,13.0,Federation Cup,Cup,https://media.api-sports.io/football/leagues/811.png
+813,29.0,Elite Two,League,https://media.api-sports.io/football/leagues/813.png
+816,83.0,Shield Cup,Cup,https://media.api-sports.io/football/leagues/816.png
+817,79.0,Super Cup Primavera,Cup,https://media.api-sports.io/football/leagues/817.png
+819,86.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/819.png
+820,87.0,Crown Prince Cup,Cup,https://media.api-sports.io/football/leagues/820.png
+821,104.0,FA Trophy,Cup,https://media.api-sports.io/football/leagues/821.png
+822,111.0,Cup,Cup,https://media.api-sports.io/football/leagues/822.png
+828,156.0,Ligue 2,League,https://media.api-sports.io/football/leagues/828.png
+829,158.0,Youth League,League,https://media.api-sports.io/football/leagues/829.png
+830,164.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/830.png
+832,2.0,Coupe de la Ligue,Cup,https://media.api-sports.io/football/leagues/832.png
+837,62.0,Rock Cup,Cup,https://media.api-sports.io/football/leagues/837.png
+838,83.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/838.png
+840,129.0,Taça Revelação U23,Cup,https://media.api-sports.io/football/leagues/840.png
+841,130.0,QFA Cup,Cup,https://media.api-sports.io/football/leagues/841.png
+843,24.0,Copa Verde,Cup,https://media.api-sports.io/football/leagues/843.png
+844,35.0,Ligue 1,League,https://media.api-sports.io/football/leagues/844.png
+845,58.0,GFA League,League,https://media.api-sports.io/football/leagues/845.png
+847,51.0,Premier League,League,https://media.api-sports.io/football/leagues/847.png
+849,168.0,Baltic Cup,Cup,https://media.api-sports.io/football/leagues/849.png
+475,24.0,Paulista - A1,League,https://media.api-sports.io/football/leagues/475.png
+476,24.0,Paulista - A2,League,https://media.api-sports.io/football/leagues/476.png
+477,24.0,Gaúcho - 1,League,https://media.api-sports.io/football/leagues/477.png
+478,24.0,Gaúcho - 2,League,https://media.api-sports.io/football/leagues/478.png
+479,30.0,Canadian Premier League,League,https://media.api-sports.io/football/leagues/479.png
+483,6.0,Copa de la Superliga,Cup,https://media.api-sports.io/football/leagues/483.png
+500,101.0,FA Cup,Cup,https://media.api-sports.io/football/leagues/500.png
+532,168.0,AFC U23 Asian Cup,Cup,https://media.api-sports.io/football/leagues/532.png
+536,168.0,CONCACAF Nations League,Cup,https://media.api-sports.io/football/leagues/536.png
+538,168.0,Africa Cup of Nations U20,Cup,https://media.api-sports.io/football/leagues/538.png
+540,168.0,CONMEBOL Libertadores U20,Cup,https://media.api-sports.io/football/leagues/540.png
+541,168.0,CONMEBOL Recopa,Cup,https://media.api-sports.io/football/leagues/541.png
+542,76.0,Iraqi League,League,https://media.api-sports.io/football/leagues/542.png
+863,83.0,Cup,Cup,https://media.api-sports.io/football/leagues/863.png
+881,168.0,Olympics Men - Qualification Concacaf,Cup,https://media.api-sports.io/football/leagues/881.png
+882,168.0,Olympics Women - Qualification Asia,Cup,https://media.api-sports.io/football/leagues/882.png
+885,168.0,Campeones Cup,Cup,https://media.api-sports.io/football/leagues/885.png
+548,82.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/548.png
+549,148.0,Damallsvenskan,League,https://media.api-sports.io/football/leagues/549.png
+558,126.0,Supercopa,Cup,https://media.api-sports.io/football/leagues/558.png
+562,15.0,Reserve League,League,https://media.api-sports.io/football/leagues/562.png
+565,117.0,Liga Primera U20,League,https://media.api-sports.io/football/leagues/565.png
+643,140.0,3. liga - Bratislava,League,https://media.api-sports.io/football/leagues/643.png
+644,140.0,3. liga - West,League,https://media.api-sports.io/football/leagues/644.png
+645,140.0,3. liga - East,League,https://media.api-sports.io/football/leagues/645.png
+646,140.0,3. liga - Center,League,https://media.api-sports.io/football/leagues/646.png
+647,89.0,Lao League,League,https://media.api-sports.io/football/leagues/647.png
+648,9.0,Tasmania NPL,League,https://media.api-sports.io/football/leagues/648.png
+649,132.0,Supreme Division Women,League,https://media.api-sports.io/football/leagues/649.png
+650,132.0,Second League - Group 3,League,https://media.api-sports.io/football/leagues/650.png
+651,132.0,Second League - Group 1,League,https://media.api-sports.io/football/leagues/651.png
+652,132.0,Second League - Group 2,League,https://media.api-sports.io/football/leagues/652.png
+653,132.0,Second League - Group 4,League,https://media.api-sports.io/football/leagues/653.png
+654,7.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/654.png
+656,25.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/656.png
+657,50.0,Cup,Cup,https://media.api-sports.io/football/leagues/657.png
+658,90.0,Cup,Cup,https://media.api-sports.io/football/leagues/658.png
+659,78.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/659.png
+660,144.0,WK-League,League,https://media.api-sports.io/football/leagues/660.png
+662,107.0,Copa por México,Cup,https://media.api-sports.io/football/leagues/662.png
+663,132.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/663.png
+666,168.0,Friendlies Women,Cup,https://media.api-sports.io/football/leagues/666.png
+667,168.0,Friendlies Clubs,Cup,https://media.api-sports.io/football/leagues/667.png
+668,43.0,1. Liga U19,League,https://media.api-sports.io/football/leagues/668.png
+669,43.0,1. Liga Women,League,https://media.api-sports.io/football/leagues/669.png
+670,49.0,Community Shield Women,Cup,https://media.api-sports.io/football/leagues/670.png
+671,72.0,Úrvalsdeild Women,League,https://media.api-sports.io/football/leagues/671.png
+672,59.0,David Kipiani Cup,Cup,https://media.api-sports.io/football/leagues/672.png
+673,107.0,Liga MX Femenil,League,https://media.api-sports.io/football/leagues/673.png
+674,108.0,Cupa,Cup,https://media.api-sports.io/football/leagues/674.png
+675,115.0,U21 Divisie 1,League,https://media.api-sports.io/football/leagues/675.png
+676,128.0,Central Youth League,League,https://media.api-sports.io/football/leagues/676.png
+678,,Super Cup,Cup,https://media.api-sports.io/football/leagues/678.png
+679,,U21 League,League,https://media.api-sports.io/football/leagues/679.png
+680,140.0,Cup,Cup,https://media.api-sports.io/football/leagues/680.png
+681,129.0,Campeonato de Portugal Prio - Group E,League,https://media.api-sports.io/football/leagues/681.png
+682,129.0,Campeonato de Portugal Prio - Group F,League,https://media.api-sports.io/football/leagues/682.png
+683,129.0,Campeonato de Portugal Prio - Group G,League,https://media.api-sports.io/football/leagues/683.png
+684,129.0,Campeonato de Portugal Prio - Group H,League,https://media.api-sports.io/football/leagues/684.png
+685,43.0,3. liga - CFL B,League,https://media.api-sports.io/football/leagues/685.png
+686,43.0,4. liga - Divizie F,League,https://media.api-sports.io/football/leagues/686.png
+687,10.0,Regionalliga - Tirol,League,https://media.api-sports.io/football/leagues/687.png
+688,10.0,Regionalliga - Salzburg,League,https://media.api-sports.io/football/leagues/688.png
+689,16.0,Third Amateur Division - ACFF A,League,https://media.api-sports.io/football/leagues/689.png
+690,16.0,Third Amateur Division - ACFF B,League,https://media.api-sports.io/football/leagues/690.png
+691,16.0,Provincial - Brabant ACFF,League,https://media.api-sports.io/football/leagues/691.png
+692,145.0,Primera División RFEF - Group 5,League,https://media.api-sports.io/football/leagues/692.png
+693,63.0,Gamma Ethniki - Group 9,League,https://media.api-sports.io/football/leagues/693.png
+694,63.0,Gamma Ethniki - Group 10,League,https://media.api-sports.io/football/leagues/694.png
+695,49.0,U18 Premier League - North,League,https://media.api-sports.io/football/leagues/695.png
+696,49.0,U18 Premier League - South,League,https://media.api-sports.io/football/leagues/696.png
+697,49.0,WSL Cup,Cup,https://media.api-sports.io/football/leagues/697.png
+699,49.0,Women's Championship,League,https://media.api-sports.io/football/leagues/699.png
+700,55.0,Kakkosen Cup,Cup,https://media.api-sports.io/football/leagues/700.png
+701,129.0,Liga Revelação U23,League,https://media.api-sports.io/football/leagues/701.png
+702,49.0,Premier League 2 Division One,League,https://media.api-sports.io/football/leagues/702.png
+703,49.0,Professional Development League,League,https://media.api-sports.io/football/leagues/703.png
+704,79.0,Coppa Italia Primavera,Cup,https://media.api-sports.io/football/leagues/704.png
+705,79.0,Campionato Primavera - 1,League,https://media.api-sports.io/football/leagues/705.png
+706,79.0,Campionato Primavera - 2,League,https://media.api-sports.io/football/leagues/706.png
+707,1.0,Cup,Cup,https://media.api-sports.io/football/leagues/707.png
+708,1.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/708.png
+709,7.0,Cup,Cup,https://media.api-sports.io/football/leagues/709.png
+710,21.0,Nacional B,League,https://media.api-sports.io/football/leagues/710.png
+711,31.0,Segunda División,League,https://media.api-sports.io/football/leagues/711.png
+712,34.0,Liga Femenina,League,https://media.api-sports.io/football/leagues/712.png
+713,34.0,Superliga,Cup,https://media.api-sports.io/football/leagues/713.png
+715,60.0,DFB Junioren Pokal,Cup,https://media.api-sports.io/football/leagues/715.png
+717,73.0,I-League - 2nd Division,League,https://media.api-sports.io/football/leagues/717.png
+719,87.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/719.png
+720,87.0,Emir Cup,Cup,https://media.api-sports.io/football/leagues/720.png
+721,97.0,Cup,Cup,https://media.api-sports.io/football/leagues/721.png
+722,107.0,Liga Premier Serie A,League,https://media.api-sports.io/football/leagues/722.png
+723,110.0,Cup,Cup,https://media.api-sports.io/football/leagues/723.png
+724,115.0,U18 Divisie 1,League,https://media.api-sports.io/football/leagues/724.png
+726,121.0,Sultan Cup,Cup,https://media.api-sports.io/football/leagues/726.png
+727,128.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/727.png
+728,131.0,Liga 1 Feminin,League,https://media.api-sports.io/football/leagues/728.png
+725,120.0,Toppserien,League,https://media.api-sports.io/football/leagues/725.png
+736,148.0,Elitettan,League,https://media.api-sports.io/football/leagues/736.png
+743,168.0,UEFA Championship - Women,Cup,https://media.api-sports.io/football/leagues/743.png
+812,15.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/812.png
+814,72.0,Reykjavik Cup,Cup,https://media.api-sports.io/football/leagues/814.png
+815,72.0,Fotbolti.net Cup A,Cup,https://media.api-sports.io/football/leagues/815.png
+818,84.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/818.png
+823,120.0,Nasjonal U19 Champions League,Cup,https://media.api-sports.io/football/leagues/823.png
+824,130.0,Emir Cup,Cup,https://media.api-sports.io/football/leagues/824.png
+825,130.0,Qatar Cup,Cup,https://media.api-sports.io/football/leagues/825.png
+826,135.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/826.png
+831,166.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/831.png
+833,9.0,Queensland Premier League,League,https://media.api-sports.io/football/leagues/833.png
+834,9.0,South Australia State League 1,League,https://media.api-sports.io/football/leagues/834.png
+835,9.0,New South Wales NPL 2,League,https://media.api-sports.io/football/leagues/835.png
+836,9.0,Victoria NPL 2,League,https://media.api-sports.io/football/leagues/836.png
+839,96.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/839.png
+842,162.0,Super Copa,Cup,https://media.api-sports.io/football/leagues/842.png
+846,142.0,Somali Premier League,League,https://media.api-sports.io/football/leagues/846.png
+848,168.0,UEFA Europa Conference League,Cup,https://media.api-sports.io/football/leagues/848.png
+851,24.0,Carioca A2,League,https://media.api-sports.io/football/leagues/851.png
+852,42.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/852.png
+853,46.0,Supercopa de Ecuador,Cup,https://media.api-sports.io/football/leagues/853.png
+854,82.0,WE League,League,https://media.api-sports.io/football/leagues/854.png
+855,102.0,Dhivehi Premier League,League,https://media.api-sports.io/football/leagues/855.png
+856,168.0,CONCACAF Caribbean Club Championship,Cup,https://media.api-sports.io/football/leagues/856.png
+857,107.0,Campeón de Campeones,Cup,https://media.api-sports.io/football/leagues/857.png
+858,168.0,CONCACAF Gold Cup - Qualification,Cup,https://media.api-sports.io/football/leagues/858.png
+859,168.0,COSAFA Cup,Cup,https://media.api-sports.io/football/leagues/859.png
+860,168.0,Arab Cup,Cup,https://media.api-sports.io/football/leagues/860.png
+910,168.0,Youth Viareggio Cup,Cup,https://media.api-sports.io/football/leagues/910.png
+861,107.0,U20 League,League,https://media.api-sports.io/football/leagues/861.png
+862,44.0,3. Division,League,https://media.api-sports.io/football/leagues/862.png
+864,37.0,Supercopa,Cup,https://media.api-sports.io/football/leagues/864.png
+865,129.0,Liga 3,League,https://media.api-sports.io/football/leagues/865.png
+866,163.0,MLS All-Star,Cup,https://media.api-sports.io/football/leagues/866.png
+891,79.0,Coppa Italia Serie C,Cup,https://media.api-sports.io/football/leagues/891.png
+868,122.0,Premier League,League,https://media.api-sports.io/football/leagues/868.png
+869,168.0,CECAFA Club Cup,Cup,https://media.api-sports.io/football/leagues/869.png
+870,38.0,Premier League,League,https://media.api-sports.io/football/leagues/870.png
+871,49.0,Premier League Cup,Cup,https://media.api-sports.io/football/leagues/871.png
+872,107.0,Liga Premier Serie B,League,https://media.api-sports.io/football/leagues/872.png
+873,153.0,Thai Champions Cup,Cup,https://media.api-sports.io/football/leagues/873.png
+874,9.0,Australia Cup,Cup,https://media.api-sports.io/football/leagues/874.png
+875,145.0,Segunda División RFEF - Group 1,League,https://media.api-sports.io/football/leagues/875.png
+876,145.0,Segunda División RFEF - Group 2,League,https://media.api-sports.io/football/leagues/876.png
+877,145.0,Segunda División RFEF - Group 3,League,https://media.api-sports.io/football/leagues/877.png
+878,145.0,Segunda División RFEF - Group 4,League,https://media.api-sports.io/football/leagues/878.png
+879,145.0,Segunda División RFEF - Group 5,League,https://media.api-sports.io/football/leagues/879.png
+880,168.0,World Cup - Women - Qualification Europe,Cup,https://media.api-sports.io/football/leagues/880.png
+883,115.0,Reserve League,League,https://media.api-sports.io/football/leagues/883.png
+884,134.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/884.png
+887,47.0,Second League,League,https://media.api-sports.io/football/leagues/887.png
+888,47.0,Second League - Group B,League,https://media.api-sports.io/football/leagues/888.png
+889,47.0,Second League - Group C,League,https://media.api-sports.io/football/leagues/889.png
+890,168.0,U20 Elite League,Cup,https://media.api-sports.io/football/leagues/890.png
+892,79.0,Coppa Italia Serie D,Cup,https://media.api-sports.io/football/leagues/892.png
+867,127.0,Copa Paulino Alcantara,League,https://media.api-sports.io/football/leagues/867.png
+895,47.0,League Cup,Cup,https://media.api-sports.io/football/leagues/895.png
+896,161.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/896.png
+898,153.0,League Cup,Cup,https://media.api-sports.io/football/leagues/898.png
+902,168.0,Algarve Cup,Cup,https://media.api-sports.io/football/leagues/902.png
+903,168.0,The Atlantic Cup,Cup,https://media.api-sports.io/football/leagues/903.png
+905,75.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/905.png
+36,168.0,Africa Cup of Nations - Qualification,Cup,https://media.api-sports.io/football/leagues/36.png
+944,121.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/944.png
+945,168.0,International Champions Cup - Women,Cup,https://media.api-sports.io/football/leagues/945.png
+946,39.0,Second NL,League,https://media.api-sports.io/football/leagues/946.png
+947,60.0,DFB Pokal - Women,Cup,https://media.api-sports.io/football/leagues/947.png
+948,129.0,1a Divisão - Women,League,https://media.api-sports.io/football/leagues/948.png
+949,168.0,CONMEBOL Libertadores Femenina,Cup,https://media.api-sports.io/football/leagues/949.png
+950,168.0,World Cup - U17 - Women,Cup,https://media.api-sports.io/football/leagues/950.png
+951,168.0,South American Youth Games,Cup,https://media.api-sports.io/football/leagues/951.png
+952,168.0,AFC U23 Asian Cup - Qualification,Cup,https://media.api-sports.io/football/leagues/952.png
+953,168.0,Africa U23 Cup of Nations - Qualification,Cup,https://media.api-sports.io/football/leagues/953.png
+954,116.0,National League - Central,League,https://media.api-sports.io/football/leagues/954.png
+955,116.0,National League - National,League,https://media.api-sports.io/football/leagues/955.png
+956,116.0,National League - Northern,League,https://media.api-sports.io/football/leagues/956.png
+957,116.0,National League - Southern,League,https://media.api-sports.io/football/leagues/957.png
+958,37.0,Copa Costa Rica,Cup,https://media.api-sports.io/football/leagues/958.png
+959,139.0,Cup,Cup,https://media.api-sports.io/football/leagues/959.png
+961,125.0,Supercopa,Cup,https://media.api-sports.io/football/leagues/961.png
+962,92.0,Premier League,League,https://media.api-sports.io/football/leagues/962.png
+966,61.0,Cup,Cup,https://media.api-sports.io/football/leagues/966.png
+967,91.0,Cup,Cup,https://media.api-sports.io/football/leagues/967.png
+968,57.0,Championnat D1,League,https://media.api-sports.io/football/leagues/968.png
+971,85.0,Shield Cup,Cup,https://media.api-sports.io/football/leagues/971.png
+975,79.0,Serie C - Relegation - Play-offs,League,https://media.api-sports.io/football/leagues/975.png
+976,79.0,Serie C - Promotion - Play-offs,League,https://media.api-sports.io/football/leagues/976.png
+974,79.0,Serie C - Supercoppa Lega Finals,League,https://media.api-sports.io/football/leagues/974.png
+977,145.0,Tercera División RFEF - Promotion - Play-offs,League,https://media.api-sports.io/football/leagues/977.png
+978,1.0,2nd Division - Play-offs,League,https://media.api-sports.io/football/leagues/978.png
+979,16.0,Provincial - Play-offs VV,League,https://media.api-sports.io/football/leagues/979.png
+980,16.0,Provincial - Play-offs ACFF,League,https://media.api-sports.io/football/leagues/980.png
+981,16.0,Third Amateur Division - Play-offs,League,https://media.api-sports.io/football/leagues/981.png
+982,44.0,Denmark Series - Promotion Round,League,https://media.api-sports.io/football/leagues/982.png
+983,44.0,Denmark Series - Relegation Round,League,https://media.api-sports.io/football/leagues/983.png
+984,49.0,National League - North - Play-offs,League,https://media.api-sports.io/football/leagues/984.png
+985,49.0,National League - South - Play-offs,League,https://media.api-sports.io/football/leagues/985.png
+986,49.0,Non League Div One - Play-offs,League,https://media.api-sports.io/football/leagues/986.png
+987,49.0,U18 Premier League - Championship,League,https://media.api-sports.io/football/leagues/987.png
+988,60.0,Oberliga - Promotion Round,League,https://media.api-sports.io/football/leagues/988.png
+989,60.0,Oberliga - Relegation Round,League,https://media.api-sports.io/football/leagues/989.png
+990,63.0,Gamma Ethniki - Promotion Group,League,https://media.api-sports.io/football/leagues/990.png
+991,129.0,Campeonato de Portugal Prio - Promotion Round,League,https://media.api-sports.io/football/leagues/991.png
+992,136.0,Football League - Championship,League,https://media.api-sports.io/football/leagues/992.png
+993,49.0,Non League Premier - Isthmian - Play-offs,League,https://media.api-sports.io/football/leagues/993.png
+994,49.0,Non League Premier - Northern - Play-offs,League,https://media.api-sports.io/football/leagues/994.png
+995,49.0,Non League Premier - Southern South - Play-offs,League,https://media.api-sports.io/football/leagues/995.png
+996,49.0,Non League Premier - Southern Central - Play-offs,League,https://media.api-sports.io/football/leagues/996.png
+997,79.0,Serie D - Promotion - Play-offs,League,https://media.api-sports.io/football/leagues/997.png
+998,79.0,Serie D - Relegation - Play-offs,League,https://media.api-sports.io/football/leagues/998.png
+999,79.0,Serie D - Championship Round,League,https://media.api-sports.io/football/leagues/999.png
+1000,145.0,Segunda División RFEF - Play-offs,League,https://media.api-sports.io/football/leagues/1000.png
+1002,60.0,Regionalliga - Promotion Play-offs,League,https://media.api-sports.io/football/leagues/1002.png
+1003,60.0,Regionalliga - Relegation Round,League,https://media.api-sports.io/football/leagues/1003.png
+1004,115.0,Derde Divisie - Relegation Round,League,https://media.api-sports.io/football/leagues/1004.png
+1005,149.0,1. Liga Classic - Play-offs,League,https://media.api-sports.io/football/leagues/1005.png
+1006,145.0,Primera División RFEF - Play Offs,League,https://media.api-sports.io/football/leagues/1006.png
+1007,157.0,3. Lig - Play-offs,League,https://media.api-sports.io/football/leagues/1007.png
+886,168.0,UEFA U17 Championship - Qualification,Cup,https://media.api-sports.io/football/leagues/886.png
+893,168.0,UEFA U19 Championship - Qualification,Cup,https://media.api-sports.io/football/leagues/893.png
+894,168.0,Asian Cup Women - Qualification,Cup,https://media.api-sports.io/football/leagues/894.png
+897,168.0,Asian Cup Women,Cup,https://media.api-sports.io/football/leagues/897.png
+899,55.0,League Cup,Cup,https://media.api-sports.io/football/leagues/899.png
+900,168.0,Tipsport Malta Cup,Cup,https://media.api-sports.io/football/leagues/900.png
+901,55.0,Ykköscup,Cup,https://media.api-sports.io/football/leagues/901.png
+904,168.0,SheBelieves Cup,Cup,https://media.api-sports.io/football/leagues/904.png
+906,6.0,Reserve League,League,https://media.api-sports.io/football/leagues/906.png
+907,40.0,Primera Division,League,https://media.api-sports.io/football/leagues/907.png
+908,168.0,AFF U23 Championship,Cup,https://media.api-sports.io/football/leagues/908.png
+1009,131.0,Liga III - Play-offs,League,https://media.api-sports.io/football/leagues/1009.png
+1010,43.0,3. liga - Promotion Play-off,League,https://media.api-sports.io/football/leagues/1010.png
+1011,16.0,Second Amateur Division - Play-offs ,League,https://media.api-sports.io/football/leagues/1011.png
+1014,47.0,Second League - Play-offs,League,https://media.api-sports.io/football/leagues/1014.png
+1016,168.0,CAC Games,Cup,https://media.api-sports.io/football/leagues/1016.png
+909,163.0,MLS Next Pro,League,https://media.api-sports.io/football/leagues/909.png
+911,168.0,Southeast Asian Games,Cup,https://media.api-sports.io/football/leagues/911.png
+912,168.0,CONCACAF Women U17,Cup,https://media.api-sports.io/football/leagues/912.png
+913,168.0,CONMEBOL - UEFA Finalissima,Cup,https://media.api-sports.io/football/leagues/913.png
+914,168.0,Tournoi Maurice Revello,Cup,https://media.api-sports.io/football/leagues/914.png
+915,120.0,1. Division Women,League,https://media.api-sports.io/football/leagues/915.png
+916,168.0,Kirin Cup,Cup,https://media.api-sports.io/football/leagues/916.png
+917,46.0,Copa Ecuador,Cup,https://media.api-sports.io/football/leagues/917.png
+918,168.0,UEFA U19 Championship - Women,Cup,https://media.api-sports.io/football/leagues/918.png
+919,168.0,Mediterranean Games,Cup,https://media.api-sports.io/football/leagues/919.png
+920,168.0,World Cup - U20 - Women,Cup,https://media.api-sports.io/football/leagues/920.png
+921,168.0,UEFA U17 Championship,Cup,https://media.api-sports.io/football/leagues/921.png
+922,168.0,Africa Cup of Nations - Women,Cup,https://media.api-sports.io/football/leagues/922.png
+923,30.0,League 1 Ontario,League,https://media.api-sports.io/football/leagues/923.png
+924,74.0,Piala Presiden,Cup,https://media.api-sports.io/football/leagues/924.png
+926,168.0,Copa America Femenina,Cup,https://media.api-sports.io/football/leagues/926.png
+927,168.0,World Cup - Women - Qualification Concacaf,Cup,https://media.api-sports.io/football/leagues/927.png
+928,168.0,AFF U19 Championship,Cup,https://media.api-sports.io/football/leagues/928.png
+929,32.0,League Two,League,https://media.api-sports.io/football/leagues/929.png
+930,162.0,Copa Uruguay,Cup,https://media.api-sports.io/football/leagues/930.png
+931,49.0,Non League Premier - Southern Central,League,https://media.api-sports.io/football/leagues/931.png
+932,49.0,Non League Div One - Northern East,League,https://media.api-sports.io/football/leagues/932.png
+933,49.0,Non League Div One - Southern Central,League,https://media.api-sports.io/football/leagues/933.png
+934,168.0,Arab Championship - U20,Cup,https://media.api-sports.io/football/leagues/934.png
+935,143.0,Diski Shield,Cup,https://media.api-sports.io/football/leagues/935.png
+936,24.0,Catarinense - 2,League,https://media.api-sports.io/football/leagues/936.png
+937,168.0,Emirates Cup,Cup,https://media.api-sports.io/football/leagues/937.png
+938,60.0,Oberliga - Bayern Nord,League,https://media.api-sports.io/football/leagues/938.png
+939,60.0,Oberliga - Bayern Süd,League,https://media.api-sports.io/football/leagues/939.png
+940,168.0,COTIF Tournament,Cup,https://media.api-sports.io/football/leagues/940.png
+941,168.0,Islamic Solidarity Games,Cup,https://media.api-sports.io/football/leagues/941.png
+1039,168.0,Premier League International Cup,Cup,https://media.api-sports.io/football/leagues/1039.png
+1040,168.0,UEFA Nations League - Women,Cup,https://media.api-sports.io/football/leagues/1040.png
+1041,129.0,Júniores U19,League,https://media.api-sports.io/football/leagues/1041.png
+1042,62.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/1042.png
+1043,168.0,African Football League,Cup,https://media.api-sports.io/football/leagues/1043.png
+1044,149.0,Erste Liga Cup,Cup,https://media.api-sports.io/football/leagues/1044.png
+1045,168.0,Pan American Games,Cup,https://media.api-sports.io/football/leagues/1045.png
+1048,5.0,Premier Division,League,https://media.api-sports.io/football/leagues/1048.png
+1049,12.0,King's Cup,Cup,https://media.api-sports.io/football/leagues/1049.png
+1050,104.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/1050.png
+1052,55.0,Kakkonen - Play-offs,League,https://media.api-sports.io/football/leagues/1052.png
+1053,148.0,Division 2 - Play-offs,League,https://media.api-sports.io/football/leagues/1053.png
+1054,120.0,2. Division - Play-offs,League,https://media.api-sports.io/football/leagues/1054.png
+1055,148.0,Ettan - Relegation Round,League,https://media.api-sports.io/football/leagues/1055.png
+1056,116.0,National League - Championship - Final,League,https://media.api-sports.io/football/leagues/1056.png
+1058,145.0,Supercopa Femenina,Cup,https://media.api-sports.io/football/leagues/1058.png
+1061,132.0,Second League A - Spring Season Gold,League,https://media.api-sports.io/football/leagues/1061.png
+1064,132.0,Second League A - Spring Season Silver,League,https://media.api-sports.io/football/leagues/1064.png
+1065,,U19 League,League,https://media.api-sports.io/football/leagues/1065.png
+1068,49.0,FA Youth Cup,Cup,https://media.api-sports.io/football/leagues/1068.png
+1072,168.0,All Africa Games,Cup,https://media.api-sports.io/football/leagues/1072.png
+1074,136.0,SWPL Cup,Cup,https://media.api-sports.io/football/leagues/1074.png
+1078,136.0,SWF Scottish Cup,Cup,https://media.api-sports.io/football/leagues/1078.png
+1079,169.0,Yemeni League,League,https://media.api-sports.io/football/leagues/1079.png
+1080,64.0,Premier Division,League,https://media.api-sports.io/football/leagues/1080.png
+1084,154.0,Championnat National,League,https://media.api-sports.io/football/leagues/1084.png
+1099,63.0,Gamma Ethniki - Relegation Play-offs,League,https://media.api-sports.io/football/leagues/1099.png
+1109,12.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/1109.png
+1111,71.0,NB III - Promotion Play-offs,League,https://media.api-sports.io/football/leagues/1111.png
+1121,132.0,Second League A - Promotion Play-offs,League,https://media.api-sports.io/football/leagues/1121.png
+960,168.0,Euro Championship - Qualification,Cup,https://media.api-sports.io/football/leagues/960.png
+963,168.0,CONCACAF U17,Cup,https://media.api-sports.io/football/leagues/963.png
+964,21.0,Copa de la División Profesional,Cup,https://media.api-sports.io/football/leagues/964.png
+965,168.0,AFC U20 Asian Cup,Cup,https://media.api-sports.io/football/leagues/965.png
+969,98.0,Primeira Divisão,League,https://media.api-sports.io/football/leagues/969.png
+970,168.0,CONMEBOL - U17,Cup,https://media.api-sports.io/football/leagues/970.png
+972,32.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/972.png
+973,168.0,CAF Cup of Nations - U17,Cup,https://media.api-sports.io/football/leagues/973.png
+1008,168.0,CAFA Nations Cup,Cup,https://media.api-sports.io/football/leagues/1008.png
+1012,168.0,AFC U17 Asian Cup,Cup,https://media.api-sports.io/football/leagues/1012.png
+1013,168.0,All-Island Cup - Women,Cup,https://media.api-sports.io/football/leagues/1013.png
+1015,168.0,CAF U23 Cup of Nations,Cup,https://media.api-sports.io/football/leagues/1015.png
+1017,107.0,U23 League,League,https://media.api-sports.io/football/leagues/1017.png
+1018,91.0,Federation Cup,Cup,https://media.api-sports.io/football/leagues/1018.png
+1019,119.0,Charity Shield,Cup,https://media.api-sports.io/football/leagues/1019.png
+1020,73.0,Calcutta Premier Division,League,https://media.api-sports.io/football/leagues/1020.png
+1021,39.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/1021.png
+1022,49.0,Premier League - Summer Series,League,https://media.api-sports.io/football/leagues/1022.png
+1023,71.0,NB III - Southeast,League,https://media.api-sports.io/football/leagues/1023.png
+1024,168.0,UEFA - CONMEBOL - Club Challenge,Cup,https://media.api-sports.io/football/leagues/1024.png
+1025,132.0,Second League A - Fall Season Gold,League,https://media.api-sports.io/football/leagues/1025.png
+1026,132.0,Second League A - Fall Season Silver,League,https://media.api-sports.io/football/leagues/1026.png
+1027,157.0,3. Lig - Group 4,League,https://media.api-sports.io/football/leagues/1027.png
+1028,168.0,Concacaf Central American Cup,Cup,https://media.api-sports.io/football/leagues/1028.png
+1029,56.0,National 3 - Group G,League,https://media.api-sports.io/football/leagues/1029.png
+1030,24.0,Goiano - 2,League,https://media.api-sports.io/football/leagues/1030.png
+1031,20.0,Premier League,League,https://media.api-sports.io/football/leagues/1031.png
+1032,6.0,Copa de la Liga Profesional,League,https://media.api-sports.io/football/leagues/1032.png
+1033,128.0,Ekstraliga Women,League,https://media.api-sports.io/football/leagues/1033.png
+1034,60.0,2. Frauen Bundesliga,League,https://media.api-sports.io/football/leagues/1034.png
+1035,24.0,Copa Rio,Cup,https://media.api-sports.io/football/leagues/1035.png
+1036,24.0,Copa Santa Catarina,Cup,https://media.api-sports.io/football/leagues/1036.png
+1037,24.0,Paraibano 2,League,https://media.api-sports.io/football/leagues/1037.png
+1038,168.0,King's Cup,Cup,https://media.api-sports.io/football/leagues/1038.png
+850,168.0,UEFA U21 Championship - Qualification,Cup,https://media.api-sports.io/football/leagues/850.png
+1156,49.0,National League Cup,Cup,https://media.api-sports.io/football/leagues/1156.png
+1157,24.0,Paraense U20,League,https://media.api-sports.io/football/leagues/1157.png
+1158,24.0,Copa Gaúcha,Cup,https://media.api-sports.io/football/leagues/1158.png
+1159,168.0,CECAFA U20 Championship,Cup,https://media.api-sports.io/football/leagues/1159.png
+1160,70.0,Sapling Cup,Cup,https://media.api-sports.io/football/leagues/1160.png
+1161,168.0,AFC U17 Asian Cup - Qualification,Cup,https://media.api-sports.io/football/leagues/1161.png
+1162,168.0,AGCFF Gulf Champions League,Cup,https://media.api-sports.io/football/leagues/1162.png
+1163,168.0,African Nations Championship - Qualification,Cup,https://media.api-sports.io/football/leagues/1163.png
+1153,168.0,AFC U20 Asian Cup - Qualification,Cup,https://media.api-sports.io/football/leagues/1153.png
+1149,24.0,Potiguar - 2,League,https://media.api-sports.io/football/leagues/1149.png
+1150,24.0,Gaúcho - 3,League,https://media.api-sports.io/football/leagues/1150.png
+1151,24.0,Pernambucano - 3,League,https://media.api-sports.io/football/leagues/1151.png
+1152,115.0,U19 Divisie 1,League,https://media.api-sports.io/football/leagues/1152.png
+1154,24.0,Catarinense - 3,League,https://media.api-sports.io/football/leagues/1154.png
+1155,24.0,Carioca B2,League,https://media.api-sports.io/football/leagues/1155.png
+1001,168.0,CONCACAF Women U20,Cup,https://media.api-sports.io/football/leagues/1001.png
+1046,168.0,CONCACAF Gold Cup - Qualification - Women,Cup,https://media.api-sports.io/football/leagues/1046.png
+1047,168.0,Olympics Women - Qualification CAF,Cup,https://media.api-sports.io/football/leagues/1047.png
+1051,70.0,HKPL Cup,Cup,https://media.api-sports.io/football/leagues/1051.png
+1057,168.0,CONCACAF Gold Cup - Women,Cup,https://media.api-sports.io/football/leagues/1057.png
+1059,24.0,Recopa Catarinense,Cup,https://media.api-sports.io/football/leagues/1059.png
+1060,168.0,CONMEBOL - Pre-Olympic Tournament,Cup,https://media.api-sports.io/football/leagues/1060.png
+1062,24.0,Paulista - A4,League,https://media.api-sports.io/football/leagues/1062.png
+1063,24.0,Copa Alagoas,Cup,https://media.api-sports.io/football/leagues/1063.png
+1066,168.0,CONCACAF U20 - Qualification,Cup,https://media.api-sports.io/football/leagues/1066.png
+1067,6.0,Torneo Promocional Amateur,League,https://media.api-sports.io/football/leagues/1067.png
+1069,24.0,Goiano U20,League,https://media.api-sports.io/football/leagues/1069.png
+1070,168.0,AFC U20 Asian Cup - Women,Cup,https://media.api-sports.io/football/leagues/1070.png
+1071,24.0,Paranaense U20,League,https://media.api-sports.io/football/leagues/1071.png
+1073,24.0,Baiano U20,League,https://media.api-sports.io/football/leagues/1073.png
+1075,164.0,Pro League A,League,https://media.api-sports.io/football/leagues/1075.png
+1076,24.0,Catarinense U20,League,https://media.api-sports.io/football/leagues/1076.png
+1077,168.0,WAFF Championship U23,Cup,https://media.api-sports.io/football/leagues/1077.png
+1081,168.0,CONMEBOL - U17 Femenino,Cup,https://media.api-sports.io/football/leagues/1081.png
+1082,24.0,Copa Rio U20,Cup,https://media.api-sports.io/football/leagues/1082.png
+1085,168.0,CONMEBOL U20 Femenino,Cup,https://media.api-sports.io/football/leagues/1085.png
+1086,24.0,Paulista - U20,League,https://media.api-sports.io/football/leagues/1086.png
+1087,55.0,Ykkösliiga,League,https://media.api-sports.io/football/leagues/1087.png
+1088,24.0,Pernambucano - U20,League,https://media.api-sports.io/football/leagues/1088.png
+1089,168.0,UAE-Qatar - Super Shield,Cup,https://media.api-sports.io/football/leagues/1089.png
+1090,9.0,NNSW League 1,League,https://media.api-sports.io/football/leagues/1090.png
+1091,9.0,Tasmania Northern Championship,League,https://media.api-sports.io/football/leagues/1091.png
+1092,9.0,Capital Territory NPL 2,League,https://media.api-sports.io/football/leagues/1092.png
+1093,9.0,Tasmania Southern Championship,League,https://media.api-sports.io/football/leagues/1093.png
+1094,9.0,Western Australia State League 1,League,https://media.api-sports.io/football/leagues/1094.png
+1095,163.0,USL League One Cup,League,https://media.api-sports.io/football/leagues/1095.png
+1096,24.0,Matogrossense 2,League,https://media.api-sports.io/football/leagues/1096.png
+1097,24.0,Copa Espírito Santo,Cup,https://media.api-sports.io/football/leagues/1097.png
+1098,24.0,Paulista Série B,League,https://media.api-sports.io/football/leagues/1098.png
+1100,24.0,Brasiliense U20,League,https://media.api-sports.io/football/leagues/1100.png
+1101,168.0,AFC U17 Asian Cup - Women,Cup,https://media.api-sports.io/football/leagues/1101.png
+1102,168.0,UEFA U17 Championship - Women,Cup,https://media.api-sports.io/football/leagues/1102.png
+1103,119.0,Premiership Women,League,https://media.api-sports.io/football/leagues/1103.png
+1104,59.0,Liga 3,League,https://media.api-sports.io/football/leagues/1104.png
+1105,168.0,Olympics - Intercontinental Play-offs,Cup,https://media.api-sports.io/football/leagues/1105.png
+1106,24.0,Carioca C,League,https://media.api-sports.io/football/leagues/1106.png
+1107,24.0,Mineiro U20,League,https://media.api-sports.io/football/leagues/1107.png
+1108,24.0,Sergipano U20,League,https://media.api-sports.io/football/leagues/1108.png
+1110,24.0,Alagoano U20,League,https://media.api-sports.io/football/leagues/1110.png
+1112,24.0,Cearense U20,League,https://media.api-sports.io/football/leagues/1112.png
+1113,165.0,Copa Venezuela,Cup,https://media.api-sports.io/football/leagues/1113.png
+1114,24.0,Carioca U20,League,https://media.api-sports.io/football/leagues/1114.png
+1115,24.0,Paraense B2,League,https://media.api-sports.io/football/leagues/1115.png
+1116,163.0,WPSL,League,https://media.api-sports.io/football/leagues/1116.png
+1117,163.0,USL W League,League,https://media.api-sports.io/football/leagues/1117.png
+1118,163.0,NPSL,League,https://media.api-sports.io/football/leagues/1118.png
+1119,163.0,NWSL - Liga MXF Summer Cup,League,https://media.api-sports.io/football/leagues/1119.png
+1120,24.0,Paraibano U20,League,https://media.api-sports.io/football/leagues/1120.png
+1122,168.0,OFC U19 Championship,Cup,https://media.api-sports.io/football/leagues/1122.png
+1123,168.0,Qatar-UAE Super Cup,Cup,https://media.api-sports.io/football/leagues/1123.png
+1124,24.0,Cearense - 3,League,https://media.api-sports.io/football/leagues/1124.png
+1125,24.0,Pernambucano - 2,League,https://media.api-sports.io/football/leagues/1125.png
+1126,50.0,Esiliiga B,League,https://media.api-sports.io/football/leagues/1126.png
+1127,116.0,Chatham Cup,Cup,https://media.api-sports.io/football/leagues/1127.png
+1128,24.0,Brasileiro U17,League,https://media.api-sports.io/football/leagues/1128.png
+1129,168.0,ASEAN Club Championship,Cup,https://media.api-sports.io/football/leagues/1129.png
+1130,163.0,USL Super League,League,https://media.api-sports.io/football/leagues/1130.png
+1131,109.0,Super Cup,League,https://media.api-sports.io/football/leagues/1131.png
+1132,168.0,AFC Challenge League,Cup,https://media.api-sports.io/football/leagues/1132.png
+1133,24.0,Goiano - 3,League,https://media.api-sports.io/football/leagues/1133.png
+1134,24.0,Amazonense - 2,League,https://media.api-sports.io/football/leagues/1134.png
+1135,24.0,Sergipano - 2,League,https://media.api-sports.io/football/leagues/1135.png
+1136,168.0,CONCACAF W Champions Cup,Cup,https://media.api-sports.io/football/leagues/1136.png
+1137,60.0,Supercup der Frauen,League,https://media.api-sports.io/football/leagues/1137.png
+1138,24.0,Paranaense - 3,League,https://media.api-sports.io/football/leagues/1138.png
+1139,24.0,Potiguar - U20,League,https://media.api-sports.io/football/leagues/1139.png
+1140,168.0,AFC Women's Champions League,Cup,https://media.api-sports.io/football/leagues/1140.png
+1141,24.0,Brasiliense B,League,https://media.api-sports.io/football/leagues/1141.png
+1142,24.0,Mineiro - 3,League,https://media.api-sports.io/football/leagues/1142.png
+1143,24.0,Estadual Junior U20,League,https://media.api-sports.io/football/leagues/1143.png
+1144,61.0,Super Cup,Cup,https://media.api-sports.io/football/leagues/1144.png
+1145,24.0,Paraense B1,League,https://media.api-sports.io/football/leagues/1145.png
+1146,24.0,Alagoano - 2,Cup,https://media.api-sports.io/football/leagues/1146.png
+1148,24.0,Maranhense - 2,League,https://media.api-sports.io/football/leagues/1148.png
+1083,168.0,UEFA Championship - Women - Qualification,Cup,https://media.api-sports.io/football/leagues/1083.png
+1147,24.0,Capixaba B,League,https://media.api-sports.io/football/leagues/1147.png

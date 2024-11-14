@@ -1,79 +1,57 @@
-import json
 import logging
 import os
 import sys
+
+import pandas as pd
+
+sys.path.insert(0, os.path.abspath(".."))
+
 from dotenv import load_dotenv
 
-# Aggiunta del percorso per i moduli utili
-sys.path.insert(0, os.path.abspath(".."))
+from db.query_database import fetch_static_data
+from utils.save_data_utils import (
+    save_processed_data,  # Importa la tua funzione personalizzata
+)
 
 # Configurazione del logging
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
-# Carica variabili di ambiente
+# Carica le variabili di ambiente dal file .env
 load_dotenv("../../config/.env")
+
+# Variabili di percorso per i file di output
 PROVIDER_NAME = os.getenv("PROVIDER_NAME")
-DATA_CLEANED_PATH_GENERIC = os.path.abspath(f"../../data/{PROVIDER_NAME}/cleaned/generics/")
-DATA_CLEANED_PATH_SPECIFIC = os.path.abspath(f"../../data/{PROVIDER_NAME}/cleaned/specifics/")
+DATA_PROCESSED_PATH_GENERIC = os.path.abspath(
+    f"../../data/{PROVIDER_NAME}/processed/generics/"
+)
 
-LEAGUE = "135"
-SEASON = "2023"
 
-team_ids = {
-    "ATALANTA": "499",
-    "BOLOGNA": "500",
-    "CAGLIARI": "490",
-    "EMPOLI": "511",
-    "FIORENTINA": "502",
-    "FROSINONE": "512",
-    "GENOA": "495",
-    "INTER": "505",
-    "JUVENTUS": "496",
-    "LAZIO": "487",
-    "LECCE": "867",
-    "MILAN": "489",
-    "MONZA": "1579",
-    "NAPOLI": "492",
-    "ROMA": "497",
-    "SALERNITANA": "514",
-    "SASSUOLO": "488",
-    "TORINO": "503",
-    "UDINESE": "494",
-    "VERONA": "504",
-}
+def preprocess_and_save(table_name, filename):
+    """
+    Recupera, preprocessa e salva i dati statici utilizzando una funzione di recupero specificata.
 
-def load_data(file_path):
-    """Carica i dati da un file JSON già pulito."""
+    Args:
+        table_name (str): Nome della tabella nel database.
+        filename (str): Nome del file CSV da salvare (es. 'countries.csv').
+    """
     try:
-        with open(file_path, "r") as f:
-            data = json.load(f)
-        logging.info(f"Dati caricati da {file_path}")
-        return data
-    except (FileNotFoundError, json.JSONDecodeError) as e:
-        logging.error(f"Errore nel caricamento di {file_path}: {e}")
-        return None
+        df = fetch_static_data(table_name)
+        df = df.drop_duplicates()
+        save_processed_data(df, DATA_PROCESSED_PATH_GENERIC, filename)
+    except Exception as e:
+        logging.error(
+            f"Errore durante il preprocessamento e salvataggio di {filename}: {e}"
+        )
 
-def load_teams_data():
-    """Carica i dati delle squadre dalla cartella cleaned."""
-    return load_data(os.path.join(DATA_CLEANED_PATH_SPECIFIC, "teams", f"{LEAGUE}_{SEASON}.json"))
-
-def load_players_data(team_id, season):
-    """Carica i dati dei giocatori per una specifica squadra e stagione dalla cartella cleaned."""
-    return load_data(
-        os.path.join(DATA_CLEANED_PATH_SPECIFIC, "players", f"{team_id}_{season}.json")
-    )
 
 if __name__ == "__main__":
-    # Carica e visualizza i dati delle squadre
-    teams_data = load_teams_data()
-    if teams_data:
-        logging.info("Dati delle squadre caricati correttamente.")
+    logging.info("Inizio del processo di preprocessamento dei dati statici.")
 
-    # Carica e visualizza i dati dei giocatori per ciascuna squadra
-    for team_name, team_id in team_ids.items():
-        players_data = load_players_data(team_id, SEASON)
-        if players_data:
-            logging.info(f"Dati dei giocatori per {team_name} caricati correttamente.")
-            
+    # Preprocessa e salva i dati per ogni tabella statica
+    preprocess_and_save("countries", "countries.csv")
+    preprocess_and_save("timezones", "timezones.csv")
+    preprocess_and_save("leagues", "leagues.csv")
+
+    logging.info("Processo di preprocessamento completato.")
