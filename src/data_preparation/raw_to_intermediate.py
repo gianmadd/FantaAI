@@ -18,12 +18,12 @@ load_dotenv("../../config/.env")
 # Percorsi principali (seguendo la struttura del fetcher)
 PROVIDER_NAME = os.getenv("PROVIDER_NAME")
 DATA_RAW_PATH_GENERIC = os.path.abspath(f"../../data/{PROVIDER_NAME}/raw/generics/")
-DATA_RAW_PATH_SPECIFIC = os.path.abspath(f"../../data/{PROVIDER_NAME}/raw/specifics/teams")
+DATA_RAW_PATH_SPECIFIC = os.path.abspath(f"../../data/{PROVIDER_NAME}/raw/specifics/players/2023")
 DATA_CLEANED_PATH_GENERIC = os.path.abspath(
     f"../../data/{PROVIDER_NAME}/cleaned/generics/"
 )
 DATA_CLEANED_PATH_SPECIFIC = os.path.abspath(
-    f"../../data/{PROVIDER_NAME}/cleaned/specifics/teams"
+    f"../../data/{PROVIDER_NAME}/cleaned/specifics/players/2023"
 )
 
 
