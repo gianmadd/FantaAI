@@ -39,10 +39,10 @@ team_ids = {
 seasons = ["2021", "2022", "2023"]
 
 
-def load_json_data(filepath):
+def load_json_data(field_name, filepath):
     """Carica i dati JSON da un file specificato."""
     with open(filepath, "r") as f:
-        return json.load(f)["response"]
+        return json.load(f)[field_name]
 
 
 def truncate_tables(conn):
@@ -262,17 +262,17 @@ def populate_tables():
 
         truncate_tables(conn)
 
-        # insert_countries(
-        #     load_json_data(os.path.join(f"{DATA_PATH_GENERIC}", "countries.json")), conn
-        # )
+        insert_countries(
+            load_json_data("countries", os.path.join(f"{DATA_PATH_GENERIC}", "countries.json")), conn
+        )
 
-        # insert_timezones(
-        #     load_json_data(os.path.join(f"{DATA_PATH_GENERIC}", "timezone.json")), conn
-        # )
+        insert_timezones(
+            load_json_data("timezone", os.path.join(f"{DATA_PATH_GENERIC}", "timezone.json")), conn
+        )
 
-        # insert_leagues(
-        #     load_json_data(os.path.join(f"{DATA_PATH_GENERIC}", "leagues.json")), conn
-        # )
+        insert_leagues(
+            load_json_data("leagues", os.path.join(f"{DATA_PATH_GENERIC}", "leagues.json")), conn
+        )
         
         # for season in seasons:
 
