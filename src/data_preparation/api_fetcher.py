@@ -23,7 +23,7 @@ DATA_RAW_PATH_GENERIC = os.path.abspath(f"../../data/{PROVIDER_NAME}/raw/generic
 DATA_RAW_PATH_SPECIFIC = os.path.abspath(f"../../data/{PROVIDER_NAME}/raw/specifics")
 
 LEAGUE = "135"
-SEASON = "2021"
+SEASON = "2020"
 
 team_ids = {
     "LAZIO": "487",
