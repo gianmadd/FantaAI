@@ -9,6 +9,7 @@ from dotenv import load_dotenv
 
 from data_provider.factory import get_data_provider
 from utils.save_data_utils import replace_slash_with_underscore, save_data
+from raw_to_intermediate import get_useful_fields_json
 
 # Configurazione del logging
 logging.basicConfig(
@@ -23,7 +24,7 @@ DATA_RAW_PATH_GENERIC = os.path.abspath(f"../../data/{PROVIDER_NAME}/raw/generic
 DATA_RAW_PATH_SPECIFIC = os.path.abspath(f"../../data/{PROVIDER_NAME}/raw/specifics")
 
 LEAGUE = "135"
-SEASON = "2020"
+SEASON = "2019"
 
 team_ids = {
     "LAZIO": "487",
@@ -64,6 +65,7 @@ def fetch_and_save_static_data(endpoint):
     file_name = replace_slash_with_underscore(endpoint)
     static_data = provider.fetch_static_data(endpoint)
     if static_data and "response" in static_data:
+        static_data = get_useful_fields_json(static_data)
         save_data(static_data, DATA_RAW_PATH_GENERIC, f"{file_name}.json")
         logging.info(f"Dati statici per {endpoint} salvati correttamente.")
     else:
@@ -77,6 +79,7 @@ def fetch_and_save_teams_from_league_season(league_id, season):
             league_id=league_id, season=season
         )
         if teams_data and "response" in teams_data:
+            teams_data = get_useful_fields_json(teams_data)
             save_data(
                 teams_data,
                 f"{DATA_RAW_PATH_SPECIFIC}/teams",
@@ -97,6 +100,7 @@ def fetch_and_save_players_from_team_season(team_id, season):
     """Recupera e salva i dati dei giocatori per una squadra e stagione."""
     players_data = provider.fetch_players_from_team_season(team_id, season)
     if players_data and "response" in players_data:
+        players_data = get_useful_fields_json(players_data)
         save_data(
             players_data,
             f"{DATA_RAW_PATH_SPECIFIC}/players/{SEASON}",

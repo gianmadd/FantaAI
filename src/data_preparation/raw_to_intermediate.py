@@ -26,6 +26,55 @@ DATA_CLEANED_PATH_SPECIFIC = os.path.abspath(
     f"../../data/{PROVIDER_NAME}/cleaned/specifics/players/2020"
 )
 
+def get_useful_fields_json(data):
+
+    field_name = data.get("get")
+
+    # Base structure
+    cleaned_data = {
+        "get": data.get("get"),
+        "parameters": data.get("parameters", {}),
+        "team": data.get("parameters", {}).get("team"),
+        "season": data.get("parameters", {}).get("season"),
+        f"{field_name}": []
+    }
+    
+    # Function to flatten nested fields
+    def flatten_fields(prefix, obj):
+        flat_data = {}
+        for key, value in obj.items():
+            if isinstance(value, dict):  # Recursively flatten dictionaries
+                flat_data.update(flatten_fields(f"{prefix}_{key}" if prefix else key, value))
+            else:  # Add non-dict values directly
+                flat_data[f"{prefix}_{key}" if prefix else key] = value
+        return flat_data
+    
+    # Process each object in the response
+    for item in data.get("response", []):
+        # Flatten the player object
+        player_data = flatten_fields("player", item.get("player", {}))
+        
+        # Combine all statistics into a single flattened entry for this player
+        combined_statistics = {}
+        for stat in item.get("statistics", []):
+            stat_data = flatten_fields("statistics", stat)
+            combined_statistics.update(stat_data)
+        
+        # Merge player data with combined statistics
+        merged_data = {**player_data, **combined_statistics}
+        cleaned_data[f"{field_name}"].append(merged_data)
+    
+    return cleaned_data
+
+
+# def get_useful_fields_json(data):
+#     cleaned_data = {
+#             "get": data.get("get"),
+#             "parameters": data.get("parameters", {}),
+#             "response": data.get("response", []),
+#         }
+#     return cleaned_data
+
 
 def clean_json(input_path, output_path):
     """
@@ -44,11 +93,7 @@ def clean_json(input_path, output_path):
             data = json.load(f)
 
         # Estrarre solo i campi necessari
-        cleaned_data = {
-            "get": data.get("get"),
-            "parameters": data.get("parameters", {}),
-            "response": data.get("response", []),
-        }
+        cleaned_data = get_useful_fields_json(data)
 
         # Dividi output_path in directory e filename per compatibilità con save_data
         directory = os.path.dirname(output_path)
