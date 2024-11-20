@@ -6,7 +6,7 @@ import sys
 sys.path.insert(0, os.path.abspath(".."))
 
 from dotenv import load_dotenv
-from raw_to_intermediate import get_player_useful_fields_json, get_static_useful_fields_json
+from raw_to_intermediate import get_player_useful_fields_json, get_static_useful_fields_json, get_team_useful_fields_json
 
 from data_provider.factory import get_data_provider
 from utils.save_data_utils import replace_slash_with_underscore, save_data
@@ -26,6 +26,7 @@ DATA_RAW_PATH_SPECIFIC = os.path.abspath(
 )
 
 LEAGUE = "135"
+seasons = ["2019", "2020", "2021", "2022", "2023"]
 SEASON = "2023"
 
 team_ids = {
@@ -81,7 +82,7 @@ def fetch_and_save_teams_from_league_season(league_id, season):
             league_id=league_id, season=season
         )
         if teams_data and "response" in teams_data:
-            teams_data = get_player_useful_fields_json(teams_data)
+            teams_data = get_team_useful_fields_json(teams_data)
             save_data(
                 teams_data,
                 f"{DATA_RAW_PATH_SPECIFIC}/teams",
@@ -117,11 +118,12 @@ if __name__ == "__main__":
     logging.info("Inizio del processo di acquisizione dati.")
 
     try:
-        fetch_and_save_static_data("countries")
-        fetch_and_save_static_data("timezone")
-        fetch_and_save_static_data("leagues")
+        # fetch_and_save_static_data("countries")
+        # fetch_and_save_static_data("timezone")
+        # fetch_and_save_static_data("leagues")
 
-        # fetch_and_save_teams_from_league_season(league_id=LEAGUE, season=SEASON)
+        # for season in seasons:
+        #     fetch_and_save_teams_from_league_season(league_id=LEAGUE, season=season)
 
         # Esempio per recuperare i giocatori di alcune squadre
         # fetch_and_save_players_from_team_season(team_id=team_ids.get("LAZIO"), season=SEASON)
@@ -135,16 +137,16 @@ if __name__ == "__main__":
         # fetch_and_save_players_from_team_season(team_id=team_ids.get("ROMA"), season=SEASON)
         # fetch_and_save_players_from_team_season(team_id=team_ids.get("ATALANTA"), season=SEASON)
 
-        # fetch_and_save_players_from_team_season(team_id=team_ids.get("BOLOGNA"), season=SEASON)
-        # fetch_and_save_players_from_team_season(team_id=team_ids.get("FIORENTINA"), season=SEASON)
-        # fetch_and_save_players_from_team_season(team_id=team_ids.get("TORINO"), season=SEASON)
-        # fetch_and_save_players_from_team_season(team_id=team_ids.get("VERONA"), season=SEASON)
-        # fetch_and_save_players_from_team_season(team_id=team_ids.get("INTER"), season=SEASON)
-        # fetch_and_save_players_from_team_season(team_id=team_ids.get("EMPOLI"), season=SEASON)
-        # fetch_and_save_players_from_team_season(team_id=team_ids.get("FROSINONE"), season=SEASON)
-        # fetch_and_save_players_from_team_season(team_id=team_ids.get("SALERNITANA"), season=SEASON)
-        # fetch_and_save_players_from_team_season(team_id=team_ids.get("LECCE"), season=SEASON)
-        # fetch_and_save_players_from_team_season(team_id=team_ids.get("MONZA"), season=SEASON)
+        fetch_and_save_players_from_team_season(team_id=team_ids.get("BOLOGNA"), season=SEASON)
+        fetch_and_save_players_from_team_season(team_id=team_ids.get("FIORENTINA"), season=SEASON)
+        fetch_and_save_players_from_team_season(team_id=team_ids.get("TORINO"), season=SEASON)
+        fetch_and_save_players_from_team_season(team_id=team_ids.get("VERONA"), season=SEASON)
+        fetch_and_save_players_from_team_season(team_id=team_ids.get("INTER"), season=SEASON)
+        fetch_and_save_players_from_team_season(team_id=team_ids.get("EMPOLI"), season=SEASON)
+        fetch_and_save_players_from_team_season(team_id=team_ids.get("FROSINONE"), season=SEASON)
+        fetch_and_save_players_from_team_season(team_id=team_ids.get("SALERNITANA"), season=SEASON)
+        fetch_and_save_players_from_team_season(team_id=team_ids.get("LECCE"), season=SEASON)
+        fetch_and_save_players_from_team_season(team_id=team_ids.get("MONZA"), season=SEASON)
 
     except Exception as e:
         logging.error(f"Errore non previsto durante il processo: {e}")

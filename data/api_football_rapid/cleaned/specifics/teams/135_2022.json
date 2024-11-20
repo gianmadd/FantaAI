@@ -2,7 +2,7 @@
     "get": "teams",
     "parameters": {
         "league": "135",
-        "season": "2023"
+        "season": "2022"
     },
     "teams": [
         {
@@ -54,22 +54,6 @@
             "venue_image": "https://media.api-sports.io/football/venues/907.png"
         },
         {
-            "team_id": 490,
-            "team_name": "Cagliari",
-            "team_code": "CAG",
-            "team_country": "Italy",
-            "team_founded": 1920,
-            "team_national": false,
-            "team_logo": "https://media.api-sports.io/football/teams/490.png",
-            "venue_id": 12275,
-            "venue_name": "Unipol Domus",
-            "venue_address": "Via Raimondo Carta Raspi",
-            "venue_city": "Cagliari",
-            "venue_capacity": 16416,
-            "venue_surface": "grass",
-            "venue_image": "https://media.api-sports.io/football/venues/12275.png"
-        },
-        {
             "team_id": 492,
             "team_name": "Napoli",
             "team_code": "NAP",
@@ -102,22 +86,6 @@
             "venue_image": "https://media.api-sports.io/football/venues/20416.png"
         },
         {
-            "team_id": 495,
-            "team_name": "Genoa",
-            "team_code": "GEN",
-            "team_country": "Italy",
-            "team_founded": 1893,
-            "team_national": false,
-            "team_logo": "https://media.api-sports.io/football/teams/495.png",
-            "venue_id": 905,
-            "venue_name": "Stadio Comunale Luigi Ferraris",
-            "venue_address": "Via Giovanni De Pr\u00e0, 1",
-            "venue_city": "Genova",
-            "venue_capacity": 36703,
-            "venue_surface": "grass",
-            "venue_image": "https://media.api-sports.io/football/venues/905.png"
-        },
-        {
             "team_id": 496,
             "team_name": "Juventus",
             "team_code": "JUV",
@@ -148,6 +116,22 @@
             "venue_capacity": 68530,
             "venue_surface": "grass",
             "venue_image": "https://media.api-sports.io/football/venues/910.png"
+        },
+        {
+            "team_id": 498,
+            "team_name": "Sampdoria",
+            "team_code": "SAM",
+            "team_country": "Italy",
+            "team_founded": 1946,
+            "team_national": false,
+            "team_logo": "https://media.api-sports.io/football/teams/498.png",
+            "venue_id": 905,
+            "venue_name": "Stadio Comunale Luigi Ferraris",
+            "venue_address": "Via Giovanni De Pr\u00e0, 1",
+            "venue_city": "Genova",
+            "venue_capacity": 36703,
+            "venue_surface": "grass",
+            "venue_image": "https://media.api-sports.io/football/venues/905.png"
         },
         {
             "team_id": 499,
@@ -262,22 +246,6 @@
             "venue_image": "https://media.api-sports.io/football/venues/20109.png"
         },
         {
-            "team_id": 512,
-            "team_name": "Frosinone",
-            "team_code": "FRO",
-            "team_country": "Italy",
-            "team_founded": 1928,
-            "team_national": false,
-            "team_logo": "https://media.api-sports.io/football/teams/512.png",
-            "venue_id": 904,
-            "venue_name": "Stadio Benito Stirpe",
-            "venue_address": "Viale Olimpia",
-            "venue_city": "Frosinone",
-            "venue_capacity": 16310,
-            "venue_surface": "grass",
-            "venue_image": "https://media.api-sports.io/football/venues/904.png"
-        },
-        {
             "team_id": 514,
             "team_name": "Salernitana",
             "team_code": "SAL",
@@ -292,6 +260,38 @@
             "venue_capacity": 37245,
             "venue_surface": "grass",
             "venue_image": "https://media.api-sports.io/football/venues/933.png"
+        },
+        {
+            "team_id": 515,
+            "team_name": "Spezia",
+            "team_code": "SPE",
+            "team_country": "Italy",
+            "team_founded": 1906,
+            "team_national": false,
+            "team_logo": "https://media.api-sports.io/football/teams/515.png",
+            "venue_id": 939,
+            "venue_name": "Stadio Alberto Picco",
+            "venue_address": "Via Nicol\u00f2 Fieschi, 18",
+            "venue_city": "La Spezia",
+            "venue_capacity": 11767,
+            "venue_surface": "artificial turf",
+            "venue_image": "https://media.api-sports.io/football/venues/939.png"
+        },
+        {
+            "team_id": 520,
+            "team_name": "Cremonese",
+            "team_code": "CRE",
+            "team_country": "Italy",
+            "team_founded": 1903,
+            "team_national": false,
+            "team_logo": "https://media.api-sports.io/football/teams/520.png",
+            "venue_id": 894,
+            "venue_name": "Stadio Giovanni Zini",
+            "venue_address": "Via Persico, 19",
+            "venue_city": "Cremona",
+            "venue_capacity": 20034,
+            "venue_surface": "grass",
+            "venue_image": "https://media.api-sports.io/football/venues/894.png"
         },
         {
             "team_id": 867,

@@ -46,6 +46,41 @@ def get_static_useful_fields_json(data):
     
     return cleaned_data
 
+def get_team_useful_fields_json(data):
+    # Estrarre il nome della chiave dinamica da "get"
+    field_name = data.get("get", "response")
+    
+    # Struttura base del JSON
+    cleaned_data = {
+        "get": field_name,
+        "parameters": data.get("parameters", {}),
+        field_name: []
+    }
+    
+    # Funzione per appiattire i campi nidificati
+    def flatten_fields(prefix, obj):
+        flat_data = {}
+        for key, value in obj.items():
+            if isinstance(value, dict):
+                flat_data.update(flatten_fields(f"{prefix}_{key}" if prefix else key, value))
+            elif isinstance(value, list):
+                flat_data[f"{prefix}_{key}" if prefix else key] = value  # Manteniamo le liste intatte
+            else:
+                flat_data[f"{prefix}_{key}" if prefix else key] = value
+        return flat_data
+
+    # Processare ogni elemento in "response"
+    for item in data.get("response", []):
+        # Appiattire i campi di "team" e "venue"
+        team_data = flatten_fields("team", item.get("team", {}))
+        venue_data = flatten_fields("venue", item.get("venue", {}))
+        
+        # Unire i dati della squadra e del venue
+        combined_data = {**team_data, **venue_data}
+        cleaned_data[field_name].append(combined_data)
+    
+    return cleaned_data
+
 
 def get_player_useful_fields_json(data):
 

@@ -2,7 +2,7 @@
     "get": "teams",
     "parameters": {
         "league": "135",
-        "season": "2023"
+        "season": "2019"
     },
     "teams": [
         {
@@ -86,6 +86,22 @@
             "venue_image": "https://media.api-sports.io/football/venues/11904.png"
         },
         {
+            "team_id": 493,
+            "team_name": "Spal",
+            "team_code": "SPA",
+            "team_country": "Italy",
+            "team_founded": 1907,
+            "team_national": false,
+            "team_logo": "https://media.api-sports.io/football/teams/493.png",
+            "venue_id": 938,
+            "venue_name": "Stadio Paolo Mazza",
+            "venue_address": "Corso Piave, 28",
+            "venue_city": "Ferrara",
+            "venue_capacity": 16134,
+            "venue_surface": "grass",
+            "venue_image": "https://media.api-sports.io/football/venues/938.png"
+        },
+        {
             "team_id": 494,
             "team_name": "Udinese",
             "team_code": "UDI",
@@ -148,6 +164,22 @@
             "venue_capacity": 68530,
             "venue_surface": "grass",
             "venue_image": "https://media.api-sports.io/football/venues/910.png"
+        },
+        {
+            "team_id": 498,
+            "team_name": "Sampdoria",
+            "team_code": "SAM",
+            "team_country": "Italy",
+            "team_founded": 1946,
+            "team_national": false,
+            "team_logo": "https://media.api-sports.io/football/teams/498.png",
+            "venue_id": 905,
+            "venue_name": "Stadio Comunale Luigi Ferraris",
+            "venue_address": "Via Giovanni De Pr\u00e0, 1",
+            "venue_city": "Genova",
+            "venue_capacity": 36703,
+            "venue_surface": "grass",
+            "venue_image": "https://media.api-sports.io/football/venues/905.png"
         },
         {
             "team_id": 499,
@@ -246,52 +278,36 @@
             "venue_image": "https://media.api-sports.io/football/venues/907.png"
         },
         {
-            "team_id": 511,
-            "team_name": "Empoli",
-            "team_code": "EMP",
+            "team_id": 518,
+            "team_name": "Brescia",
+            "team_code": "BRE",
             "team_country": "Italy",
-            "team_founded": 1920,
+            "team_founded": 1911,
             "team_national": false,
-            "team_logo": "https://media.api-sports.io/football/teams/511.png",
-            "venue_id": 20109,
-            "venue_name": "Stadio Carlo Castellani \u2013 Computer Gross Arena",
-            "venue_address": "Viale delle Olimpiadi",
-            "venue_city": "Empoli",
-            "venue_capacity": 16284,
+            "team_logo": "https://media.api-sports.io/football/teams/518.png",
+            "venue_id": 882,
+            "venue_name": "Stadio Mario Rigamonti",
+            "venue_address": "Via Giovanni Novagani, 8",
+            "venue_city": "Brescia",
+            "venue_capacity": 27547,
             "venue_surface": "grass",
-            "venue_image": "https://media.api-sports.io/football/venues/20109.png"
+            "venue_image": "https://media.api-sports.io/football/venues/882.png"
         },
         {
-            "team_id": 512,
-            "team_name": "Frosinone",
-            "team_code": "FRO",
+            "team_id": 523,
+            "team_name": "Parma",
+            "team_code": "PAR",
             "team_country": "Italy",
-            "team_founded": 1928,
+            "team_founded": 1913,
             "team_national": false,
-            "team_logo": "https://media.api-sports.io/football/teams/512.png",
-            "venue_id": 904,
-            "venue_name": "Stadio Benito Stirpe",
-            "venue_address": "Viale Olimpia",
-            "venue_city": "Frosinone",
-            "venue_capacity": 16310,
+            "team_logo": "https://media.api-sports.io/football/teams/523.png",
+            "venue_id": 921,
+            "venue_name": "Stadio Ennio Tardini",
+            "venue_address": "Via Partigiani d&apos;Italia, 1",
+            "venue_city": "Parma",
+            "venue_capacity": 21473,
             "venue_surface": "grass",
-            "venue_image": "https://media.api-sports.io/football/venues/904.png"
-        },
-        {
-            "team_id": 514,
-            "team_name": "Salernitana",
-            "team_code": "SAL",
-            "team_country": "Italy",
-            "team_founded": 2011,
-            "team_national": false,
-            "team_logo": "https://media.api-sports.io/football/teams/514.png",
-            "venue_id": 933,
-            "venue_name": "Stadio Arechi",
-            "venue_address": "Via Salvador Allende",
-            "venue_city": "Salerno",
-            "venue_capacity": 37245,
-            "venue_surface": "grass",
-            "venue_image": "https://media.api-sports.io/football/venues/933.png"
+            "venue_image": "https://media.api-sports.io/football/venues/921.png"
         },
         {
             "team_id": 867,
@@ -308,22 +324,6 @@
             "venue_capacity": 33876,
             "venue_surface": "grass",
             "venue_image": "https://media.api-sports.io/football/venues/911.png"
-        },
-        {
-            "team_id": 1579,
-            "team_name": "Monza",
-            "team_code": "MON",
-            "team_country": "Italy",
-            "team_founded": 1912,
-            "team_national": false,
-            "team_logo": "https://media.api-sports.io/football/teams/1579.png",
-            "venue_id": 12086,
-            "venue_name": "U-Power Stadium",
-            "venue_address": "Via Franco Tognini",
-            "venue_city": "Monza",
-            "venue_capacity": 18568,
-            "venue_surface": "grass",
-            "venue_image": "https://media.api-sports.io/football/venues/12086.png"
         }
     ]
 }

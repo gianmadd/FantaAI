@@ -2,7 +2,7 @@
     "get": "teams",
     "parameters": {
         "league": "135",
-        "season": "2023"
+        "season": "2021"
     },
     "teams": [
         {
@@ -150,6 +150,22 @@
             "venue_image": "https://media.api-sports.io/football/venues/910.png"
         },
         {
+            "team_id": 498,
+            "team_name": "Sampdoria",
+            "team_code": "SAM",
+            "team_country": "Italy",
+            "team_founded": 1946,
+            "team_national": false,
+            "team_logo": "https://media.api-sports.io/football/teams/498.png",
+            "venue_id": 905,
+            "venue_name": "Stadio Comunale Luigi Ferraris",
+            "venue_address": "Via Giovanni De Pr\u00e0, 1",
+            "venue_city": "Genova",
+            "venue_capacity": 36703,
+            "venue_surface": "grass",
+            "venue_image": "https://media.api-sports.io/football/venues/905.png"
+        },
+        {
             "team_id": 499,
             "team_name": "Atalanta",
             "team_code": "ATA",
@@ -262,22 +278,6 @@
             "venue_image": "https://media.api-sports.io/football/venues/20109.png"
         },
         {
-            "team_id": 512,
-            "team_name": "Frosinone",
-            "team_code": "FRO",
-            "team_country": "Italy",
-            "team_founded": 1928,
-            "team_national": false,
-            "team_logo": "https://media.api-sports.io/football/teams/512.png",
-            "venue_id": 904,
-            "venue_name": "Stadio Benito Stirpe",
-            "venue_address": "Viale Olimpia",
-            "venue_city": "Frosinone",
-            "venue_capacity": 16310,
-            "venue_surface": "grass",
-            "venue_image": "https://media.api-sports.io/football/venues/904.png"
-        },
-        {
             "team_id": 514,
             "team_name": "Salernitana",
             "team_code": "SAL",
@@ -294,36 +294,36 @@
             "venue_image": "https://media.api-sports.io/football/venues/933.png"
         },
         {
-            "team_id": 867,
-            "team_name": "Lecce",
-            "team_code": "LEC",
+            "team_id": 515,
+            "team_name": "Spezia",
+            "team_code": "SPE",
             "team_country": "Italy",
-            "team_founded": 1908,
+            "team_founded": 1906,
             "team_national": false,
-            "team_logo": "https://media.api-sports.io/football/teams/867.png",
-            "venue_id": 911,
-            "venue_name": "Stadio Comunale Via del Mare",
-            "venue_address": "Viale dello Stadio",
-            "venue_city": "Lecce",
-            "venue_capacity": 33876,
-            "venue_surface": "grass",
-            "venue_image": "https://media.api-sports.io/football/venues/911.png"
+            "team_logo": "https://media.api-sports.io/football/teams/515.png",
+            "venue_id": 939,
+            "venue_name": "Stadio Alberto Picco",
+            "venue_address": "Via Nicol\u00f2 Fieschi, 18",
+            "venue_city": "La Spezia",
+            "venue_capacity": 11767,
+            "venue_surface": "artificial turf",
+            "venue_image": "https://media.api-sports.io/football/venues/939.png"
         },
         {
-            "team_id": 1579,
-            "team_name": "Monza",
-            "team_code": "MON",
+            "team_id": 517,
+            "team_name": "Venezia",
+            "team_code": "VEN",
             "team_country": "Italy",
-            "team_founded": 1912,
+            "team_founded": 1907,
             "team_national": false,
-            "team_logo": "https://media.api-sports.io/football/teams/1579.png",
-            "venue_id": 12086,
-            "venue_name": "U-Power Stadium",
-            "venue_address": "Via Franco Tognini",
-            "venue_city": "Monza",
-            "venue_capacity": 18568,
+            "team_logo": "https://media.api-sports.io/football/teams/517.png",
+            "venue_id": 948,
+            "venue_name": "Stadio Pierluigi Penzo",
+            "venue_address": "Isola di Sant&apos;Elena",
+            "venue_city": "Venezia",
+            "venue_capacity": 11150,
             "venue_surface": "grass",
-            "venue_image": "https://media.api-sports.io/football/venues/12086.png"
+            "venue_image": "https://media.api-sports.io/football/venues/948.png"
         }
     ]
 }
