@@ -1,7 +1,7 @@
 {
     "get": "countries",
     "parameters": [],
-    "response": [
+    "countries": [
         {
             "name": "Albania",
             "code": "AL",

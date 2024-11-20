@@ -262,44 +262,44 @@ def populate_tables():
 
         truncate_tables(conn)
 
-        insert_countries(
-            load_json_data(os.path.join(f"{DATA_PATH_GENERIC}", "countries.json")), conn
-        )
+        # insert_countries(
+        #     load_json_data(os.path.join(f"{DATA_PATH_GENERIC}", "countries.json")), conn
+        # )
 
-        insert_timezones(
-            load_json_data(os.path.join(f"{DATA_PATH_GENERIC}", "timezone.json")), conn
-        )
+        # insert_timezones(
+        #     load_json_data(os.path.join(f"{DATA_PATH_GENERIC}", "timezone.json")), conn
+        # )
 
-        insert_leagues(
-            load_json_data(os.path.join(f"{DATA_PATH_GENERIC}", "leagues.json")), conn
-        )
+        # insert_leagues(
+        #     load_json_data(os.path.join(f"{DATA_PATH_GENERIC}", "leagues.json")), conn
+        # )
         
-        for season in seasons:
+        # for season in seasons:
 
-            insert_teams(
-                load_json_data(
-                    os.path.join(f"{DATA_PATH_SPECIFIC}/teams", f"135_{season}.json")
-                ),
-                conn,
-            )
+        #     insert_teams(
+        #         load_json_data(
+        #             os.path.join(f"{DATA_PATH_SPECIFIC}/teams", f"135_{season}.json")
+        #         ),
+        #         conn,
+        #     )
 
-        for season in seasons:
+        # for season in seasons:
 
-            for team_id in team_ids.values():
+        #     for team_id in team_ids.values():
 
-                insert_players(
-                    load_json_data(
-                        os.path.join(f"{DATA_PATH_SPECIFIC}/players/{season}", f"{team_id}_{season}.json")
-                    ),
-                    conn,
-                )
+        #         insert_players(
+        #             load_json_data(
+        #                 os.path.join(f"{DATA_PATH_SPECIFIC}/players/{season}", f"{team_id}_{season}.json")
+        #             ),
+        #             conn,
+        #         )
 
-                insert_player_statistics(
-                    load_json_data(
-                        os.path.join(f"{DATA_PATH_SPECIFIC}/players/{season}", f"{team_id}_{season}.json")
-                    ),
-                    conn,
-                )
+        #         insert_player_statistics(
+        #             load_json_data(
+        #                 os.path.join(f"{DATA_PATH_SPECIFIC}/players/{season}", f"{team_id}_{season}.json")
+        #             ),
+        #             conn,
+        #         )
 
         print("Database popolato con successo.")
 

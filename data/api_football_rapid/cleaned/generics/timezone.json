@@ -1,7 +1,7 @@
 {
     "get": "timezone",
     "parameters": [],
-    "response": [
+    "timezone": [
         "Africa/Abidjan",
         "Africa/Accra",
         "Africa/Addis_Ababa",

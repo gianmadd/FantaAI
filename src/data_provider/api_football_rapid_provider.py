@@ -202,7 +202,8 @@ class FootballRapidAPI(DataProviderBase):
 
     def fetch_static_data(self, endpoint):
         url = f"{self.BASE_URL}/{endpoint}"
-        return self._make_request(url, f"Dati statici per {endpoint}")
+        params = {}
+        return self._make_request(url, params, f"Dati statici per {endpoint}")
 
     def fetch_teams_from_league_season(self, league_id, season):
         url = f"{self.BASE_URL}/teams"
