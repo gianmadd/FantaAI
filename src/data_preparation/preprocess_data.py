@@ -9,9 +9,7 @@ sys.path.insert(0, os.path.abspath(".."))
 from dotenv import load_dotenv
 
 from db.query_database import fetch_static_data
-from utils.save_data_utils import (
-    save_processed_data,  # Importa la tua funzione personalizzata
-)
+from utils.save_data_utils import save_processed_data_parquet  
 
 # Configurazione del logging
 logging.basicConfig(
@@ -39,7 +37,7 @@ def preprocess_and_save(table_name, filename):
     try:
         df = fetch_static_data(table_name)
         df = df.drop_duplicates()
-        save_processed_data(df, DATA_PROCESSED_PATH_GENERIC, filename)
+        save_processed_data_parquet(df, DATA_PROCESSED_PATH_GENERIC, filename)
     except Exception as e:
         logging.error(
             f"Errore durante il preprocessamento e salvataggio di {filename}: {e}"
@@ -50,8 +48,8 @@ if __name__ == "__main__":
     logging.info("Inizio del processo di preprocessamento dei dati statici.")
 
     # Preprocessa e salva i dati per ogni tabella statica
-    preprocess_and_save("countries", "countries.csv")
-    preprocess_and_save("timezones", "timezones.csv")
-    preprocess_and_save("leagues", "leagues.csv")
+    preprocess_and_save("countries", "countries.parquet")
+    preprocess_and_save("timezones", "timezones.parquet")
+    preprocess_and_save("leagues", "leagues.parquet")
 
     logging.info("Processo di preprocessamento completato.")

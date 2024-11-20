@@ -78,6 +78,38 @@ def save_processed_data(matches_df, directory, filename):
         logging.error(f"Errore nel salvataggio del file CSV: {e}")
         raise
 
+
+def save_processed_data_parquet(dataframe, directory, filename):
+    """
+    Salva i dati preprocessati in un file Parquet nella directory specificata.
+
+    Args:
+        dataframe (pd.DataFrame): Il DataFrame contenente i dati preprocessati.
+        directory (str): La directory in cui salvare il file.
+        filename (str): Il nome del file Parquet, incluso l'estensione (es. 'processed_data.parquet').
+
+    Returns:
+        None
+
+    Logs:
+        logging.info: Messaggio informativo con il percorso del file salvato.
+
+    Raises:
+        OSError: Se la creazione della directory o il salvataggio del file fallisce.
+    """
+    try:
+        os.makedirs(directory, exist_ok=True)
+        file_path = os.path.join(directory, filename)
+
+        # Salva il DataFrame in formato Parquet
+        dataframe.to_parquet(file_path, engine='pyarrow', index=False)
+        logging.info(f"Dati preprocessati salvati in formato Parquet in {file_path}")
+
+    except Exception as e:
+        logging.error(f"Errore nel salvataggio del file Parquet: {e}")
+        raise
+
+
 def replace_slash_with_underscore(input_string):
     """
     Sostituisce i caratteri '/' con '_' in una stringa.
