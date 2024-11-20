@@ -67,15 +67,6 @@ def get_useful_fields_json(data):
     return cleaned_data
 
 
-# def get_useful_fields_json(data):
-#     cleaned_data = {
-#             "get": data.get("get"),
-#             "parameters": data.get("parameters", {}),
-#             "response": data.get("response", []),
-#         }
-#     return cleaned_data
-
-
 def clean_json(input_path, output_path):
     """
     Pulisce un file JSON mantenendo solo i campi 'get', 'parameters' e 'response'.
