@@ -292,6 +292,7 @@ def populate_tables():
                 conn,
             )
 
+        ################################################## TEMPORANEO. USARE CICLO QUANDO I DATI SONO RECUPERATI
         insert_players(
             load_json_data(
                 "players",
@@ -311,6 +312,7 @@ def populate_tables():
             ),
             conn,
         )
+        #####################################################
 
         # for season in seasons:
 
