@@ -27,7 +27,7 @@ DATA_RAW_PATH_SPECIFIC = os.path.abspath(
 
 LEAGUE = "135"
 seasons = ["2019", "2020", "2021", "2022", "2023"]
-SEASON = "2023"
+SEASON = "2022"
 
 team_ids = {
     "LAZIO": "487",
@@ -137,15 +137,15 @@ if __name__ == "__main__":
         # fetch_and_save_players_from_team_season(team_id=team_ids.get("ROMA"), season=SEASON)
         # fetch_and_save_players_from_team_season(team_id=team_ids.get("ATALANTA"), season=SEASON)
 
-        fetch_and_save_players_from_team_season(team_id=team_ids.get("BOLOGNA"), season=SEASON)
-        fetch_and_save_players_from_team_season(team_id=team_ids.get("FIORENTINA"), season=SEASON)
-        fetch_and_save_players_from_team_season(team_id=team_ids.get("TORINO"), season=SEASON)
-        fetch_and_save_players_from_team_season(team_id=team_ids.get("VERONA"), season=SEASON)
-        fetch_and_save_players_from_team_season(team_id=team_ids.get("INTER"), season=SEASON)
-        fetch_and_save_players_from_team_season(team_id=team_ids.get("EMPOLI"), season=SEASON)
-        fetch_and_save_players_from_team_season(team_id=team_ids.get("FROSINONE"), season=SEASON)
-        fetch_and_save_players_from_team_season(team_id=team_ids.get("SALERNITANA"), season=SEASON)
-        fetch_and_save_players_from_team_season(team_id=team_ids.get("LECCE"), season=SEASON)
+        # fetch_and_save_players_from_team_season(team_id=team_ids.get("BOLOGNA"), season=SEASON)
+        # fetch_and_save_players_from_team_season(team_id=team_ids.get("FIORENTINA"), season=SEASON)
+        # fetch_and_save_players_from_team_season(team_id=team_ids.get("TORINO"), season=SEASON)
+        # fetch_and_save_players_from_team_season(team_id=team_ids.get("VERONA"), season=SEASON)
+        # fetch_and_save_players_from_team_season(team_id=team_ids.get("INTER"), season=SEASON)
+        # fetch_and_save_players_from_team_season(team_id=team_ids.get("EMPOLI"), season=SEASON)
+        # fetch_and_save_players_from_team_season(team_id=team_ids.get("FROSINONE"), season=SEASON)
+        # fetch_and_save_players_from_team_season(team_id=team_ids.get("SALERNITANA"), season=SEASON)
+        # fetch_and_save_players_from_team_season(team_id=team_ids.get("LECCE"), season=SEASON)
         fetch_and_save_players_from_team_season(team_id=team_ids.get("MONZA"), season=SEASON)
 
     except Exception as e:
