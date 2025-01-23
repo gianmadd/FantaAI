@@ -1,37 +1,53 @@
 import json
 import os
 
-from dotenv import load_dotenv
-from scrapegraphai.graphs import SmartScraperGraph
+import pandas as pd
 
-load_dotenv()
-QROQ_API_KEY = os.getenv("QROQ_API_KEY")
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+from src.scraping.scraper import TransfermarktScraper
 
-
-# Define the configuration for the scraping pipeline
-graph_config = {
-    "llm": {"api_key": GEMINI_API_KEY, "model": "gemini-pro"},
-    "verbose": True,
-    "headless": False,
+campionati = {
+    "serie_a": {
+        "url": "https://www.transfermarkt.it/serie-a/startseite/wettbewerb/IT1",
+        "nome": "Serie A",
+    },
+    "premier_league": {
+        "url": "https://www.transfermarkt.it/premier-league/startseite/wettbewerb/GB1",
+        "nome": "Premier League",
+    },
+    "la_liga": {
+        "url": "https://www.transfermarkt.it/la-liga/startseite/wettbewerb/ES1",
+        "nome": "La Liga",
+    },
+    "bundesliga": {
+        "url": "https://www.transfermarkt.it/bundesliga/startseite/wettbewerb/L1",
+        "nome": "Bundesliga",
+    },
 }
 
+stagioni = ["2024"]
 
-smart_scraper_graph = SmartScraperGraph(
-    prompt="""
-        Extract the name of all the teams and the corresponding link to the team page in the provided web page. 
-        """,
-    source="https://www.transfermarkt.it/serie-a/startseite/wettbewerb/IT1",
-    config=graph_config,
-)
 
-# Run the pipeline
-result = smart_scraper_graph.run()
+# Inizializza lo scraper
+scraper = TransfermarktScraper()
 
-# save result in txt file
-with open("result.txt", "w") as f:
-    f.write(str(result))
+for campionato in campionati.values():
+    campionato_url = campionato["url"]
+    campionato_nome = campionato["nome"]
 
-# save result in json file
-with open("result.json", "w") as f:
-    json.dump(result, f, indent=4)
+    for stagione in stagioni:
+        print(f"\nInizio scraping per {campionato_nome} stagione {stagione}...")
+        teams = scraper.scrape_teams(campionato_url, campionato_nome, stagione)
+        print(f"Squadre scaricate: {len(teams)}")
+
+
+CAMPIONATI_PATH = "data/raw/"
+
+for campionato in os.listdir(CAMPIONATI_PATH):
+    for stagione in os.listdir(os.path.join(CAMPIONATI_PATH, campionato)):
+        teams = json.load(open(os.path.join(CAMPIONATI_PATH, campionato, stagione, "squadre.json"), "r", encoding="utf-8"))
+        for team in teams:
+            team_url = team["link"]
+            team_name = team["name"]
+            print(f"\nInizio scraping per {team_name}...")
+            players = scraper.scrape_players(team_url, team_name, campionato, stagione)
+            print(f"Giocatori scaricati: {len(players)}")
