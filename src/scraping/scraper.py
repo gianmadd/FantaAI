@@ -219,7 +219,7 @@ class TransfermarktScraper:
                 )
                 if luogo_nascita_label:
                     luogo_nascita_span = luogo_nascita_label.find_next_sibling(
-                        "span", class_="info-table__content--bold"
+                        "span", class_=lambda x: x and "info-table__content" and "info-table__content--bold" in x
                     ).find("span")
                     if luogo_nascita_span and luogo_nascita_span.contents:
                         luogo = luogo_nascita_span.contents[0].strip()
