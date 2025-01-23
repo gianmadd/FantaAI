@@ -158,37 +158,37 @@ def main():
     )
 
     for campionato in os.listdir(DATA_PATH):
-        CAMPIOANTO_PATH = os.path.join(DATA_PATH, campionato)
-        for stagione in os.listdir(CAMPIOANTO_PATH):
-            STAGIONE_PATH = os.path.join(CAMPIOANTO_PATH, stagione)
+        CAMPIONATO_PATH = os.path.join(DATA_PATH, campionato)
+        for stagione in os.listdir(CAMPIONATO_PATH):
+            STAGIONE_PATH = os.path.join(CAMPIONATO_PATH, stagione)
             for squadra in os.listdir(STAGIONE_PATH):
-                if squadra == "SSC Napoli":
-                    SQUADRA_PATH = os.path.join(STAGIONE_PATH, squadra)
-                    GIOCATORI_PATH = os.path.join(SQUADRA_PATH, "giocatori.csv")
-                    giocatori_df = pd.read_csv(GIOCATORI_PATH)
-                    for _, giocatore in giocatori_df.iterrows():
-                        giocatore_url = giocatore["link"]
-                        giocatore_nome = giocatore["name"]
-                        print(f"\nInizio scraping per {giocatore_nome}...")
+                SQUADRA_PATH = os.path.join(STAGIONE_PATH, squadra)
+                GIOCATORI_PATH = os.path.join(SQUADRA_PATH, "giocatori.csv")
+                giocatori_df = pd.read_csv(GIOCATORI_PATH)
+                informazioni_giocatori_df = informazioni_giocatori_df[0:0]
+                for _, giocatore in giocatori_df.iterrows():
+                    giocatore_url = giocatore["link"]
+                    giocatore_nome = giocatore["name"]
+                    print(f"\nInizio scraping per {giocatore_nome}...")
 
-                        # Estrai i dettagli del giocatore
-                        dettagli_giocatore = scraper.scrape_player_details(giocatore_url)
+                    # Estrai i dettagli del giocatore
+                    dettagli_giocatore = scraper.scrape_player_details(giocatore_url)
 
-                        dettagli_giocatore = pd.DataFrame([dettagli_giocatore])
+                    dettagli_giocatore = pd.DataFrame([dettagli_giocatore])
 
-                        # Concatena i dettagli al DataFrame
-                        informazioni_giocatori_df = pd.concat(
-                            [informazioni_giocatori_df, dettagli_giocatore],
-                            ignore_index=True,
-                        )
-
-                        print(f"Dettagli del giocatore {giocatore_nome} scaricati.")
-
-                    salva_df(
-                        informazioni_giocatori_df, SQUADRA_PATH, "informazioni_giocatori"
+                    # Concatena i dettagli al DataFrame
+                    informazioni_giocatori_df = pd.concat(
+                        [informazioni_giocatori_df, dettagli_giocatore],
+                        ignore_index=True,
                     )
 
+                    print(f"Dettagli del giocatore {giocatore_nome} scaricati.")
 
+                salva_df(
+                    informazioni_giocatori_df,
+                    SQUADRA_PATH,
+                    "informazioni_giocatori",
+                )
 
 
 if __name__ == "__main__":
