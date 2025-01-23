@@ -97,7 +97,7 @@ def scrape_squadra(scraper, team_url, team_name, campionato_nome, stagione):
 
 def main():
     # # Inizializza lo scraper
-    # scraper = TransfermarktScraper()
+    scraper = TransfermarktScraper()
 
     # # Itera su tutti i campionati
     # for campionato in campionati.values():
