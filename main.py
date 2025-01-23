@@ -1,3 +1,4 @@
+import concurrent.futures
 import os
 
 import pandas as pd
@@ -132,69 +133,114 @@ def main():
 
     # print("\nScraping completato per tutti i campionati e tutte le squadre.")
 
-    DATA_PATH = "data/raw/"
+    # DATA_PATH = "data/raw/"
 
-    informazioni_giocatori_df = pd.DataFrame(
-        columns=[
-            "numero_maglia",
-            "nome",
-            "cognome",
-            "data_nascita",
-            "età",
-            "luogo_nascita",
-            "altezza",
-            "nazionalità",
-            "posizione",
-            "piede",
-            "ruolo_naturale",
-            "altri_ruoli",
-            "in_rosa_da",
-            "scadenza",
-            "squadra_attuale",
-            "valore_attuale",
-            "valore_piu_alto",
-            "data_aggiornamento",
-        ]
-    )
+    # informazioni_giocatori_df = pd.DataFrame(
+    #     columns=[
+    #         "numero_maglia",
+    #         "nome",
+    #         "cognome",
+    #         "data_nascita",
+    #         "età",
+    #         "luogo_nascita",
+    #         "altezza",
+    #         "nazionalità",
+    #         "posizione",
+    #         "piede",
+    #         "ruolo_naturale",
+    #         "altri_ruoli",
+    #         "in_rosa_da",
+    #         "scadenza",
+    #         "squadra_attuale",
+    #         "valore_attuale",
+    #         "valore_piu_alto",
+    #         "data_aggiornamento",
+    #     ]
+    # )
 
-    for campionato in os.listdir(DATA_PATH):
-        CAMPIONATO_PATH = os.path.join(DATA_PATH, campionato)
-        for stagione in os.listdir(CAMPIONATO_PATH):
-            STAGIONE_PATH = os.path.join(CAMPIONATO_PATH, stagione)
-            for squadra in os.listdir(STAGIONE_PATH):
-                if squadra == "squadre.csv" or squadra == "squadre.json":
-                    continue
-                files = os.listdir(os.path.join(STAGIONE_PATH, squadra))
-                if "informazioni_giocatori.csv" in files or "informazioni_giocatori.json" in files:
-                    print(f"Salto {squadra} perche è gia stato scaricato")
-                    continue
-                SQUADRA_PATH = os.path.join(STAGIONE_PATH, squadra)
-                GIOCATORI_PATH = os.path.join(SQUADRA_PATH, "giocatori.csv")
-                giocatori_df = pd.read_csv(GIOCATORI_PATH)
-                informazioni_giocatori_df = informazioni_giocatori_df[0:0]
-                for _, giocatore in giocatori_df.iterrows():
-                    giocatore_url = giocatore["link"]
-                    giocatore_nome = giocatore["name"]
-                    print(f"\nInizio scraping per {giocatore_nome}...")
+    # # Prepara una lista di tutti i giocatori da processare
+    # player_tasks = []
 
-                    # Estrai i dettagli del giocatore
-                    dettagli_giocatore = scraper.scrape_player_details(giocatore_url)
+    # for campionato in os.listdir(DATA_PATH):
+    #     CAMPIONATO_PATH = os.path.join(DATA_PATH, campionato)
+    #     if not os.path.isdir(CAMPIONATO_PATH):
+    #         continue
+    #     for stagione in os.listdir(CAMPIONATO_PATH):
+    #         STAGIONE_PATH = os.path.join(CAMPIONATO_PATH, stagione)
+    #         if not os.path.isdir(STAGIONE_PATH):
+    #             continue
+    #         for squadra in os.listdir(STAGIONE_PATH):
+    #             SQUADRA_PATH = os.path.join(STAGIONE_PATH, squadra)
+    #             if not os.path.isdir(SQUADRA_PATH):
+    #                 continue
+    #             # Controlla se 'informazioni_giocatori' è già stato salvato
+    #             if any(fname in ["informazioni_giocatori.csv", "informazioni_giocatori.json"] for fname in os.listdir(SQUADRA_PATH)):
+    #                 print(f"Salto {squadra} perché è già stato scaricato")
+    #                 continue
+    #             GIOCATORI_PATH = os.path.join(SQUADRA_PATH, "giocatori.csv")
+    #             if not os.path.exists(GIOCATORI_PATH):
+    #                 print(f"File {GIOCATORI_PATH} non trovato. Salto {squadra}.")
+    #                 continue
+    #             giocatori_df = pd.read_csv(GIOCATORI_PATH)
+    #             for _, giocatore in giocatori_df.iterrows():
+    #                 giocatore_url = giocatore["link"]
+    #                 giocatore_nome = giocatore["name"]
+    #                 player_tasks.append((giocatore_url, SQUADRA_PATH, giocatore_nome))
 
-                    dettagli_giocatore = pd.DataFrame([dettagli_giocatore])
+    # print(f"Totali giocatori da processare: {len(player_tasks)}")
 
-                    # Concatena i dettagli al DataFrame
-                    informazioni_giocatori_df = pd.concat(
-                        [informazioni_giocatori_df, dettagli_giocatore],
-                        ignore_index=True,
-                    )
+    # # Definisci la funzione worker dentro main
+    # def worker_scrape_player(task):
+    #     giocatore_url, squadra_path, giocatore_nome = task
+    #     try:
+    #         scraper = TransfermarktScraper(headers=None, delay=1)
+    #         dettagli = scraper.scrape_player_details(giocatore_url)
+    #         scraper = None  # Libera risorse
+    #         return (squadra_path, dettagli, giocatore_nome)
+    #     except Exception as e:
+    #         print(f"Errore nello scraping del giocatore {giocatore_nome} ({giocatore_url}): {e}")
+    #         return (squadra_path, None, giocatore_nome)
 
-                    print(f"Dettagli del giocatore {giocatore_nome} scaricati.")
+    # # Configura il numero di thread
+    # max_workers = min(8, os.cpu_count() or 1)  # Al massimo 8 thread o il numero di CPU disponibili
 
-                salva_df(
-                    informazioni_giocatori_df,
-                    SQUADRA_PATH,
-                    "informazioni_giocatori",
-                )
+    # with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
+    #     # Mappa le task alla funzione worker_scrape_player
+    #     futures = {executor.submit(worker_scrape_player, task): task for task in player_tasks}
+    #     for future in concurrent.futures.as_completed(futures):
+    #         task = futures[future]
+    #         squadra_path, dettagli, giocatore_nome = future.result()
+    #         if dettagli:
+    #             # Converti i dettagli in DataFrame
+    #             df_dettagli = pd.DataFrame([dettagli])
+
+    #             # Definisci il percorso del file 'informazioni_giocatori.csv' e 'informazioni_giocatori.json'
+    #             informazioni_path_csv = os.path.join(squadra_path, "informazioni_giocatori.csv")
+    #             informazioni_path_json = os.path.join(squadra_path, "informazioni_giocatori.json")
+
+    #             # Salva in CSV (in modalità append)
+    #             if os.path.exists(informazioni_path_csv):
+    #                 df_dettagli.to_csv(informazioni_path_csv, mode='a', header=False, index=False, encoding="utf-8")
+    #             else:
+    #                 df_dettagli.to_csv(informazioni_path_csv, index=False, encoding="utf-8")
+
+    #             # Salva in JSON (in modalità append)
+    #             if os.path.exists(informazioni_path_json):
+    #                 existing_data = pd.read_json(informazioni_path_json, orient="records")
+    #                 combined_data = pd.concat([existing_data, df_dettagli], ignore_index=True)
+    #                 combined_data.to_json(informazioni_path_json, orient="records", force_ascii=False, indent=4)
+    #             else:
+    #                 df_dettagli.to_json(informazioni_path_json, orient="records", force_ascii=False, indent=4)
+
+    #             print(f"Dettagli del giocatore {giocatore_nome} scaricati e salvati.")
+    #         else:
+    #             print(f"Dettagli del giocatore {giocatore_nome} non disponibili.")
+
+    # print("Scraping dei dettagli dei giocatori completato.")
+
+    ################################
+
+    
 
 
 if __name__ == "__main__":
