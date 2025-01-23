@@ -162,6 +162,12 @@ def main():
         for stagione in os.listdir(CAMPIONATO_PATH):
             STAGIONE_PATH = os.path.join(CAMPIONATO_PATH, stagione)
             for squadra in os.listdir(STAGIONE_PATH):
+                if squadra == "squadre.csv" or squadra == "squadre.json":
+                    continue
+                files = os.listdir(os.path.join(STAGIONE_PATH, squadra))
+                if "informazioni_giocatori.csv" in files or "informazioni_giocatori.json" in files:
+                    print(f"Salto {squadra} perche è gia stato scaricato")
+                    continue
                 SQUADRA_PATH = os.path.join(STAGIONE_PATH, squadra)
                 GIOCATORI_PATH = os.path.join(SQUADRA_PATH, "giocatori.csv")
                 giocatori_df = pd.read_csv(GIOCATORI_PATH)
