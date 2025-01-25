@@ -4,8 +4,21 @@ import time
 import requests
 from bs4 import BeautifulSoup, NavigableString
 
+from src.utils.scraper_utils import (
+    extract_altri_ruoli,
+    extract_links_from_table,
+    extract_nationalities,
+    extract_player_details_from_header,
+    extract_value_from_div,
+    find_label_content,
+    find_table,
+    make_absolute_url,
+    parse_player_name,
+)
+
 
 class TransfermarktScraper:
+
     def __init__(self, base_url="https://www.transfermarkt.it", headers=None, delay=1):
         """
         Inizializza lo scraper con l'URL di base, gli header HTTP e un ritardo tra le richieste.
@@ -20,93 +33,91 @@ class TransfermarktScraper:
 
     def get_soup(self, url):
         """
-        Effettua una richiesta HTTP e restituisce un oggetto BeautifulSoup.
+        Sends an HTTP GET request and returns a BeautifulSoup object.
         """
-        print(f"Richiesta HTTP a {url}")
-        response = self.session.get(url)
-        response.raise_for_status()  # Solleva un'eccezione per risposte non valide
-        print(f"Richiesta a {url} riuscita.")
-        time.sleep(self.delay)  # Ritardo per evitare di sovraccaricare il server
-        return BeautifulSoup(response.text, "html.parser")
+        print(f"Sending HTTP request to {url}")
+        try:
+            response = self.session.get(url)
+            response.raise_for_status()
+            print(f"Successfully fetched content from {url}")
+            time.sleep(self.delay)
+            return BeautifulSoup(response.text, "html.parser")
+        except requests.HTTPError as http_err:
+            print(f"HTTP error occurred while fetching {url}: {http_err}")
+        except Exception as err:
+            print(f"An error occurred while fetching {url}: {err}")
+        return None
 
     def scrape_teams(self, competition_url):
         """
-        Estrae i nomi delle squadre e i relativi link dalla pagina di competizione.
-        Restituisce una lista di dizionari con i dettagli delle squadre.
+        Extracts team names and links from the competition page.
+        Returns a list of dictionaries with team details.
         """
+        print(f"Starting to scrape teams from {competition_url}")
         soup = self.get_soup(competition_url)
         teams = []
 
-        # Trova la tabella delle squadre
-        table = soup.find("table", class_="items")
+        if not soup:
+            print(f"Failed to retrieve soup for {competition_url}")
+            return teams
+
+        table = find_table(soup, table_class="items")
         if not table:
-            print("Non è stata trovata la tabella delle squadre.")
+            print("Teams table not found.")
             return teams
 
-        # Trova il corpo della tabella
-        tbody = table.find("tbody")
-        if not tbody:
-            print("Non è stato trovato il corpo della tabella.")
-            return teams
+        # Extract links from the table
+        extracted_teams = extract_links_from_table(
+            table, exclude_class="bg_blau_20", td_class="hauptlink no-border-links"
+        )
 
-        # Itera sulle righe della tabella
-        for row in tbody.find_all("tr", class_=lambda x: x != "bg_blau_20"):
-            team_cell = row.find("td", class_="hauptlink no-border-links")
-            if team_cell:
-                link_tag = team_cell.find("a", href=True)
-                if link_tag:
-                    name = link_tag.get_text(strip=True)
-                    link = f"{self.base_url}{link_tag['href']}"
-                    teams.append({"name": name, "link": link})
-                    print(f"Squadra trovata: {name}, Link: {link}")
+        # Convert relative URLs to absolute URLs
+        for team in extracted_teams:
+            team["link"] = make_absolute_url(self.base_url, team["link"])
+            teams.append(team)
+            print(f"Found team: {team['name']}, Link: {team['link']}")
 
-        print(f"Scraping delle squadre completato. {len(teams)} squadre trovate.")
+        print(f"Completed scraping teams. Total teams found: {len(teams)}")
         return teams
 
     def scrape_players(self, team_url):
         """
-        Estrae i giocatori di una squadra dalla pagina della squadra.
-        Restituisce una lista di dizionari con i dettagli dei giocatori.
+        Extracts players from a team's page.
+        Returns a list of dictionaries with player details.
         """
+        print(f"Starting to scrape players from {team_url}")
         soup = self.get_soup(team_url)
         players = []
 
-        # Trova la tabella dei giocatori
-        table = soup.find("table", class_="items")
+        if not soup:
+            print(f"Failed to retrieve soup for {team_url}")
+            return players
+
+        table = find_table(soup, table_class="items")
         if not table:
-            print(
-                f"Non è stata trovata la tabella dei giocatori per la squadra: {team_url}"
-            )
+            print(f"Players table not found for team: {team_url}")
             return players
 
-        # Trova il corpo della tabella
-        tbody = table.find("tbody")
-        if not tbody:
-            print(
-                f"Non è stato trovato il corpo della tabella dei giocatori per la squadra: {team_url}"
-            )
-            return players
+        # Extract links from the table
+        extracted_players = extract_links_from_table(
+            table, exclude_class="bg_blau_20", td_class="hauptlink"
+        )
 
-        # Itera sulle righe della tabella
-        for row in tbody.find_all("tr", class_=lambda x: x != "bg_blau_20"):
-            player_cell = row.find("td", class_="hauptlink")
-            if player_cell:
-                link_tag = player_cell.find("a", href=True)
-                if link_tag:
-                    name = link_tag.get_text(strip=True)
-                    link = f"{self.base_url}{link_tag['href']}"
-                    players.append({"name": name, "link": link})
-                    print(f"Giocatore trovato: {name}, Link: {link}")
+        # Convert relative URLs to absolute URLs
+        for player in extracted_players:
+            player["link"] = make_absolute_url(self.base_url, player["link"])
+            players.append(player)
+            print(f"Found player: {player['name']}, Link: {player['link']}")
 
-        print(f"Scraping dei giocatori completato. {len(players)} giocatori trovati.")
+        print(f"Completed scraping players. Total players found: {len(players)}")
         return players
 
     def scrape_player_details(self, player_url):
         """
-        Estrae le informazioni dettagliate di un giocatore dalla sua pagina.
-        Restituisce un dizionario con i dettagli del giocatore.
+        Extracts detailed information about a player from their Transfermarkt page.
+        Returns a dictionary with player details.
         """
-        # Definizione delle colonne fisse
+        # Define fixed columns
         COLUMN_ORDER = [
             "numero_maglia",
             "nome",
@@ -125,307 +136,145 @@ class TransfermarktScraper:
             "squadra_attuale",
             "valore_attuale",
             "valore_piu_alto",
-            "data_aggiornamento"
+            "data_aggiornamento",
         ]
 
-
-        soup = self.get_soup(player_url)
-        if not soup:
-            # Restituisce un dizionario con tutti i campi impostati a None
-            return {col: None for col in COLUMN_ORDER}
-
-        # Inizializza il dizionario con tutte le chiavi impostate a None
+        # Initialize the details dictionary with None
         player_details = {col: None for col in COLUMN_ORDER}
 
         try:
-            # 1. Estrazione dall'header (Numero di Maglia, Nome, Cognome)
+            soup = self.get_soup(player_url)
+            if not soup:
+                return player_details
+
+            # 1. Extract details from the header
             header = soup.find("h1", class_="data-header__headline-wrapper")
             if header:
-                # Numero di Maglia
-                numero_maglia_span = header.find(
-                    "span", class_="data-header__shirt-number"
-                )
-                if numero_maglia_span:
-                    numero_maglia = numero_maglia_span.get_text(strip=True).replace(
-                        "#", ""
-                    )
-                    player_details["numero_maglia"] = numero_maglia
-                    print(f"Numero di Maglia: {numero_maglia}")
-                else:
-                    print("Numero di maglia non trovato.")
-
-                # Nome e Cognome
-                nome = ""
-                cognome = ""
-
-                for child in header.children:
-                    if isinstance(child, NavigableString):
-                        text = child.strip()
-                        if text:
-                            nome = text
-                    elif child.name == "strong":
-                        cognome = child.get_text(strip=True)
-
-                if nome:
-                    player_details["nome"] = nome
-                    print(f"Nome: {nome}")
-                else:
-                    print("Nome non trovato.")
-
-                if cognome:
-                    player_details["cognome"] = cognome
-                    print(f"Cognome: {cognome}")
-                else:
-                    print("Cognome non trovato.")
+                header_details = extract_player_details_from_header(header)
+                player_details.update(header_details)
             else:
-                print("Header del giocatore non trovato.")
+                print("Player header not found.")
 
-            # 2. Estrazione dalla prima div (info-table)
+            # 2. Extract from the first info-table div
             info_table = soup.select_one("div.info-table.info-table--right-space")
-            if info_table is None:
-                # Prova con l'altra classe che include 'min-height-audio'
+            if not info_table:
+                # Try alternative class
                 info_table = soup.select_one(
                     "div.info-table.info-table--right-space.min-height-audio"
                 )
 
             if info_table:
-                # Data di nascita e Età
-                nato_il_label = info_table.find(
-                    "span", text=re.compile(r"Nato il:", re.I)
-                )
-                if nato_il_label:
-                    nato_il_a = nato_il_label.find_next_sibling(
-                        "span", class_="info-table__content--bold"
-                    ).find("a")
-                    if nato_il_a:
-                        nato_il = nato_il_a.get_text(strip=True)
-                        if "(" in nato_il and ")" in nato_il:
-                            data_nascita, età = nato_il.split("(")
-                            data_nascita = data_nascita.strip()
-                            età = età.strip(")")
-                            player_details["data_nascita"] = data_nascita
-                            player_details["età"] = età
-                            print(f"Data di Nascita: {data_nascita}, Età: {età}")
-                        else:
-                            print("Formato inatteso per 'Nato il:'.")
+                # Data di nascita and Età
+                nato_il = find_label_content(info_table, r"Nato il:")
+                if nato_il:
+                    # Split data_nascita and età
+                    if "(" in nato_il and ")" in nato_il:
+                        data_nascita, età = nato_il.split("(")
+                        player_details["data_nascita"] = data_nascita.strip()
+                        player_details["età"] = età.strip(")")
                     else:
-                        print("Tag <a> non trovato per 'Nato il:'.")
-                else:
-                    print("'Nato il:' non trovato.")
+                        print("Unexpected format for 'Nato il:'")
 
                 # Luogo di nascita
-                luogo_nascita_label = info_table.find(
-                    "span", text=re.compile(r"Luogo di nascita:", re.I)
-                )
-                if luogo_nascita_label:
-                    luogo_nascita_span = luogo_nascita_label.find_next_sibling(
-                        "span", class_=lambda x: x and "info-table__content" and "info-table__content--bold" in x
-                    ).find("span")
-                    if luogo_nascita_span and luogo_nascita_span.contents:
-                        luogo = luogo_nascita_span.contents[0].strip()
-                        player_details["luogo_nascita"] = luogo
-                        print(f"Luogo di Nascita: {luogo}")
-                    else:
-                        print(
-                            "Luogo di nascita non trovato o struttura HTML inattesa."
-                        )
-                else:
-                    print("'Luogo di nascita:' non trovato.")
+                luogo_nascita = find_label_content(info_table, r"Luogo di nascita:")
+                if luogo_nascita:
+                    player_details["luogo_nascita"] = luogo_nascita
 
                 # Altezza
-                altezza_label = info_table.find(
-                    "span", text=re.compile(r"Altezza:", re.I)
-                )
-                if altezza_label:
-                    altezza = (
-                        altezza_label.find_next_sibling(
-                            "span", class_="info-table__content--bold"
-                        )
-                        .get_text(strip=True)
-                        .replace("&nbsp;", " ")
-                        .replace("m", "")
-                        .strip()
+                altezza = find_label_content(info_table, r"Altezza:")
+                if altezza:
+                    player_details["altezza"] = (
+                        altezza.replace("&nbsp;", " ").replace("m", "").strip()
                     )
-                    player_details["altezza"] = altezza
-                    print(f"Altezza: {altezza}")
-                else:
-                    print("'Altezza:' non trovato.")
 
-                # Nazionalità (Multiple)
-                nazionalita_label = info_table.find(
+                # Nazionalità
+                nazionalita_span = info_table.find(
                     "span", text=re.compile(r"Nazionalità:", re.I)
                 )
-                if nazionalita_label:
-                    nazionalita_span = nazionalita_label.find_next_sibling(
+                if nazionalita_span:
+                    nazionalita_content = nazionalita_span.find_next_sibling(
                         "span", class_="info-table__content--bold"
                     )
-                    if nazionalita_span:
-                        nazionalita = [
-                            img["title"]
-                            for img in nazionalita_span.find_all("img", alt=True)
-                        ]
-                        player_details["nazionalità"] = nazionalita
-                        print(f"Nazionalità: {nazionalita}")
-                    else:
-                        print("Span per 'Nazionalità' non trovato.")
-                else:
-                    print("'Nazionalità:' non trovato.")
+                    if nazionalita_content:
+                        player_details["nazionalità"] = extract_nationalities(
+                            nazionalita_content
+                        )
 
                 # Posizione
-                posizione_label = info_table.find(
-                    "span", text=re.compile(r"Posizione:", re.I)
-                )
-                if posizione_label:
-                    posizione = posizione_label.find_next_sibling(
-                        "span", class_="info-table__content--bold"
-                    ).get_text(strip=True)
+                posizione = find_label_content(info_table, r"Posizione:")
+                if posizione:
                     player_details["posizione"] = posizione
-                    print(f"Posizione: {posizione}")
-                else:
-                    print("'Posizione:' non trovato.")
 
                 # Piede
-                piede_label = info_table.find("span", text=re.compile(r"Piede:", re.I))
-                if piede_label:
-                    piede = piede_label.find_next_sibling(
-                        "span", class_="info-table__content--bold"
-                    ).get_text(strip=True)
+                piede = find_label_content(info_table, r"Piede:")
+                if piede:
                     player_details["piede"] = piede
-                    print(f"Piede: {piede}")
-                else:
-                    print("'Piede:' non trovato.")
 
                 # Squadra attuale
-                squadra_label = info_table.find(
-                    "span", text=re.compile(r"Squadra attuale:", re.I)
-                )
-                if squadra_label:
-                    # Usa una funzione lambda per gestire le classi multiple
-                    squadra_span = squadra_label.find_next_sibling(
-                        "span",
-                        class_=lambda x: x
-                        and "info-table__content--bold" in x
-                        and "info-table__content--flex" in x,
-                    )
-                    if squadra_span:
-                        squadra = squadra_span.find_all("a")[-1].get_text(strip=True)
-                        player_details["squadra_attuale"] = squadra
-                        print(f"Squadra Attuale: {squadra}")
-                    else:
-                        print("Span per 'Squadra attuale' non trovato.")
-                else:
-                    print("'Squadra attuale:' non trovato.")
+                squadra_attuale = find_label_content(info_table, r"Squadra attuale:")
+                if squadra_attuale:
+                    # Assuming the last <a> tag contains the team name
+                    squadra_links = info_table.find_all("a")
+                    if squadra_links:
+                        player_details["squadra_attuale"] = squadra_links[-1].get_text(
+                            strip=True
+                        )
 
                 # In rosa da
-                in_rosa_da_label = info_table.find(
-                    "span", text=re.compile(r"In rosa da:", re.I)
-                )
-                if in_rosa_da_label:
-                    in_rosa_da = in_rosa_da_label.find_next_sibling(
-                        "span", class_="info-table__content--bold"
-                    ).get_text(strip=True)
+                in_rosa_da = find_label_content(info_table, r"In rosa da:")
+                if in_rosa_da:
                     player_details["in_rosa_da"] = in_rosa_da
-                    print(f"In Rosa Da: {in_rosa_da}")
-                else:
-                    print("'In rosa da:' non trovato.")
 
                 # Scadenza
-                scadenza_label = info_table.find(
-                    "span", text=re.compile(r"Scadenza:", re.I)
-                )
-                if scadenza_label:
-                    scadenza = scadenza_label.find_next_sibling(
-                        "span", class_="info-table__content--bold"
-                    ).get_text(strip=True)
+                scadenza = find_label_content(info_table, r"Scadenza:")
+                if scadenza:
                     player_details["scadenza"] = scadenza
-                    print(f"Scadenza Contratto: {scadenza}")
-                else:
-                    print("'Scadenza:' non trovato.")
             else:
-                print(
-                    "Div 'info-table' non trovato con nessuna delle classi specificate."
-                )
+                print("Info table div not found.")
 
-            # 3. Estrazione dalla seconda div (detail-position__box)
+            # 3. Extract from the second div (detail-position__box)
             detail_position = soup.find("div", class_="detail-position__box")
             if detail_position:
                 # Ruolo naturale
-                ruolo_naturale_label = detail_position.find(
-                    "dt", text=re.compile(r"Ruolo naturale:", re.I)
-                )
-                if ruolo_naturale_label:
-                    ruolo_naturale_dd = ruolo_naturale_label.find_next_sibling("dd")
-                    if ruolo_naturale_dd:
-                        ruolo_naturale = ruolo_naturale_dd.get_text(strip=True)
-                        player_details["ruolo_naturale"] = ruolo_naturale
-                        print(f"Ruolo Naturale: {ruolo_naturale}")
-                    else:
-                        print("Tag <dd> per 'Ruolo naturale' non trovato.")
-                else:
-                    print("'Ruolo naturale:' non trovato.")
+                ruolo_naturale = find_label_content(detail_position, r"Ruolo naturale:")
+                if ruolo_naturale:
+                    player_details["ruolo_naturale"] = ruolo_naturale
 
                 # Altri ruoli
-                altri_ruoli_label = detail_position.find(
-                    "dt", text=re.compile(r"Altro ruolo:", re.I)
-                )
-                if altri_ruoli_label:
-                    altri_ruoli_dds = altri_ruoli_label.find_next_siblings("dd")
-                    if altri_ruoli_dds:
-                        altri_ruoli = [
-                            dd.get_text(strip=True) for dd in altri_ruoli_dds
-                        ]
-                        player_details["altri_ruoli"] = altri_ruoli
-                        print(f"Altri Ruoli: {altri_ruoli}")
-                    else:
-                        print("Tag <dd> per 'Altro ruolo' non trovato.")
-                else:
-                    print("'Altro ruolo:' non trovato.")
+                altri_ruoli = extract_altri_ruoli(detail_position)
+                if altri_ruoli:
+                    player_details["altri_ruoli"] = altri_ruoli
             else:
-                print("Div 'detail-position__box' non trovato.")
+                print("Detail position box not found.")
 
-            # 4. Estrazione dei valori
-            valore_div = soup.find("div", class_=re.compile(r'\bcurrent-and-max\b'))
+            # 4. Extract values
+            valore_div = soup.find("div", class_=re.compile(r"\bcurrent-and-max\b"))
             if valore_div:
                 # Valore attuale
-                valore_attuale_div = valore_div.find("div", class_=re.compile(r'\bcurrent-value\b'))
-                if valore_attuale_div:
-                    # Cerca un tag <a>, se presente
-                    valore_attuale_a = valore_attuale_div.find("a")
-                    if valore_attuale_a:
-                        valore_attuale = valore_attuale_a.get_text(strip=True)
-                    else:
-                        # Se non c'è un tag <a>, prendi il testo direttamente
-                        valore_attuale = valore_attuale_div.get_text(strip=True)
-                    
+                valore_attuale = extract_value_from_div(
+                    valore_div, r"\bcurrent-value\b"
+                )
+                if valore_attuale:
                     player_details["valore_attuale"] = valore_attuale
-                    print(f"Valore Attuale: {valore_attuale}")
-                else:
-                    print("'current-value' div non trovato.")
 
-                # Valore più alto e data di aggiornamento
-                valore_max_div = valore_div.find("div", class_=re.compile(r'\bmax\b'))
-                if valore_max_div:
-                    valore_piu_alto_div = valore_max_div.find("div", class_=re.compile(r'\bmax-value\b'))
-                    if valore_piu_alto_div:
-                        valore_piu_alto = valore_piu_alto_div.get_text(strip=True)
-                        # Assumendo che la data di aggiornamento sia nel terzo <div> dentro 'max'
-                        divs_inside_max = valore_max_div.find_all("div")
-                        if len(divs_inside_max) >= 3:
-                            data_aggiornamento = divs_inside_max[2].get_text(strip=True)
-                        else:
-                            data_aggiornamento = "Data non disponibile"
+                # Valore più alto and data di aggiornamento
+                max_div = valore_div.find("div", class_=re.compile(r"\bmax\b"))
+                if max_div:
+                    valore_piu_alto = extract_value_from_div(max_div, r"\bmax-value\b")
+                    if valore_piu_alto:
                         player_details["valore_piu_alto"] = valore_piu_alto
+
+                    # Assuming the third <div> inside 'max' contains 'data_aggiornamento'
+                    divs_inside_max = max_div.find_all("div")
+                    if len(divs_inside_max) >= 3:
+                        data_aggiornamento = divs_inside_max[2].get_text(strip=True)
                         player_details["data_aggiornamento"] = data_aggiornamento
-                        print(f"Valore Più Alto: {valore_piu_alto}, Data di Aggiornamento: {data_aggiornamento}")
                     else:
-                        print("Tag <div class='max-value'> non trovato.")
-                else:
-                    print("'max' div non trovato.")
+                        player_details["data_aggiornamento"] = "Data non disponibile"
             else:
-                print("'current-and-max' div non trovato.")
-                
+                print("'current-and-max' div not found.")
 
         except Exception as e:
-            print(f"Errore durante l'analisi del giocatore: {e}")
+            print(f"Error while scraping player details from {player_url}: {e}")
 
         return player_details
