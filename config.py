@@ -1,24 +1,24 @@
 # Configurazione dei campionati
 campionati = {
-    "serie_a": {
+    "serie a": {
         "url": "https://www.transfermarkt.it/serie-a/startseite/wettbewerb/IT1",
-        "nome": "Serie A",
+        "nome": "serie a",
     },
-    "premier_league": {
+    "premier league": {
         "url": "https://www.transfermarkt.it/premier-league/startseite/wettbewerb/GB1",
-        "nome": "Premier League",
+        "nome": "premier league",
     },
-    "la_liga": {
+    "la liga": {
         "url": "https://www.transfermarkt.it/la-liga/startseite/wettbewerb/ES1",
-        "nome": "La Liga",
+        "nome": "la liga",
     },
     "bundesliga": {
         "url": "https://www.transfermarkt.it/bundesliga/startseite/wettbewerb/L1",
-        "nome": "Bundesliga",
+        "nome": "bundesliga",
     },
-    "ligue_1": {
+    "ligue 1": {
         "url": "https://www.transfermarkt.it/ligue-1/startseite/wettbewerb/FR1",
-        "nome": "Ligue 1",
+        "nome": "ligue 1",
     },
 }
 

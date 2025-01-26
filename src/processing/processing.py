@@ -128,3 +128,5 @@ def scrape_and_save_player_details(scraper: TransfermarktScraper, giocatore_url:
             print(f"Dettagli del giocatore {giocatore_nome} non disponibili.")
     except Exception as e:
         print(f"Errore nello scraping del giocatore {giocatore_nome} ({giocatore_url}): {e}")
+
+

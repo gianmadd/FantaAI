@@ -1,6 +1,10 @@
 from src.scraping.scraper import TransfermarktScraper
 from src.processing.processing import scrape_and_save_teams, scrape_and_save_players
 import config
+import os
+import pandas as pd
+from src.processing.post_processing import order_positions
+
 
 
 def main():
@@ -25,6 +29,9 @@ def main():
                 scrape_and_save_players(scraper, team, campionato["nome"], stagione)
 
     print("Scraping completato per tutti i campionati e tutte le squadre.")
+
+    print("Ordinamento dei giocatori per posizione")
+    order_positions()
 
 if __name__ == "__main__":
     main()
